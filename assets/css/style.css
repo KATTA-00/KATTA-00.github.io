@@ -1377,3 +1377,51 @@ body {
 #portfolio .teammembers li:hover {
   color: #28a745; /* Highlight color on hover */
 }
+
+#skills {
+  background-color: #ffffff;
+  padding: 80px 0;
+}
+
+#skills .section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#skills h2 {
+  color: #343a40;
+}
+
+#skills .skill {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#skills .progress-bar {
+  height: 20px;
+  background-color: #28a745; /* Progress bar color */
+}
+
+#projects {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+#projects .section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#projects h2 {
+  color: #343a40;
+}
+
+#projects .project {
+  margin-bottom: 30px;
+}
+
+#projects .project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
