@@ -9,18 +9,23 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
-  color: #3e480f;
+  color: #1f2937;
 }
 
 a {
-  color: #34b7a7;
+  color: #3b82f6;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #51cdbe;
+  color: #1e3a8a;
   text-decoration: none;
 }
 
@@ -41,6 +46,24 @@ h6 {
   #main {
     margin-top: 30px;
   }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1e3a8a;
 }
 
 /*--------------------------------------------------------------
