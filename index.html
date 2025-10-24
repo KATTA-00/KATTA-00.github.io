@@ -212,7 +212,7 @@
       /* Quick Links Section */
       .quick-links {
         background: var(--bg-white);
-        padding: 3rem 0;
+        padding: 1.5rem 0;
         margin-top: -50px;
         position: relative;
         z-index: 3;
@@ -220,14 +220,14 @@
 
       .quick-links .container {
         background: white;
-        padding: 2rem;
+        padding: 1.2rem;
         border-radius: 15px;
         box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
       }
 
       .link-card {
         text-align: center;
-        padding: 1.5rem;
+        padding: 1rem;
         border-radius: 10px;
         transition: all 0.3s ease;
         text-decoration: none;
@@ -245,42 +245,43 @@
       }
 
       .link-card i {
-        font-size: 2.5rem;
+        font-size: 2rem;
         color: var(--secondary-color);
-        margin-bottom: 1rem;
+        margin-bottom: 0.8rem;
       }
 
       .link-card h4 {
         font-weight: 600;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.4rem;
+        font-size: 1rem;
       }
 
       .link-card p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         color: var(--text-light);
         margin: 0;
       }
 
       /* Research Highlights */
       .research-preview {
-        padding: 4rem 0;
+        padding: 2rem 0;
         background: var(--bg-white);
       }
 
       .section-title {
         text-align: center;
-        margin-bottom: 3rem;
+        margin-bottom: 1.5rem;
       }
 
       .section-title h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 700;
         color: var(--primary-color);
-        margin-bottom: 1rem;
+        margin-bottom: 0.6rem;
       }
 
       .section-title p {
-        font-size: 1.1rem;
+        font-size: 0.95rem;
         color: var(--text-light);
         max-width: 600px;
         margin: 0 auto;
@@ -288,8 +289,8 @@
 
       .research-card {
         background: var(--bg-light);
-        padding: 2rem;
-        border-radius: 15px;
+        padding: 1rem;
+        border-radius: 12px;
         height: 100%;
         transition: all 0.3s ease;
         border: 2px solid transparent;
@@ -304,26 +305,86 @@
       .research-card h4 {
         color: var(--primary-color);
         font-weight: 600;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        line-height: 1.3;
       }
 
       .research-card .tag {
         background: var(--secondary-color);
         color: white;
-        padding: 0.25rem 0.75rem;
-        border-radius: 15px;
-        font-size: 0.8rem;
+        padding: 0.15rem 0.5rem;
+        border-radius: 10px;
+        font-size: 0.7rem;
         font-weight: 500;
-        margin-right: 0.5rem;
-        margin-bottom: 0.5rem;
+        margin-right: 0.3rem;
+        margin-bottom: 0.3rem;
         display: inline-block;
+      }
+
+      .research-card p {
+        margin-bottom: 0.6rem;
+        line-height: 1.4;
+        font-size: 0.9rem;
+      }
+
+      /* Improved spacing for sections */
+      .row.g-4 {
+        --bs-gutter-y: 1.5rem;
+      }
+
+      /* Compact headers */
+      h2 {
+        margin-bottom: 1rem;
+      }
+
+      h4 {
+        margin-bottom: 0.8rem;
+      }
+
+      /* More compact design improvements */
+      .btn-outline {
+        font-size: 0.7rem !important;
+        padding: 0.25rem 0.6rem !important;
+        margin-right: 0.3rem !important;
+      }
+
+      /* Compact spacing for content elements */
+      .text-muted {
+        margin-bottom: 0.4rem !important;
+        font-size: 0.85rem !important;
+      }
+
+      /* Reduce gap between rows in all sections */
+      .g-4 {
+        --bs-gutter-y: 1rem !important;
+      }
+
+      /* Compact achievement cards */
+      .research-card.text-center {
+        padding: 1rem !important;
+      }
+
+      .research-card.text-center i {
+        font-size: 2rem !important;
+        margin-bottom: 0.6rem !important;
+      }
+
+      .research-card.text-center h4 {
+        font-size: 1rem !important;
+        margin-bottom: 0.4rem !important;
+      }
+
+      .research-card.text-center p {
+        font-size: 0.85rem !important;
+        margin-bottom: 0.5rem !important;
       }
 
       /* Footer */
       footer {
         background: var(--primary-color);
         color: white;
-        padding: 3rem 0 2rem;
+        padding: 2rem 0 1.5rem;
       }
 
       .social-links {
@@ -392,6 +453,7 @@
           <ul>
             <li><a class="active" href="#hero">Home</a></li>
             <li><a href="#research">Research</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#achievements">Achievements</a></li>
@@ -587,7 +649,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="research-card">
               <h4>Neuromorphic Computing</h4>
-              <div class="mb-3">
+              <div class="mb-2">
                 <span class="tag">Brain-inspired Computing</span>
                 <span class="tag">Spiking Neural Networks</span>
                 <span class="tag">Edge AI</span>
@@ -604,8 +666,109 @@
       </div>
     </section>
 
+    <!-- ======= Education Section ======= -->
+    <section
+      id="education"
+      style="padding: 2rem 0; background: var(--bg-white)"
+    >
+      <div class="container">
+        <div class="section-title">
+          <h2>Education</h2>
+          <p>
+            Academic journey with exceptional performance in computer
+            engineering and mathematics at the national level.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="research-card">
+              <h4>University of Peradeniya</h4>
+              <p class="text-muted mb-1" style="font-size: 0.8rem">
+                Nov. 2021 – Present
+              </p>
+              <div class="mb-1">
+                <span class="tag">Computer Engineering</span>
+                <span class="tag">B.Sc. Engineering (Hons.)</span>
+                <span class="tag">First Class</span>
+              </div>
+              <p
+                style="
+                  font-size: 0.85rem;
+                  line-height: 1.4;
+                  margin-bottom: 0.6rem;
+                "
+              >
+                Undergraduate in B.Sc. Engineering (Hons.) Computer Engineering
+              </p>
+              <div
+                style="
+                  background: var(--bg-white);
+                  padding: 0.8rem;
+                  border-radius: 8px;
+                  border-left: 4px solid var(--primary-color);
+                  margin-bottom: 0.8rem;
+                "
+              >
+                <p style="margin: 0; font-size: 0.85rem; line-height: 1.4">
+                  <strong>Current GPA:</strong> 4.0/4.0<br />
+                  <strong>Field Rank:</strong> 1st out of 90 students
+                </p>
+              </div>
+              <div class="mt-1">
+                <a
+                  href="docs/Kanishka_Gunawardana_Transcript.pdf"
+                  class="btn-outline"
+                  style="font-size: 0.7rem; padding: 0.25rem 0.6rem"
+                  target="_blank"
+                >
+                  <i class="bi bi-file-earmark-pdf"></i> Academic Transcript
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="research-card">
+              <h4>Dharmaraja College Kandy</h4>
+              <p class="text-muted mb-1" style="font-size: 0.8rem">
+                Nov. 2006 – Aug. 2019
+              </p>
+              <div class="mb-1">
+                <span class="tag">G.C.E. Advanced Level</span>
+                <span class="tag">Mathematics Stream</span>
+                <span class="tag">Top 150 Nationally</span>
+              </div>
+              <p
+                style="
+                  font-size: 0.85rem;
+                  line-height: 1.4;
+                  margin-bottom: 0.6rem;
+                "
+              >
+                G.C.E. Advanced Level Examination with outstanding performance
+              </p>
+              <div
+                style="
+                  background: var(--bg-white);
+                  padding: 0.8rem;
+                  border-radius: 8px;
+                  border-left: 4px solid var(--secondary-color);
+                  margin-bottom: 0.8rem;
+                "
+              >
+                <p style="margin: 0; font-size: 0.85rem; line-height: 1.4">
+                  <strong>Z-score:</strong> 2.5661<br />
+                  <strong>National Rank:</strong> 149 out of 19,508<br />
+                  <strong>District Rank:</strong> 11 out of 1,189
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ======= Key Projects Section ======= -->
-    <section id="projects" style="padding: 4rem 0; background: var(--bg-light)">
+    <section id="projects" style="padding: 2rem 0; background: var(--bg-light)">
       <div class="container">
         <div class="section-title">
           <h2>Featured Projects</h2>
@@ -616,7 +779,11 @@
         </div>
         <div class="row g-4">
           <div class="col-lg-6">
-            <a target="_blank" style="text-decoration: none; color: inherit">
+            <a
+              href="https://github.com/cepdnaclk/e19-4yp-RISC-V-SoC-With-Neuromorphic-Accelerator-for-SNNs"
+              target="_blank"
+              style="text-decoration: none; color: inherit"
+            >
               <div
                 class="research-card"
                 style="
@@ -627,42 +794,45 @@
                 onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'"
               >
                 <div
-                  class="d-flex justify-content-between align-items-start mb-2"
+                  class="d-flex justify-content-between align-items-start mb-1"
                 >
                   <h4>
-                    A RISC-V SoC with Configurable Neuromorphic Acceleration for
-                    Small-Scale Spiking Neural Networks (FYP)
+                    RISC-V SoC with Neuromorphic Acceleration for SNNs (FYP)
                   </h4>
                 </div>
-                <p class="text-muted mb-2" style="font-size: 0.9rem">
+                <p class="text-muted mb-1" style="font-size: 0.8rem">
                   Nov. 2024 - Present
                 </p>
-                <div class="mb-3">
+                <div class="mb-1">
                   <span class="tag">Final Year Project</span>
                   <span class="tag">RISC-V</span>
                   <span class="tag">Neuromorphic</span>
                   <span class="tag">SoC</span>
                   <span class="tag">FPGA</span>
                 </div>
-                <p>
+                <p style="font-size: 0.85rem; line-height: 1.4">
                   Developing a neuromorphic SoC for small-scale SNNs, featuring
                   a configurable neuromorphic accelerator with on-chip learning,
-                  tailored for low-power edge applications such as robotics.
-                  Integrating RISC-V-based general-purpose computing and sensor
-                  interfacing capabilities.
+                  tailored for low-power edge applications.
                 </p>
-                <p style="font-size: 0.9rem; color: var(--text-light)">
+                <p
+                  style="
+                    font-size: 0.8rem;
+                    color: var(--text-light);
+                    margin-bottom: 0.5rem;
+                  "
+                >
                   <strong>Supervision:</strong> Dr. Isuru Nawinne, Prof. Roshan
                   G. Ragel
                 </p>
-                <div class="mt-3">
+                <div class="mt-1">
                   <a
                     href="https://github.com/cepdnaclk/e19-4yp-RISC-V-SoC-With-Neuromorphic-Accelerator-for-SNNs"
                     class="btn-outline"
                     style="
-                      font-size: 0.8rem;
-                      padding: 0.4rem 0.8rem;
-                      margin-right: 0.5rem;
+                      font-size: 0.7rem;
+                      padding: 0.25rem 0.6rem;
+                      margin-right: 0.3rem;
                     "
                     target="_blank"
                   >
@@ -671,7 +841,7 @@
                   <a
                     href="https://cepdnaclk.github.io/e19-4yp-RISC-V-SoC-With-Neuromorphic-Accelerator-for-SNNs/"
                     class="btn-outline"
-                    style="font-size: 0.8rem; padding: 0.4rem 0.8rem"
+                    style="font-size: 0.7rem; padding: 0.25rem 0.6rem"
                     target="_blank"
                   >
                     <i class="bi bi-globe"></i> Website
@@ -962,7 +1132,7 @@
     <!-- ======= Achievements Section ======= -->
     <section
       id="achievements"
-      style="padding: 4rem 0; background: var(--bg-white)"
+      style="padding: 2rem 0; background: var(--bg-white)"
     >
       <div class="container">
         <div class="section-title">
@@ -1121,7 +1291,7 @@
     <!-- ======= Experience Section ======= -->
     <section
       id="experience"
-      style="padding: 4rem 0; background: var(--bg-light)"
+      style="padding: 2rem 0; background: var(--bg-light)"
     >
       <div class="container">
         <div class="section-title">
@@ -1265,7 +1435,7 @@
     <!-- ======= Publications Section ======= -->
     <section
       id="publications"
-      style="padding: 4rem 0; background: var(--bg-light)"
+      style="padding: 2rem 0; background: var(--bg-light)"
     >
       <div class="container">
         <div class="section-title">
@@ -1321,7 +1491,7 @@
     <!-- ======= Certificates Section ======= -->
     <section
       id="certificates"
-      style="padding: 4rem 0; background: var(--bg-white)"
+      style="padding: 2rem 0; background: var(--bg-white)"
     >
       <div class="container">
         <div class="section-title">
@@ -1332,127 +1502,146 @@
           </p>
         </div>
         <div class="row g-4">
-          <div class="col-lg-8 mx-auto">
-            <div class="research-card">
-              <div class="d-flex align-items-center mb-3">
-                <i
-                  class="bi bi-mortarboard"
-                  style="
-                    font-size: 2.5rem;
-                    color: var(--primary-color);
-                    margin-right: 1rem;
-                  "
-                ></i>
-                <div>
-                  <h4 style="margin-bottom: 0.5rem">
-                    Machine Learning Specialization
-                  </h4>
-                  <p style="margin: 0; color: var(--text-light)">
-                    Stanford University & DeepLearning.AI (Coursera) | Sep. 2023
-                  </p>
+          <div class="col-lg-6">
+            <a
+              href="https://katta-00.github.io/docs/Certificates/ML.pdf"
+              target="_blank"
+              style="text-decoration: none; color: inherit"
+            >
+              <div
+                class="research-card"
+                style="
+                  cursor: pointer;
+                  transition: transform 0.2s, box-shadow 0.2s;
+                "
+                onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'"
+                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'"
+              >
+                <h4>Machine Learning Specialization</h4>
+                <p class="text-muted mb-1" style="font-size: 0.8rem">
+                  Stanford University & DeepLearning.AI (Coursera) | Sep. 2023
+                </p>
+                <div class="mb-1">
+                  <span class="tag">Machine Learning</span>
+                  <span class="tag">Deep Learning</span>
+                  <span class="tag">Stanford</span>
+                  <span class="tag">Andrew Ng</span>
                 </div>
-              </div>
-              <div class="mb-3">
-                <span class="tag">Machine Learning</span>
-                <span class="tag">Deep Learning</span>
-                <span class="tag">Stanford</span>
-                <span class="tag">Andrew Ng</span>
-              </div>
-              <p>
-                Comprehensive specialization covering supervised learning,
-                unsupervised learning, and advanced algorithms.
-              </p>
-              <div class="row mt-3">
-                <div class="col-md-4 mb-2">
+                <p
+                  style="
+                    font-size: 0.85rem;
+                    line-height: 1.4;
+                    margin-bottom: 0.8rem;
+                  "
+                >
+                  Comprehensive specialization covering supervised learning,
+                  unsupervised learning, and advanced learning algorithms with
+                  practical implementations.
+                </p>
+                <div class="mt-1">
+                  <a
+                    href="https://katta-00.github.io/docs/Certificates/ML.pdf"
+                    class="btn-outline"
+                    style="
+                      font-size: 0.7rem;
+                      padding: 0.25rem 0.6rem;
+                      margin-right: 0.3rem;
+                    "
+                    target="_blank"
+                  >
+                    <i class="bi bi-file-earmark-pdf"></i> Certificate
+                  </a>
                   <a
                     href="https://katta-00.github.io/docs/Certificates/SL.pdf"
                     class="btn-outline"
                     style="
-                      font-size: 0.8rem;
-                      padding: 0.4rem 0.8rem;
-                      width: 100%;
+                      font-size: 0.7rem;
+                      padding: 0.25rem 0.6rem;
+                      margin-right: 0.3rem;
                     "
                     target="_blank"
                   >
-                    <i class="bi bi-file-earmark-pdf"></i> Supervised Learning
+                    <i class="bi bi-file-earmark-pdf"></i> Part 1
                   </a>
-                </div>
-                <div class="col-md-4 mb-2">
                   <a
                     href="https://katta-00.github.io/docs/Certificates/UL.pdf"
                     class="btn-outline"
                     style="
-                      font-size: 0.8rem;
-                      padding: 0.4rem 0.8rem;
-                      width: 100%;
+                      font-size: 0.7rem;
+                      padding: 0.25rem 0.6rem;
+                      margin-right: 0.3rem;
                     "
                     target="_blank"
                   >
-                    <i class="bi bi-file-earmark-pdf"></i> Unsupervised Learning
+                    <i class="bi bi-file-earmark-pdf"></i> Part 2
                   </a>
-                </div>
-                <div class="col-md-4 mb-2">
                   <a
                     href="https://katta-00.github.io/docs/Certificates/AA.pdf"
                     class="btn-outline"
-                    style="
-                      font-size: 0.8rem;
-                      padding: 0.4rem 0.8rem;
-                      width: 100%;
-                    "
+                    style="font-size: 0.7rem; padding: 0.25rem 0.6rem"
                     target="_blank"
                   >
-                    <i class="bi bi-file-earmark-pdf"></i> Advanced Algorithms
+                    <i class="bi bi-file-earmark-pdf"></i> Part 3
                   </a>
                 </div>
               </div>
-              <div class="mt-3">
-                <a
-                  href="https://katta-00.github.io/docs/Certificates/ML.pdf"
-                  class="btn-primary"
-                  style="font-size: 0.9rem; padding: 0.5rem 1rem"
-                  target="_blank"
-                >
-                  <i class="bi bi-download"></i> Download Complete Certificate
-                </a>
-              </div>
-            </div>
+            </a>
           </div>
-          <div class="col-lg-6 mx-auto">
-            <div class="research-card text-center">
-              <i
-                class="bi bi-tools"
+          <div class="col-lg-6">
+            <a
+              href="https://katta-00.github.io/docs/Certificates/CAD_E1_1017.pdf"
+              target="_blank"
+              style="text-decoration: none; color: inherit"
+            >
+              <div
+                class="research-card"
                 style="
-                  font-size: 2.5rem;
-                  color: var(--accent-color);
-                  margin-bottom: 1rem;
+                  cursor: pointer;
+                  transition: transform 0.2s, box-shadow 0.2s;
                 "
-              ></i>
-              <h4>Engineering Drawing and 3D Modelling using AutoCAD</h4>
-              <p class="text-muted mb-3">TecView Institute | Mar. 2021</p>
-              <div class="mb-3">
-                <span class="tag">AutoCAD</span>
-                <span class="tag">3D Modelling</span>
-                <span class="tag">Engineering Drawing</span>
-              </div>
-              <div class="mt-3">
-                <a
-                  href="https://katta-00.github.io/docs/Certificates/CAD_E1_1017.pdf"
-                  class="btn-primary"
-                  style="font-size: 0.9rem; padding: 0.5rem 1rem"
-                  target="_blank"
+                onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'"
+                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'"
+              >
+                <h4>Engineering Drawing and 3D Modelling using AutoCAD</h4>
+                <p class="text-muted mb-1" style="font-size: 0.8rem">
+                  TecView Institute | Mar. 2021
+                </p>
+                <div class="mb-1">
+                  <span class="tag">AutoCAD</span>
+                  <span class="tag">3D Modelling</span>
+                  <span class="tag">Engineering Drawing</span>
+                  <span class="tag">CAD Design</span>
+                </div>
+                <p
+                  style="
+                    font-size: 0.85rem;
+                    line-height: 1.4;
+                    margin-bottom: 0.8rem;
+                  "
                 >
-                  <i class="bi bi-download"></i> View Certificate
-                </a>
+                  Professional certification in engineering drawing and 3D
+                  modeling techniques using AutoCAD software for technical
+                  design and documentation.
+                </p>
+                <div class="mt-1">
+                  <a
+                    href="https://katta-00.github.io/docs/Certificates/CAD_E1_1017.pdf"
+                    class="btn-outline"
+                    style="font-size: 0.7rem; padding: 0.25rem 0.6rem"
+                    target="_blank"
+                  >
+                    <i class="bi bi-file-earmark-pdf"></i> View Certificate
+                  </a>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" style="padding: 4rem 0; background: var(--bg-white)">
+    <section id="contact" style="padding: 2rem 0; background: var(--bg-white)">
       <div class="container">
         <div class="section-title">
           <h2>Get In Touch</h2>
