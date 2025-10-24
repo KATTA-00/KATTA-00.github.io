@@ -117,11 +117,12 @@
           var(--secondary-color) 100%
         );
         color: white;
-        min-height: 100vh;
+        min-height: 75vh !important;
         display: flex;
         align-items: center;
         position: relative;
         overflow: hidden;
+        padding: 2rem 0 !important;
       }
 
       #hero::before {
@@ -212,8 +213,8 @@
       /* Quick Links Section */
       .quick-links {
         background: var(--bg-white);
-        padding: 1.5rem 0;
-        margin-top: -50px;
+        padding: 1.5rem 0 !important;
+        margin-top: -30px !important;
         position: relative;
         z-index: 3;
       }
@@ -349,6 +350,24 @@
         margin-right: 0.3rem !important;
       }
 
+      /* Force hero section compactness */
+      section#hero {
+        min-height: 75vh !important;
+        max-height: 80vh !important;
+      }
+
+      #hero .row {
+        min-height: auto !important;
+      }
+
+      /* Ensure buttons are properly styled */
+      .btn-group .btn-outline,
+      .btn-group .btn-primary {
+        padding: 12px 30px !important;
+        font-size: 1rem !important;
+        margin-right: 1rem !important;
+      }
+
       /* Compact spacing for content elements */
       .text-muted {
         margin-bottom: 0.4rem !important;
@@ -384,7 +403,67 @@
       footer {
         background: var(--primary-color);
         color: white;
-        padding: 2rem 0 1.5rem;
+        padding: 1.5rem 0 1rem;
+        margin-top: 1rem;
+      }
+
+      footer h4,
+      footer h5 {
+        color: white;
+        margin-bottom: 0.8rem;
+        font-weight: 600;
+        font-size: 1.1rem;
+      }
+
+      footer h4 {
+        font-size: 1.3rem;
+      }
+
+      footer p {
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.4;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+      }
+
+      footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      footer ul li {
+        margin-bottom: 0.4rem;
+      }
+
+      footer ul li a {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        transition: color 0.3s ease;
+        font-size: 0.9rem;
+      }
+
+      footer ul li a:hover {
+        color: white;
+        text-decoration: none;
+      }
+
+      footer .footer-divider {
+        border: none;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.2);
+        margin: 1.5rem 0 1rem;
+      }
+
+      footer .footer-bottom {
+        padding-top: 0.5rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      footer .footer-bottom p {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.8rem;
       }
 
       .social-links {
@@ -402,13 +481,11 @@
         line-height: 45px;
         color: white !important;
         margin: 0 0.5rem;
-        transition: all 0.3s ease;
         text-decoration: none;
       }
 
       .social-links a:hover {
         background: var(--accent-color);
-        transform: translateY(-3px);
         color: white !important;
         text-decoration: none;
       }
@@ -420,6 +497,13 @@
 
       /* Responsive Design */
       @media (max-width: 768px) {
+        #hero,
+        section#hero {
+          min-height: 70vh !important;
+          max-height: 75vh !important;
+          padding: 1.5rem 0 !important;
+        }
+
         #hero h1 {
           font-size: 2.5rem;
         }
@@ -428,9 +512,26 @@
           font-size: 1.1rem;
         }
 
+        #hero img {
+          width: 220px !important;
+          height: 220px !important;
+        }
+
+        .quick-links {
+          margin-top: -20px !important;
+        }
+
         .btn-group {
           flex-direction: column;
           align-items: center;
+        }
+
+        .btn-group .btn-outline,
+        .btn-group .btn-primary {
+          padding: 10px 25px !important;
+          font-size: 0.9rem !important;
+          margin: 0.5rem 0 !important;
+          width: auto !important;
         }
 
         .section-title h2 {
@@ -498,11 +599,11 @@
               <i class="bi bi-cpu"></i> Neuromorphic Computing • Computer
               Architecture • Embedded Systems • Hardware-Software Co-Design
             </p>
-            <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 1rem">
+            <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 0.8rem">
               Specializing in neuromorphic computing, computer architecture, and
               embedded systems.
             </p>
-            <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 2rem">
+            <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 1.5rem">
               Seeking PhD opportunities to advance the field of
               hardware-software co-design.
             </p>
@@ -521,17 +622,18 @@
           </div>
           <div class="col-lg-4 text-center">
             <!-- Profile Photo -->
-            <div style="margin-bottom: 2rem">
+            <div style="margin-bottom: 1.5rem">
               <img
                 src="docs/kanishka.png"
                 alt="Kanishka Gunawardana"
                 style="
-                  width: 350px;
-                  height: 350px;
+                  width: 340px !important;
+                  height: 340px !important;
                   border-radius: 50%;
                   border: 4px solid rgba(255, 255, 255, 0.3);
                   object-fit: cover;
                   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+                  max-width: 100%;
                 "
               />
             </div>
@@ -1303,130 +1405,157 @@
         </div>
         <div class="row g-4">
           <div class="col-lg-6">
-            <div class="research-card">
-              <div class="d-flex align-items-center mb-3">
-                <i
-                  class="bi bi-building"
-                  style="
-                    font-size: 2.5rem;
-                    color: var(--primary-color);
-                    margin-right: 1rem;
-                  "
-                ></i>
-                <div>
-                  <h4 style="margin-bottom: 0.5rem">Temporary Instructor</h4>
-                  <p style="margin: 0; color: var(--text-light)">
-                    University of Peradeniya | 2024 - Present
-                  </p>
+            <a
+              href="https://people.ce.pdn.ac.lk/staff/temporary-academic-staff/"
+              target="_blank"
+              class="text-decoration-none"
+            >
+              <div class="research-card card-hover">
+                <div class="d-flex align-items-center mb-3">
+                  <i
+                    class="bi bi-building"
+                    style="
+                      font-size: 2.5rem;
+                      color: var(--primary-color);
+                      margin-right: 1rem;
+                    "
+                  ></i>
+                  <div>
+                    <h4 style="margin-bottom: 0.5rem">Temporary Instructor</h4>
+                    <p style="margin: 0; color: var(--text-light)">
+                      University of Peradeniya | 2024 - Present
+                    </p>
+                  </div>
                 </div>
+                <div class="mb-3">
+                  <span class="tag">Teaching</span>
+                  <span class="tag">Research Mentoring</span>
+                  <span class="tag">Computer Architecture</span>
+                </div>
+                <p>
+                  Teaching computer architecture and embedded systems courses to
+                  undergraduate students. Mentoring research teams on
+                  neuromorphic accelerators and on-chip learning capabilities.
+                  Contributing to curriculum development and academic research
+                  initiatives.
+                </p>
               </div>
-              <div class="mb-3">
-                <span class="tag">Teaching</span>
-                <span class="tag">Research Mentoring</span>
-                <span class="tag">Computer Architecture</span>
-              </div>
-              <p>
-                Teaching computer architecture and embedded systems courses to
-                undergraduate students. Mentoring research teams on neuromorphic
-                accelerators and on-chip learning capabilities. Contributing to
-                curriculum development and academic research initiatives.
-              </p>
-            </div>
+            </a>
           </div>
           <div class="col-lg-6">
-            <div class="research-card">
-              <div class="d-flex align-items-center mb-3">
-                <i
-                  class="bi bi-code-slash"
-                  style="
-                    font-size: 2.5rem;
-                    color: var(--secondary-color);
-                    margin-right: 1rem;
-                  "
-                ></i>
-                <div>
-                  <h4 style="margin-bottom: 0.5rem">
-                    Software Engineering Intern
-                  </h4>
-                  <p style="margin: 0; color: var(--text-light)">
-                    WSO2 LLC | 2023
-                  </p>
+            <a
+              href="https://wso2.com/"
+              target="_blank"
+              class="text-decoration-none"
+            >
+              <div class="research-card card-hover">
+                <div class="d-flex align-items-center mb-3">
+                  <i
+                    class="bi bi-code-slash"
+                    style="
+                      font-size: 2.5rem;
+                      color: var(--secondary-color);
+                      margin-right: 1rem;
+                    "
+                  ></i>
+                  <div>
+                    <h4 style="margin-bottom: 0.5rem">
+                      Software Engineering Intern
+                    </h4>
+                    <p style="margin: 0; color: var(--text-light)">
+                      WSO2 LLC | 2023
+                    </p>
+                  </div>
                 </div>
+                <div class="mb-3">
+                  <span class="tag">Ballerina</span>
+                  <span class="tag">API Integration</span>
+                  <span class="tag">OpenAI</span>
+                </div>
+                <p>
+                  Developed Ballerina integrations including the OpenAI
+                  Finetunes Connector and ISO20022-to-SwiftMT message conversion
+                  systems. Worked on enterprise-level software solutions and API
+                  integrations for cloud-native applications.
+                </p>
               </div>
-              <div class="mb-3">
-                <span class="tag">Ballerina</span>
-                <span class="tag">API Integration</span>
-                <span class="tag">OpenAI</span>
-              </div>
-              <p>
-                Developed Ballerina integrations including the OpenAI Finetunes
-                Connector and ISO20022-to-SwiftMT message conversion systems.
-                Worked on enterprise-level software solutions and API
-                integrations for cloud-native applications.
-              </p>
-            </div>
+            </a>
           </div>
           <div class="col-lg-6">
-            <div class="research-card">
-              <div class="d-flex align-items-center mb-3">
-                <i
-                  class="bi bi-cpu-fill"
-                  style="
-                    font-size: 2.5rem;
-                    color: var(--accent-color);
-                    margin-right: 1rem;
-                  "
-                ></i>
-                <div>
-                  <h4 style="margin-bottom: 0.5rem">Research Assistant</h4>
-                  <p style="margin: 0; color: var(--text-light)">
-                    PeraMorphIQ Research Group | 2024 - Present
-                  </p>
+            <a
+              href="https://github.com/PeraMorphIQ"
+              target="_blank"
+              class="text-decoration-none"
+            >
+              <div class="research-card card-hover">
+                <div class="d-flex align-items-center mb-3">
+                  <i
+                    class="bi bi-cpu-fill"
+                    style="
+                      font-size: 2.5rem;
+                      color: var(--accent-color);
+                      margin-right: 1rem;
+                    "
+                  ></i>
+                  <div>
+                    <h4 style="margin-bottom: 0.5rem">Research Assistant</h4>
+                    <p style="margin: 0; color: var(--text-light)">
+                      PeraMorphIQ Research Group | 2024 - Present
+                    </p>
+                  </div>
                 </div>
+                <div class="mb-3">
+                  <span class="tag">Neuromorphic Computing</span>
+                  <span class="tag">Hardware Design</span>
+                  <span class="tag">Edge AI</span>
+                </div>
+                <p>
+                  Contributing to cutting-edge research in neuromorphic
+                  computing and brain-inspired hardware architectures.
+                  Developing configurable neuromorphic accelerators for edge
+                  applications and investigating on-chip learning algorithms.
+                </p>
               </div>
-              <div class="mb-3">
-                <span class="tag">Neuromorphic Computing</span>
-                <span class="tag">Hardware Design</span>
-                <span class="tag">Edge AI</span>
-              </div>
-              <p>
-                Contributing to cutting-edge research in neuromorphic computing
-                and brain-inspired hardware architectures. Developing
-                configurable neuromorphic accelerators for edge applications and
-                investigating on-chip learning algorithms.
-              </p>
-            </div>
+            </a>
           </div>
           <div class="col-lg-6">
-            <div class="research-card">
-              <div class="d-flex align-items-center mb-3">
-                <i
-                  class="bi bi-gear-fill"
-                  style="
-                    font-size: 2.5rem;
-                    color: var(--primary-color);
-                    margin-right: 1rem;
-                  "
-                ></i>
-                <div>
-                  <h4 style="margin-bottom: 0.5rem">Head of Web Development</h4>
-                  <p style="margin: 0; color: var(--text-light)">
-                    Robotics Society, University of Peradeniya | 2022 - 2023
-                  </p>
+            <a
+              href="https://robotics.soc.pdn.ac.lk/"
+              target="_blank"
+              class="text-decoration-none"
+            >
+              <div class="research-card card-hover">
+                <div class="d-flex align-items-center mb-3">
+                  <i
+                    class="bi bi-gear-fill"
+                    style="
+                      font-size: 2.5rem;
+                      color: var(--primary-color);
+                      margin-right: 1rem;
+                    "
+                  ></i>
+                  <div>
+                    <h4 style="margin-bottom: 0.5rem">
+                      Head of Web Development
+                    </h4>
+                    <p style="margin: 0; color: var(--text-light)">
+                      Robotics Society, University of Peradeniya | 2022 - 2023
+                    </p>
+                  </div>
                 </div>
+                <div class="mb-3">
+                  <span class="tag">Leadership</span>
+                  <span class="tag">Web Development</span>
+                  <span class="tag">Team Management</span>
+                </div>
+                <p>
+                  Led the web development team for the university's robotics
+                  society. Managed website development projects, organized
+                  technical workshops, and coordinated with cross-functional
+                  teams for robotics competitions and events.
+                </p>
               </div>
-              <div class="mb-3">
-                <span class="tag">Leadership</span>
-                <span class="tag">Web Development</span>
-                <span class="tag">Team Management</span>
-              </div>
-              <p>
-                Led the web development team for the university's robotics
-                society. Managed website development projects, organized
-                technical workshops, and coordinated with cross-functional teams
-                for robotics competitions and events.
-              </p>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -1683,10 +1812,13 @@
                     "
                   ></i>
                   <h5>Location</h5>
-                  <p>University of Peradeniya<br />Sri Lanka</p>
+                  <p>
+                    Department of Computer Engineering<br />
+                    University of Peradeniya, Sri Lanka
+                  </p>
                 </div>
               </div>
-              <div class="social-links mt-4">
+              <!-- <div class="social-links mt-4">
                 <a href="https://github.com/KATTA-00" title="GitHub">
                   <i class="bi bi-github" style="font-size: 1.5rem"></i>
                 </a>
@@ -1705,7 +1837,7 @@
                 <a href="mailto:kanishkagunawarthana@gmail.com" title="Email">
                   <i class="bi bi-envelope" style="font-size: 1.5rem"></i>
                 </a>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -1723,8 +1855,8 @@
     <!-- ======= Footer ======= -->
     <footer id="footer">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
+        <div class="row g-3 align-items-stretch p-3">
+          <div class="col-lg-8 col-md-8">
             <h4>Kanishka Gunawardana</h4>
             <p>
               Computer Engineering Researcher specializing in neuromorphic
@@ -1732,67 +1864,80 @@
               PhD opportunities to advance the field of hardware-software
               co-design.
             </p>
+            <div class="mt-2">
+              <small style="color: rgba(255, 255, 255, 0.7)">
+                <i class="bi bi-geo-alt me-2"></i>University of Peradeniya, Sri
+                Lanka
+              </small>
+            </div>
           </div>
-          <div class="col-lg-3">
-            <h5>Quick Links</h5>
-            <ul style="list-style: none; padding: 0">
-              <li style="margin-bottom: 0.5rem">
+
+          <div class="col-lg-4 col-md-4">
+            <h5>Connect</h5>
+            <div class="row g-2">
+              <div class="col-6">
                 <a
-                  href="docs/Kanishka_Gunawardana_CV_PHD.pdf"
-                  style="color: rgba(255, 255, 255, 0.8); text-decoration: none"
-                  >Download CV</a
+                  href="https://github.com/KATTA-00"
+                  target="_blank"
+                  class="d-flex align-items-center text-decoration-none"
                 >
-              </li>
-              <li style="margin-bottom: 0.5rem">
+                  <i class="bi bi-github me-2"></i>
+                  <span style="color: rgba(255, 255, 255, 0.8)">GitHub</span>
+                </a>
+              </div>
+              <div class="col-6">
                 <a
-                  href="docs/Kanishka_Gunawardana_Transcript.pdf"
-                  style="color: rgba(255, 255, 255, 0.8); text-decoration: none"
-                  >Academic Transcript</a
+                  href="https://www.linkedin.com/in/kanishka-gunawardana-285aa4201"
+                  target="_blank"
+                  class="d-flex align-items-center text-decoration-none"
                 >
-              </li>
-              <li style="margin-bottom: 0.5rem">
+                  <i class="bi bi-linkedin me-2"></i>
+                  <span style="color: rgba(255, 255, 255, 0.8)">LinkedIn</span>
+                </a>
+              </div>
+              <div class="col-6">
                 <a
-                  href="#research"
-                  style="color: rgba(255, 255, 255, 0.8); text-decoration: none"
-                  >Research</a
+                  href="mailto:kanishkagunawarthana@gmail.com"
+                  class="d-flex align-items-center text-decoration-none"
                 >
-              </li>
-              <li style="margin-bottom: 0.5rem">
+                  <i class="bi bi-envelope me-2"></i>
+                  <span style="color: rgba(255, 255, 255, 0.8)">Email</span>
+                </a>
+              </div>
+              <div class="col-6">
                 <a
-                  href="#publications"
-                  style="color: rgba(255, 255, 255, 0.8); text-decoration: none"
-                  >Publications</a
+                  href="https://www.instagram.com/_.k_a_t_t_a._/"
+                  target="_blank"
+                  class="d-flex align-items-center text-decoration-none"
                 >
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3">
-            <h5>Research Interests</h5>
-            <ul
-              style="
-                list-style: none;
-                padding: 0;
-                color: rgba(255, 255, 255, 0.8);
-              "
-            >
-              <li style="margin-bottom: 0.5rem">Computer Architecture</li>
-              <li style="margin-bottom: 0.5rem">Embedded Systems</li>
-              <li style="margin-bottom: 0.5rem">Neuromorphic Computing</li>
-              <li style="margin-bottom: 0.5rem">Hardware-Software Co-Design</li>
-            </ul>
+                  <i class="bi bi-instagram me-2"></i>
+                  <span style="color: rgba(255, 255, 255, 0.8)">Instagram</span>
+                </a>
+              </div>
+              <div class="col-6">
+                <a
+                  href="https://www.facebook.com/kanishka.gunawardana.169"
+                  target="_blank"
+                  class="d-flex align-items-center text-decoration-none"
+                >
+                  <i class="bi bi-facebook me-2"></i>
+                  <span style="color: rgba(255, 255, 255, 0.8)">Facebook</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-        <hr style="margin: 2rem 0; border-color: rgba(255, 255, 255, 0.2)" />
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <p style="margin: 0; color: rgba(255, 255, 255, 0.8)">
-              &copy; 2025 Kanishka Gunawardana. All rights reserved.
-            </p>
-          </div>
-          <div class="col-lg-6 text-lg-end">
-            <p style="margin: 0; color: rgba(255, 255, 255, 0.8)">
-              Last updated: October 2025
-            </p>
+
+        <!-- <hr class="footer-divider" /> -->
+
+        <div class="footer-bottom">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 text-center text-lg-start">
+              <p>&copy; 2025 Kanishka Gunawardana. All rights reserved.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 text-center text-lg-end">
+              <p>Last updated: October 2025 | Built for PhD Applications</p>
+            </div>
           </div>
         </div>
       </div>
