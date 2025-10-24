@@ -6,7 +6,7 @@
     <title>Kanishka Gunawardana - Computer Engineering Researcher</title>
     <meta
       name="description"
-      content="Kanishka Gunawardana - Computer Engineering researcher specializing in neuromorphic computing, computer architecture, and embedded systems. Seeking PhD opportunities to advance the field of hardware-software co-design."
+      content="Kanishka Gunawardana - Computer Engineering researcher specializing in neuromorphic computing, computer architecture, and embedded systems. Accelerating hardware-software co-design for AI/ML workloads through brain-inspired computing principles."
     />
     <meta
       name="keywords"
@@ -72,101 +72,251 @@
       }
 
       /* Header Styles */
-      header {
+      header#header {
         background: linear-gradient(
           135deg,
           var(--primary-color) 0%,
           var(--secondary-color) 100%
-        );
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        backdrop-filter: blur(10px);
+        ) !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2) !important;
+        backdrop-filter: blur(10px) !important;
+        width: 100% !important;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        z-index: 1000 !important;
+        padding: 8px 0 !important;
+        margin: 0 !important;
       }
 
-      .logo a {
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: white;
-        text-decoration: none;
+      header#header .container-fluid {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        flex-wrap: nowrap !important;
+        max-width: 100% !important;
+        padding: 0 15px !important;
+        margin: 0 !important;
+        width: 100% !important;
       }
 
-      .navbar ul li a {
-        color: rgba(255, 255, 255, 0.9);
-        font-weight: 500;
-        transition: color 0.3s ease;
+      header#header .logo {
+        flex: 0 0 auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
       }
 
-      .navbar ul li a:hover,
-      .navbar ul li a.active {
-        color: white;
+      header#header .logo h1 {
+        margin: 0 !important;
+        padding: 0 !important;
       }
 
-      .header-social-links a {
-        color: rgba(255, 255, 255, 0.8);
-        transition: color 0.3s ease;
+      header#header .logo a {
+        font-size: 1.5rem !important;
+        font-weight: 700 !important;
+        color: white !important;
+        text-decoration: none !important;
+        display: block !important;
       }
 
-      .header-social-links a:hover {
-        color: white;
+      header#header .navbar {
+        flex: 1 !important;
+        display: flex !important;
+        justify-content: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        background: none !important;
+      }
+
+      header#header .navbar ul {
+        display: flex !important;
+        list-style: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+      }
+
+      header#header .navbar ul li {
+        margin: 0 3px !important;
+        padding: 0 !important;
+        list-style: none !important;
+      }
+
+      header#header .navbar ul li a {
+        color: rgba(255, 255, 255, 0.9) !important;
+        font-weight: 500 !important;
+        transition: color 0.3s ease !important;
+        padding: 8px 12px !important;
+        border-radius: 4px !important;
+        font-size: 14px !important;
+        white-space: nowrap !important;
+        text-decoration: none !important;
+        display: block !important;
+      }
+
+      header#header .navbar ul li a:hover,
+      header#header .navbar ul li a.active {
+        color: white !important;
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        text-decoration: none !important;
+      }
+
+      header#header .header-social-links {
+        flex: 0 0 auto !important;
+        display: flex !important;
+        gap: 8px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      header#header .header-social-links a {
+        color: rgba(255, 255, 255, 0.8) !important;
+        transition: color 0.3s ease !important;
+        font-size: 16px !important;
+        text-decoration: none !important;
+        display: block !important;
+      }
+
+      header#header .header-social-links a:hover {
+        color: white !important;
+        text-decoration: none !important;
+      }
+
+      header#header .mobile-nav-toggle {
+        display: none !important;
+        color: white !important;
+        font-size: 24px !important;
+        cursor: pointer !important;
+        background: none !important;
+        border: none !important;
       }
 
       /* Hero Section */
-      #hero {
+      section#hero {
         background: linear-gradient(
           135deg,
           var(--primary-color) 0%,
           var(--secondary-color) 100%
-        );
-        color: white;
+        ) !important;
+        color: white !important;
         min-height: 75vh !important;
-        display: flex;
-        align-items: center;
-        position: relative;
-        overflow: hidden;
-        padding: 2rem 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        position: relative !important;
+        overflow: hidden !important;
+        padding: 80px 0 40px 0 !important;
+        width: 100% !important;
+        margin: 0 !important;
       }
 
-      #hero::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
-        opacity: 0.3;
+      section#hero::before {
+        content: "" !important;
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>') !important;
+        opacity: 0.4 !important;
       }
 
-      #hero .container {
-        position: relative;
-        z-index: 2;
+      section#hero::after {
+        content: "" !important;
+        position: absolute !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        height: 4px !important;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.3),
+          transparent
+        ) !important;
+        z-index: 1 !important;
       }
 
-      #hero h1 {
-        font-size: 3.5rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
-        background: linear-gradient(45deg, #ffffff, #e0e7ff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+      section#hero .container {
+        position: relative !important;
+        z-index: 2 !important;
+        width: 100% !important;
+        max-width: 1200px !important;
+        margin: 0 auto !important;
+        padding: 0 15px !important;
       }
 
-      #hero .subtitle {
-        font-size: 1.3rem;
-        margin-bottom: 1.5rem;
-        opacity: 0.9;
-        font-weight: 300;
+      section#hero .row {
+        display: flex !important;
+        align-items: center !important;
+        width: 100% !important;
+        margin: 0 !important;
+        justify-content: space-between !important;
+        flex-wrap: wrap !important;
       }
 
-      #hero .specialization {
-        font-size: 1.1rem;
-        margin-bottom: 2rem;
-        padding: 0.5rem 1rem;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 25px;
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        display: inline-block;
+      section#hero h1 {
+        font-size: 3.5rem !important;
+        font-weight: 700 !important;
+        margin-bottom: 1rem !important;
+        background: linear-gradient(45deg, #ffffff, #e0e7ff) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text !important;
+        line-height: 1.2 !important;
+      }
+
+      section#hero .subtitle {
+        font-size: 1.3rem !important;
+        margin-bottom: 1.5rem !important;
+        opacity: 0.9 !important;
+        font-weight: 300 !important;
+        color: white !important;
+      }
+
+      section#hero .specialization {
+        font-size: 1rem !important;
+        margin-bottom: 2rem !important;
+        padding: 0.8rem 1.5rem !important;
+        background: rgba(255, 255, 255, 0.12) !important;
+        border-radius: 30px !important;
+        backdrop-filter: blur(15px) !important;
+        border: 1px solid rgba(255, 255, 255, 0.25) !important;
+        display: inline-block !important;
+        color: white !important;
+        font-weight: 400 !important;
+        letter-spacing: 0.5px !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+      }
+
+      section#hero img {
+        max-width: 100% !important;
+        height: auto !important;
+      }
+
+      /* Profile Image */
+      .profile-image {
+        width: 340px !important;
+        height: 340px !important;
+        border-radius: 50% !important;
+        border: 4px solid rgba(255, 255, 255, 0.3) !important;
+        object-fit: cover !important;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+        max-width: 100% !important;
+        display: block !important;
+        margin: 0 auto !important;
+      }
+
+      section#hero .col-lg-4 {
+        margin-bottom: 2rem !important;
+        text-align: center !important;
+      }
+
+      section#hero p {
+        color: white !important;
       }
 
       .btn-group {
@@ -176,14 +326,17 @@
 
       .btn-primary,
       .btn-outline {
-        padding: 12px 30px;
-        font-size: 1rem;
+        padding: 14px 32px;
+        font-size: 0.95rem;
         font-weight: 600;
-        border-radius: 50px;
+        border-radius: 8px;
         text-decoration: none;
         transition: all 0.3s ease;
         display: inline-block;
         border: 2px solid;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        font-size: 0.85rem;
       }
 
       .btn-primary {
@@ -208,59 +361,6 @@
         background-color: white;
         color: var(--primary-color);
         transform: translateY(-2px);
-      }
-
-      /* Quick Links Section */
-      .quick-links {
-        background: var(--bg-white);
-        padding: 1.5rem 0 !important;
-        margin-top: -30px !important;
-        position: relative;
-        z-index: 3;
-      }
-
-      .quick-links .container {
-        background: white;
-        padding: 1.2rem;
-        border-radius: 15px;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-      }
-
-      .link-card {
-        text-align: center;
-        padding: 1rem;
-        border-radius: 10px;
-        transition: all 0.3s ease;
-        text-decoration: none;
-        color: var(--text-dark);
-        background: var(--bg-light);
-        border: 2px solid transparent;
-      }
-
-      .link-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-        border-color: var(--secondary-color);
-        color: var(--text-dark);
-        text-decoration: none;
-      }
-
-      .link-card i {
-        font-size: 2rem;
-        color: var(--secondary-color);
-        margin-bottom: 0.8rem;
-      }
-
-      .link-card h4 {
-        font-weight: 600;
-        margin-bottom: 0.4rem;
-        font-size: 1rem;
-      }
-
-      .link-card p {
-        font-size: 0.85rem;
-        color: var(--text-light);
-        margin: 0;
       }
 
       /* Research Highlights */
@@ -496,46 +596,463 @@
       }
 
       /* Responsive Design */
-      @media (max-width: 768px) {
-        #hero,
+
+      /* Responsive Design */
+      @media (max-width: 1200px) {
+        .navbar ul li a {
+          font-size: 13px;
+          padding: 6px 10px;
+        }
+
+        .header-social-links {
+          gap: 6px;
+        }
+
+        .header-social-links a {
+          font-size: 14px;
+        }
+      }
+
+      @media (max-width: 991px) {
+        header#header .mobile-nav-toggle {
+          display: none !important;
+        }
+
+        header#header .navbar ul {
+          display: none !important;
+        }
+
+        header#header .navbar {
+          justify-content: flex-end !important;
+        }
+
+        header#header .header-social-links {
+          display: none !important;
+        }
+
+        header#header .container-fluid {
+          padding: 0 15px !important;
+        }
+      }
+
+      /* Tablet and Mobile Styles */
+      @media (max-width: 992px) {
+        /* Header adjustments */
+        header#header {
+          padding: 8px 0 !important;
+        }
+
+        header#header .logo a {
+          font-size: 1.2rem !important;
+        }
+
+        /* Hero section */
         section#hero {
           min-height: 70vh !important;
-          max-height: 75vh !important;
-          padding: 1.5rem 0 !important;
+          padding: 70px 0 30px 0 !important;
+        }
+
+        section#hero .container {
+          padding: 0 20px !important;
+        }
+
+        section#hero .row {
+          flex-direction: column-reverse !important;
+          align-items: center !important;
+          justify-content: center !important;
+        }
+
+        section#hero .col-lg-8,
+        section#hero .col-lg-4 {
+          width: 100% !important;
+          max-width: 100% !important;
+          flex: 0 0 100% !important;
+        }
+
+        section#hero .col-lg-8 {
+          text-align: center !important;
+        }
+
+        section#hero .col-lg-4 {
+          display: none !important;
+        }
+
+        .profile-image {
+          display: none !important;
+        }
+
+        section#hero .col-lg-8 {
+          text-align: center !important;
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        section#hero h1 {
+          font-size: 2.5rem !important;
+          margin-top: 1rem !important;
+        }
+
+        section#hero .subtitle {
+          font-size: 1.15rem !important;
+        }
+
+        section#hero .specialization {
+          font-size: 0.9rem !important;
+          padding: 0.75rem 1rem !important;
+          display: inline-block !important;
+          text-align: center !important;
+        }
+
+        section#hero p {
+          font-size: 1rem !important;
+        }
+
+        .profile-image {
+          width: 280px !important;
+          height: 280px !important;
+        }
+
+        /* Sections */
+        section {
+          padding: 3rem 0 !important;
+        }
+
+        .section-title h2 {
+          font-size: 1.8rem;
+        }
+
+        .section-title p {
+          font-size: 0.95rem;
+        }
+
+        /* Cards */
+        .research-card {
+          padding: 1.5rem;
+        }
+
+        .research-card h4 {
+          font-size: 1.15rem;
+        }
+
+
+
+        /* Buttons */
+        .btn-group {
+          justify-content: flex-start;
+          gap: 0.75rem;
+        }
+
+        .btn-primary,
+        .btn-outline {
+          padding: 12px 24px;
+          font-size: 0.95rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        /* Mobile phones */
+        header#header {
+          padding: 6px 0 !important;
+        }
+
+        header#header .container-fluid {
+          padding: 0 12px !important;
+        }
+
+        header#header .logo a {
+          font-size: 1.1rem !important;
+        }
+
+        header#header .mobile-nav-toggle {
+          display: none !important;
+        }
+
+        section#hero {
+          min-height: 60vh !important;
+          padding: 60px 0 25px 0 !important;
+        }
+
+        /* Hide image completely on mobile */
+        section#hero .col-lg-4 {
+          display: none !important;
+        }
+
+        .profile-image {
+          display: none !important;
+        }
+
+        section#hero .col-lg-8 {
+          text-align: center !important;
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        section#hero .container {
+          padding: 0 15px !important;
+        }
+
+        section#hero h1 {
+          font-size: 2rem !important;
+          line-height: 1.2 !important;
+        }
+
+        section#hero .subtitle {
+          font-size: 1rem !important;
+        }
+
+        section#hero .specialization {
+          font-size: 0.8rem !important;
+          padding: 0.6rem 0.8rem !important;
+        }
+
+        section#hero p {
+          font-size: 0.9rem !important;
+          line-height: 1.6 !important;
+        }
+
+        .profile-image {
+          width: 220px !important;
+          height: 220px !important;
+          border: 3px solid rgba(255, 255, 255, 0.3) !important;
+        }
+
+        .section-title h2 {
+          font-size: 1.6rem;
+        }
+
+        .research-card h4 {
+          font-size: 1.05rem;
+        }
+
+        .research-card p {
+          font-size: 0.9rem;
+        }
+
+        .tag {
+          font-size: 0.7rem;
+          padding: 0.2rem 0.5rem;
+        }
+
+        .btn-primary,
+        .btn-outline {
+          width: 100%;
+          justify-content: center;
+        }
+
+        /* Footer mobile */
+        footer {
+          text-align: center;
+        }
+
+        footer .row.g-3 {
+          text-align: center;
+        }
+
+        footer .col-lg-4,
+        footer .col-lg-8 {
+          text-align: center !important;
+        }
+
+        footer .row.g-2 {
+          justify-content: center;
+        }
+      }
+
+      @media (max-width: 576px) {
+        /* Small mobile devices */
+        body {
+          font-size: 14px;
+        }
+
+        header {
+          padding: 5px 0;
+        }
+
+        header .container-fluid {
+          padding: 0 10px;
+        }
+
+        .logo a {
+          font-size: 1rem;
+        }
+
+        .mobile-nav-toggle {
+          display: none !important;
+        }
+
+        #hero {
+          min-height: 55vh;
+          padding: 55px 0 20px 0;
+        }
+
+        #hero .container {
+          padding: 0 12px;
         }
 
         #hero h1 {
-          font-size: 2.5rem;
+          font-size: 1.7rem;
         }
 
         #hero .subtitle {
-          font-size: 1.1rem;
+          font-size: 0.9rem;
         }
 
-        #hero img {
-          width: 220px !important;
-          height: 220px !important;
+        #hero .specialization {
+          font-size: 0.7rem;
+          padding: 0.5rem 0.7rem;
+        }
+
+        #hero .specialization i {
+          font-size: 0.7rem;
+        }
+
+        #hero p {
+          font-size: 0.85rem !important;
+        }
+
+        .profile-image {
+          width: 200px !important;
+          height: 200px !important;
         }
 
         .quick-links {
           margin-top: -20px !important;
         }
 
-        .btn-group {
-          flex-direction: column;
-          align-items: center;
+        .quick-links .container {
+          padding: 1rem;
         }
 
-        .btn-group .btn-outline,
-        .btn-group .btn-primary {
-          padding: 10px 25px !important;
-          font-size: 0.9rem !important;
-          margin: 0.5rem 0 !important;
-          width: auto !important;
+        .link-card {
+          padding: 1rem;
+        }
+
+        .link-card i {
+          font-size: 1.8rem;
+        }
+
+        .link-card h4 {
+          font-size: 0.9rem;
+        }
+
+        .link-card p {
+          font-size: 0.75rem;
         }
 
         .section-title h2 {
-          font-size: 2rem;
+          font-size: 1.4rem;
+        }
+
+        .section-title p {
+          font-size: 0.85rem;
+        }
+
+        .research-card {
+          padding: 1rem;
+        }
+
+        .research-card h4 {
+          font-size: 1rem;
+        }
+
+        .research-card p {
+          font-size: 0.85rem;
+        }
+
+        .btn-primary,
+        .btn-outline {
+          padding: 10px 18px;
+          font-size: 0.85rem;
+        }
+
+        /* Adjust column spacing */
+        .container {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+
+        section {
+          padding: 2rem 0 !important;
+        }
+      }
+
+      @media (max-width: 480px) {
+        /* Very small screens */
+        #hero {
+          min-height: 50vh;
+          padding: 50px 0 15px 0;
+        }
+
+        #hero h1 {
+          font-size: 1.5rem;
+        }
+
+        #hero .subtitle {
+          font-size: 0.85rem;
+        }
+
+        #hero .specialization {
+          font-size: 0.65rem;
+          padding: 0.4rem 0.6rem;
+        }
+
+        #hero p {
+          font-size: 0.8rem !important;
+        }
+
+        .profile-image {
+          display: none !important;
+        }
+
+        section#hero .col-lg-4 {
+          display: none !important;
+        }
+
+        section#hero .col-lg-8 {
+          text-align: center !important;
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .section-title h2 {
+          font-size: 1.25rem;
+        }
+      }
+
+      @media (max-width: 360px) {
+        /* Extra small screens */
+        header .container-fluid {
+          padding: 0 8px;
+        }
+
+        .logo a {
+          font-size: 0.9rem;
+        }
+
+        #hero .container {
+          padding: 0 10px;
+        }
+
+        #hero h1 {
+          font-size: 1.3rem;
+        }
+
+        #hero .subtitle {
+          font-size: 0.8rem;
+        }
+
+        .profile-image {
+          display: none !important;
+        }
+
+        section#hero .col-lg-4 {
+          display: none !important;
+        }
+
+        section#hero .col-lg-8 {
+          text-align: center !important;
+          width: 100% !important;
+          max-width: 100% !important;
         }
       }
     </style>
@@ -543,14 +1060,12 @@
 
   <body>
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
-      <div
-        class="container-fluid d-flex justify-content-between align-items-center"
-      >
-        <h1 class="logo me-auto me-lg-0">
-          <a href="index.html"></a>
-        </h1>
-        <nav id="navbar" class="navbar order-last order-lg-0">
+    <header id="header">
+      <div class="container-fluid">
+        <div class="logo">
+          <a href="index.html">Kanishka Gunawardana</a>
+        </div>
+        <nav class="navbar">
           <ul>
             <li><a class="active" href="#hero">Home</a></li>
             <li><a href="#research">Research</a></li>
@@ -564,7 +1079,6 @@
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
-        <!-- .navbar -->
         <div class="header-social-links">
           <a href="https://github.com/KATTA-00" class="github" title="GitHub">
             <i class="bi bi-github"></i>
@@ -596,27 +1110,43 @@
             <h1>Kanishka Gunawardana</h1>
             <p class="subtitle">Computer Engineering Researcher</p>
             <p class="specialization">
-              <i class="bi bi-cpu"></i> Neuromorphic Computing • Computer
-              Architecture • Embedded Systems • Hardware-Software Co-Design
+              <i class="bi bi-cpu"></i> Neuromorphic Computing | Computer
+              Architecture | Embedded Systems | Hardware-Software Co-Design
             </p>
-            <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 0.8rem">
+            <!-- <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 0.8rem">
               Specializing in neuromorphic computing, computer architecture, and
               embedded systems.
+            </p> -->
+            <p
+              style="
+                font-size: 1.1rem;
+                opacity: 0.95;
+                margin-bottom: 1.5rem;
+                line-height: 1.8;
+                font-weight: 300;
+                letter-spacing: 0.3px;
+              "
+            >
+              My research focuses on advancing hardware–software co-design for
+              AI/ML workloads, drawing inspiration from neuromorphic computing
+              principles to transcend conventional architectural boundaries and
+              achieve unprecedented levels of computational efficiency and
+              intelligent processing.
             </p>
-            <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 1.5rem">
-              Seeking PhD opportunities to advance the field of
-              hardware-software co-design.
-            </p>
-            <div class="btn-group d-flex flex-wrap">
+            <div class="btn-group">
               <a
                 href="docs/Kanishka_Gunawardana_CV_PHD.pdf"
                 class="btn-primary cv-phd-link"
                 target="_blank"
               >
-                <i class="bi bi-file-earmark-pdf"></i> Download CV
+                <i class="bi bi-file-earmark-pdf"></i> View Curriculum Vitae
               </a>
-              <a href="#research" class="btn-outline">
-                <i class="bi bi-search"></i> Explore Research
+              <a
+                href="docs/Kanishka_Gunawardana_Transcript.pdf"
+                class="btn-outline transcript-link"
+                target="_blank"
+              >
+                <i class="bi bi-award"></i> View Academic Transcript
               </a>
             </div>
           </div>
@@ -626,15 +1156,7 @@
               <img
                 src="docs/kanishka.png"
                 alt="Kanishka Gunawardana"
-                style="
-                  width: 340px !important;
-                  height: 340px !important;
-                  border-radius: 50%;
-                  border: 4px solid rgba(255, 255, 255, 0.3);
-                  object-fit: cover;
-                  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-                  max-width: 100%;
-                "
+                class="profile-image"
               />
             </div>
             <!-- <div
@@ -661,50 +1183,6 @@
       </div>
     </section>
     <!-- End Hero -->
-
-    <!-- ======= Quick Links Section ======= -->
-    <section class="quick-links">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-lg-3 col-md-6">
-            <a
-              href="docs/Kanishka_Gunawardana_CV_PHD.pdf"
-              class="link-card d-block"
-              target="_blank"
-            >
-              <i class="bi bi-file-earmark-pdf"></i>
-              <h4>Curriculum Vitae</h4>
-              <p>Complete academic and professional profile</p>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <a
-              href="docs/Kanishka_Gunawardana_Transcript.pdf"
-              class="link-card d-block"
-              target="_blank"
-            >
-              <i class="bi bi-award"></i>
-              <h4>Academic Transcript</h4>
-              <p>Official university grades and achievements</p>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <a href="#publications" class="link-card d-block">
-              <i class="bi bi-journal-text"></i>
-              <h4>Publications</h4>
-              <p>Research papers and conference proceedings</p>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <a href="docs/Certificates/" class="link-card d-block">
-              <i class="bi bi-patch-check"></i>
-              <h4>Certificates</h4>
-              <p>Awards and professional certifications</p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- ======= Research Highlights Section ======= -->
     <section id="research" class="research-preview">
@@ -1934,9 +2412,6 @@
           <div class="row align-items-center">
             <div class="col-lg-6 col-md-6 text-center text-lg-start">
               <p>&copy; 2025 Kanishka Gunawardana. All rights reserved.</p>
-            </div>
-            <div class="col-lg-6 col-md-6 text-center text-lg-end">
-              <p>Last updated: October 2025 | Built for PhD Applications</p>
             </div>
           </div>
         </div>
