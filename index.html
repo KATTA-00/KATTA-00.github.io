@@ -320,23 +320,36 @@
       }
 
       .btn-group {
+        display: flex;
+        flex-wrap: wrap;
         gap: 1rem;
         margin-top: 2rem;
+        justify-content: center;
+        align-items: center;
       }
 
       .btn-primary,
       .btn-outline {
-        padding: 14px 32px;
-        font-size: 0.95rem;
+        padding: 14px 28px;
+        font-size: 0.85rem;
         font-weight: 600;
         border-radius: 8px;
         text-decoration: none;
         transition: all 0.3s ease;
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
         border: 2px solid;
         letter-spacing: 0.5px;
         text-transform: uppercase;
-        font-size: 0.85rem;
+        white-space: nowrap;
+        min-width: 200px;
+      }
+
+      .btn-primary i,
+      .btn-outline i {
+        font-size: 1rem;
       }
 
       .btn-primary {
@@ -734,18 +747,44 @@
           font-size: 1.15rem;
         }
 
-
-
         /* Buttons */
         .btn-group {
-          justify-content: flex-start;
+          justify-content: center;
           gap: 0.75rem;
+          flex-direction: column;
         }
 
         .btn-primary,
         .btn-outline {
           padding: 12px 24px;
-          font-size: 0.95rem;
+          font-size: 0.8rem;
+          width: 100%;
+          max-width: 280px;
+        }
+      }
+
+      @media (max-width: 850px) and (min-width: 769px) {
+        /* Small tablets and landscape phones */
+        #hero h1 {
+          font-size: 2.3rem !important;
+        }
+
+        #hero .subtitle {
+          font-size: 1.05rem !important;
+        }
+
+        #hero .specialization {
+          font-size: 0.85rem !important;
+        }
+
+        #hero p {
+          font-size: 0.95rem !important;
+        }
+
+        .btn-primary,
+        .btn-outline {
+          font-size: 0.75rem !important;
+          padding: 12px 22px !important;
         }
       }
 
@@ -767,13 +806,13 @@
           display: none !important;
         }
 
-        section#hero {
+        #hero {
           min-height: 60vh !important;
           padding: 60px 0 25px 0 !important;
         }
 
         /* Hide image completely on mobile */
-        section#hero .col-lg-4 {
+        #hero .col-lg-4 {
           display: none !important;
         }
 
@@ -781,39 +820,67 @@
           display: none !important;
         }
 
-        section#hero .col-lg-8 {
+        #hero .col-lg-8 {
           text-align: center !important;
           width: 100% !important;
           max-width: 100% !important;
+          flex: 0 0 100% !important;
         }
 
-        section#hero .container {
+        #hero .container {
           padding: 0 15px !important;
         }
 
-        section#hero h1 {
+        #hero .row {
+          flex-direction: column !important;
+          align-items: center !important;
+          justify-content: center !important;
+        }
+
+        #hero h1 {
           font-size: 2rem !important;
           line-height: 1.2 !important;
+          margin-bottom: 0.8rem !important;
         }
 
-        section#hero .subtitle {
+        #hero .subtitle {
           font-size: 1rem !important;
+          margin-bottom: 1rem !important;
         }
 
-        section#hero .specialization {
+        #hero .specialization {
           font-size: 0.8rem !important;
           padding: 0.6rem 0.8rem !important;
+          margin-bottom: 1.5rem !important;
         }
 
-        section#hero p {
+        #hero p {
           font-size: 0.9rem !important;
           line-height: 1.6 !important;
+          margin-bottom: 1.5rem !important;
         }
 
-        .profile-image {
-          width: 220px !important;
-          height: 220px !important;
-          border: 3px solid rgba(255, 255, 255, 0.3) !important;
+        .btn-group {
+          justify-content: center !important;
+          gap: 0.75rem !important;
+          flex-direction: column !important;
+          width: 100% !important;
+          align-items: center !important;
+        }
+
+        .btn-primary,
+        .btn-outline {
+          width: 100% !important;
+          max-width: 300px !important;
+          text-align: center !important;
+          min-width: auto !important;
+          padding: 12px 20px !important;
+          font-size: 0.75rem !important;
+        }
+
+        .btn-primary i,
+        .btn-outline i {
+          font-size: 0.9rem !important;
         }
 
         .section-title h2 {
@@ -881,62 +948,42 @@
         }
 
         #hero {
-          min-height: 55vh;
-          padding: 55px 0 20px 0;
+          min-height: 55vh !important;
+          padding: 50px 0 20px 0 !important;
         }
 
         #hero .container {
-          padding: 0 12px;
+          padding: 0 12px !important;
         }
 
         #hero h1 {
-          font-size: 1.7rem;
+          font-size: 1.7rem !important;
         }
 
         #hero .subtitle {
-          font-size: 0.9rem;
+          font-size: 0.9rem !important;
         }
 
         #hero .specialization {
-          font-size: 0.7rem;
-          padding: 0.5rem 0.7rem;
+          font-size: 0.7rem !important;
+          padding: 0.5rem 0.7rem !important;
         }
 
         #hero .specialization i {
-          font-size: 0.7rem;
+          font-size: 0.7rem !important;
         }
 
         #hero p {
           font-size: 0.85rem !important;
         }
 
+        /* Keep image hidden */
         .profile-image {
-          width: 200px !important;
-          height: 200px !important;
+          display: none !important;
         }
 
-        .quick-links {
-          margin-top: -20px !important;
-        }
-
-        .quick-links .container {
-          padding: 1rem;
-        }
-
-        .link-card {
-          padding: 1rem;
-        }
-
-        .link-card i {
-          font-size: 1.8rem;
-        }
-
-        .link-card h4 {
-          font-size: 0.9rem;
-        }
-
-        .link-card p {
-          font-size: 0.75rem;
+        #hero .col-lg-4 {
+          display: none !important;
         }
 
         .section-title h2 {
@@ -959,10 +1006,20 @@
           font-size: 0.85rem;
         }
 
+        .btn-group {
+          gap: 0.6rem !important;
+        }
+
         .btn-primary,
         .btn-outline {
-          padding: 10px 18px;
-          font-size: 0.85rem;
+          padding: 11px 18px !important;
+          font-size: 0.7rem !important;
+          max-width: 260px !important;
+        }
+
+        .btn-primary i,
+        .btn-outline i {
+          font-size: 0.85rem !important;
         }
 
         /* Adjust column spacing */
@@ -979,39 +1036,65 @@
       @media (max-width: 480px) {
         /* Very small screens */
         #hero {
-          min-height: 50vh;
-          padding: 50px 0 15px 0;
+          min-height: 50vh !important;
+          padding: 40px 0 15px 0 !important;
+        }
+
+        #hero .container {
+          padding: 0 10px !important;
         }
 
         #hero h1 {
-          font-size: 1.5rem;
+          font-size: 1.5rem !important;
+          margin-bottom: 0.6rem !important;
         }
 
         #hero .subtitle {
-          font-size: 0.85rem;
+          font-size: 0.85rem !important;
+          margin-bottom: 0.8rem !important;
         }
 
         #hero .specialization {
-          font-size: 0.65rem;
-          padding: 0.4rem 0.6rem;
+          font-size: 0.65rem !important;
+          padding: 0.4rem 0.6rem !important;
+          margin-bottom: 1rem !important;
         }
 
         #hero p {
           font-size: 0.8rem !important;
+          margin-bottom: 1.2rem !important;
         }
 
         .profile-image {
           display: none !important;
         }
 
-        section#hero .col-lg-4 {
+        #hero .col-lg-4 {
           display: none !important;
         }
 
-        section#hero .col-lg-8 {
+        #hero .col-lg-8 {
           text-align: center !important;
           width: 100% !important;
           max-width: 100% !important;
+        }
+
+        .btn-group {
+          gap: 0.5rem !important;
+          margin-top: 1.5rem !important;
+        }
+
+        .btn-primary,
+        .btn-outline {
+          padding: 10px 16px !important;
+          font-size: 0.65rem !important;
+          max-width: 240px !important;
+          letter-spacing: 0.3px !important;
+        }
+
+        .btn-primary i,
+        .btn-outline i {
+          font-size: 0.8rem !important;
         }
 
         .section-title h2 {
@@ -1022,37 +1105,73 @@
       @media (max-width: 360px) {
         /* Extra small screens */
         header .container-fluid {
-          padding: 0 8px;
+          padding: 0 8px !important;
         }
 
         .logo a {
-          font-size: 0.9rem;
+          font-size: 0.9rem !important;
+        }
+
+        #hero {
+          min-height: 45vh !important;
+          padding: 35px 0 10px 0 !important;
         }
 
         #hero .container {
-          padding: 0 10px;
+          padding: 0 8px !important;
         }
 
         #hero h1 {
-          font-size: 1.3rem;
+          font-size: 1.3rem !important;
+          margin-bottom: 0.5rem !important;
         }
 
         #hero .subtitle {
-          font-size: 0.8rem;
+          font-size: 0.8rem !important;
+          margin-bottom: 0.8rem !important;
+        }
+
+        #hero .specialization {
+          font-size: 0.6rem !important;
+          padding: 0.3rem 0.5rem !important;
+          margin-bottom: 1rem !important;
+        }
+
+        #hero p {
+          font-size: 0.75rem !important;
+          margin-bottom: 1rem !important;
         }
 
         .profile-image {
           display: none !important;
         }
 
-        section#hero .col-lg-4 {
+        #hero .col-lg-4 {
           display: none !important;
         }
 
-        section#hero .col-lg-8 {
+        #hero .col-lg-8 {
           text-align: center !important;
           width: 100% !important;
           max-width: 100% !important;
+        }
+
+        .btn-group {
+          gap: 0.4rem !important;
+          margin-top: 1.2rem !important;
+        }
+
+        .btn-primary,
+        .btn-outline {
+          font-size: 0.6rem !important;
+          padding: 9px 14px !important;
+          max-width: 220px !important;
+          letter-spacing: 0.2px !important;
+        }
+
+        .btn-primary i,
+        .btn-outline i {
+          font-size: 0.75rem !important;
         }
       }
     </style>
