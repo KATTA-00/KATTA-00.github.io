@@ -164,9 +164,19 @@ h6 {
   max-height: 40px;
 }
 
+/* Hide logo name on desktop */
+.logo-name {
+  display: none;
+}
+
 @media (max-width: 992px) {
   #header .logo {
     font-size: 28px;
+  }
+  
+  /* Show logo name on mobile */
+  .logo-name {
+    display: inline;
   }
 }
 
@@ -472,9 +482,9 @@ h6 {
 
 #hero h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 46px;
   color: #efe6e6;
 }
 
@@ -521,13 +531,13 @@ h6 {
   }
 
   #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 24px;
+    line-height: 32px;
   }
 
   #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 
