@@ -1023,6 +1023,19 @@
           font-size: 0.85rem;
         }
 
+        /* Add spacing between stacked buttons in cards */
+        .research-card .mt-3,
+        .research-card .mt-1 {
+          display: flex !important;
+          flex-direction: column !important;
+          gap: 0.5rem !important;
+        }
+
+        .research-card .btn-outline {
+          margin-right: 0 !important;
+          width: auto !important;
+        }
+
         .btn-group {
           gap: 0.6rem !important;
         }
@@ -1443,8 +1456,8 @@
                 "
               >
                 <p style="margin: 0; font-size: 0.85rem; line-height: 1.4">
-                  <strong>Current GPA:</strong> 4.0/4.0<br />
-                  <strong>Field Rank:</strong> 1st out of 90 students
+                  <strong>GPA: 4.0/4.0</strong><br />
+                  <strong>Rank: 1st out of 486 students</strong>
                 </p>
               </div>
               <div class="mt-1">
@@ -1489,9 +1502,9 @@
                 "
               >
                 <p style="margin: 0; font-size: 0.85rem; line-height: 1.4">
-                  <strong>Z-score:</strong> 2.5661<br />
-                  <strong>National Rank:</strong> 149 out of 19,508<br />
-                  <strong>District Rank:</strong> 11 out of 1,189
+                  <strong>Z-score: 2.5661</strong><br />
+                  <strong>National Rank: 149 out of 19,508</strong><br />
+                  <strong>District Rank: 11 out of 1,189</strong>
                 </p>
               </div>
             </div>
