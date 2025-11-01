@@ -482,16 +482,32 @@ h6 {
 
 #hero h1 {
   margin: 0;
-  font-size: 38px;
+  font-size: 32px;
   font-weight: 700;
-  line-height: 46px;
+  line-height: 40px;
   color: #efe6e6;
 }
 
 #hero h2 {
   color: #ffffff;
   margin: 10px 0 0 0;
-  font-size: 22px;
+  font-size: 18px;
+}
+
+#hero .subtitle {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+}
+
+#hero .specialization {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 1rem;
+}
+
+#hero p {
+  font-size: 0.95rem !important;
 }
 
 #hero .btn-about {
@@ -531,13 +547,25 @@ h6 {
   }
 
   #hero h1 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 30px;
   }
 
   #hero h2 {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  #hero .subtitle {
+    font-size: 14px;
+  }
+
+  #hero .specialization {
+    font-size: 12px;
+  }
+
+  #hero p {
+    font-size: 0.85rem !important;
   }
 }
 
