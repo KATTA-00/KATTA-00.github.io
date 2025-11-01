@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kanishka Gunawardana - Computer Engineering Researcher</title>
+    <title>Kanishka Gunawardana - Computer Engineering Graduate</title>
     <meta
       name="description"
-      content="Kanishka Gunawardana - Computer Engineering researcher specializing in neuromorphic computing, computer architecture, and embedded systems. Accelerating hardware-software co-design for AI/ML workloads through brain-inspired computing principles."
+      content="Kanishka Gunawardana - Computer Engineering graduate specializing in neuromorphic computing, computer architecture, and embedded systems. Accelerating hardware-software co-design for AI/ML workloads through brain-inspired computing principles."
     />
     <meta
       name="keywords"
@@ -207,8 +207,8 @@
         display: flex !important;
         align-items: center !important;
         position: relative !important;
-        overflow: hidden !important;
-        padding: 80px 0 40px 0 !important;
+        overflow: visible !important;
+        padding: 80px 0 60px 0 !important;
         width: 100% !important;
         margin: 0 !important;
       }
@@ -462,6 +462,36 @@
         font-size: 0.7rem !important;
         padding: 0.25rem 0.6rem !important;
         margin-right: 0.3rem !important;
+      }
+
+      /* Card buttons - darker theme */
+      .research-card .btn-outline,
+      .research-card a.btn-outline {
+        background-color: var(--primary-color) !important;
+        color: white !important;
+        border-color: var(--primary-color) !important;
+        font-size: 0.7rem !important;
+        padding: 0.25rem 0.6rem !important;
+        margin-right: 0.3rem !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 0.3rem !important;
+        text-decoration: none !important;
+        transition: all 0.3s ease !important;
+      }
+
+      .research-card .btn-outline:hover,
+      .research-card a.btn-outline:hover {
+        background-color: var(--secondary-color) !important;
+        border-color: var(--secondary-color) !important;
+        color: white !important;
+        text-decoration: none !important;
+        transform: translateY(-1px) !important;
+      }
+
+      .research-card .btn-outline i,
+      .research-card a.btn-outline i {
+        font-size: 0.8rem !important;
       }
 
       /* Force hero section compactness */
@@ -809,7 +839,8 @@
 
         #hero {
           min-height: 60vh !important;
-          padding: 60px 0 25px 0 !important;
+          padding: 60px 0 40px 0 !important;
+          overflow: visible !important;
         }
 
         /* Hide image completely on mobile */
@@ -929,7 +960,8 @@
 
         #hero {
           min-height: 55vh !important;
-          padding: 50px 0 20px 0 !important;
+          padding: 50px 0 35px 0 !important;
+          overflow: visible !important;
         }
 
         #hero .container {
@@ -1021,7 +1053,8 @@
         /* Very small screens */
         #hero {
           min-height: 50vh !important;
-          padding: 40px 0 15px 0 !important;
+          padding: 40px 0 30px 0 !important;
+          overflow: visible !important;
         }
 
         #hero .container {
@@ -1102,7 +1135,8 @@
 
         #hero {
           min-height: 45vh !important;
-          padding: 35px 0 10px 0 !important;
+          padding: 35px 0 25px 0 !important;
+          overflow: visible !important;
         }
 
         #hero .container {
@@ -1219,7 +1253,7 @@
         <div class="row align-items-center">
           <div class="col-lg-8">
             <h1>Kanishka Gunawardana</h1>
-            <p class="subtitle">Computer Engineering Researcher</p>
+            <p class="subtitle">Computer Engineering Graduate</p>
             <p class="specialization">
               <i class="bi bi-cpu"></i> Neuromorphic Computing | Computer
               Architecture | Embedded Systems | Hardware-Software Co-Design
@@ -1311,14 +1345,16 @@
             <div class="research-card">
               <h4>Computer Architecture</h4>
               <div class="mb-3">
-                <span class="tag">RISC-V</span>
-                <span class="tag">System-on-Chip</span>
-                <span class="tag">Hardware Acceleration</span>
+                <span class="tag">Hardware-Software Co-Design</span>
+                <span class="tag">Domain-Specific Accelerators</span>
+                <span class="tag">RISC-V SoC</span>
               </div>
               <p>
-                Designing efficient processor architectures and custom
-                accelerators. Recent work includes RISC-V SoC design with
-                neuromorphic acceleration for small-scale applications.
+                Designing processor architectures and domain-specific
+                accelerators that transcend conventional system boundaries.
+                Focus on hardware-software co-design for efficient AI/ML
+                workloads, including RISC-V SoC integration with neuromorphic
+                acceleration.
               </p>
             </div>
           </div>
@@ -1326,13 +1362,15 @@
             <div class="research-card">
               <h4>Embedded Systems</h4>
               <div class="mb-3">
+                <span class="tag">Low-Power Edge AI</span>
                 <span class="tag">IoT</span>
                 <span class="tag">Real-time Systems</span>
-                <span class="tag">Wearable Tech</span>
               </div>
               <p>
                 Creating intelligent embedded solutions for real-world
-                applications.
+                applications with a focus on low-power edge AI systems.
+                Developing energy-efficient architectures for AI inference at
+                the edge.
               </p>
             </div>
           </div>
@@ -1487,23 +1525,40 @@
                   class="d-flex justify-content-between align-items-start mb-1"
                 >
                   <h4>
-                    RISC-V SoC with Neuromorphic Acceleration for SNNs (FYP)
+                    SNAP-V: A RISC-V SoC with Configurable Neuromorphic
+                    Acceleration for Small-Scale Spiking Neural Networks (Final
+                    Year Thesis)
                   </h4>
                 </div>
                 <p class="text-muted mb-1" style="font-size: 0.8rem">
-                  Nov. 2024 - Present
+                  Nov. 2024 - Jul. 2025
                 </p>
                 <div class="mb-1">
-                  <span class="tag">Final Year Project</span>
-                  <span class="tag">RISC-V</span>
+                  <span class="tag">Final Year Thesis</span>
+                  <span class="tag">RISC-V SoC</span>
                   <span class="tag">Neuromorphic</span>
-                  <span class="tag">SoC</span>
-                  <span class="tag">FPGA</span>
+                  <span class="tag">H-NoC</span>
+                  <span class="tag">Energy-Efficient</span>
                 </div>
                 <p style="font-size: 0.85rem; line-height: 1.4">
-                  Developing a neuromorphic SoC for small-scale SNNs, featuring
-                  a configurable neuromorphic accelerator with on-chip learning,
-                  tailored for low-power edge applications.
+                  Designed and developed a dual-core RISC-V System-on-Chip
+                  integrating a configurable neuromorphic accelerator with over
+                  1k LIF neurons organized into parallel clusters interconnected
+                  through a hierarchical Network-on-Chip (H-NoC), enabling
+                  efficient spike-based computation for small-scale SNNs in
+                  low-power edge applications.
+                </p>
+                <p
+                  style="
+                    font-size: 0.85rem;
+                    line-height: 1.4;
+                    margin-bottom: 0.5rem;
+                  "
+                >
+                  Validated the SoC on MNIST using Synopsys (VCS/PrimePower) and
+                  Xilinx Vivado, achieving 96.69% accuracy (within an average
+                  2.62% of baseline) and state-of-the-art energy efficiency of
+                  1.39 pJ/synaptic operation.
                 </p>
                 <p
                   style="
@@ -1517,7 +1572,7 @@
                 </p>
                 <div class="mt-1">
                   <a
-                    href="https://github.com/cepdnaclk/e19-4yp-RISC-V-SoC-With-Neuromorphic-Accelerator-for-SNNs"
+                    href="https://github.com/PeraMorphIQ"
                     class="btn-outline"
                     style="
                       font-size: 0.7rem;
@@ -1528,14 +1583,14 @@
                   >
                     <i class="bi bi-github"></i> GitHub
                   </a>
-                  <a
+                  <!-- <a
                     href="https://cepdnaclk.github.io/e19-4yp-RISC-V-SoC-With-Neuromorphic-Accelerator-for-SNNs/"
                     class="btn-outline"
                     style="font-size: 0.7rem; padding: 0.25rem 0.6rem"
                     target="_blank"
                   >
                     <i class="bi bi-globe"></i> Website
-                  </a>
+                  </a> -->
                 </div>
               </div>
             </a>
@@ -1562,14 +1617,17 @@
                 <div class="mb-3">
                   <span class="tag">Academic Project</span>
                   <span class="tag">RISC-V</span>
-                  <span class="tag">CPU Design</span>
-                  <span class="tag">Pipelining</span>
+                  <span class="tag">5-Stage Pipeline</span>
+                  <span class="tag">AXI Integration</span>
+                  <span class="tag">FPGA</span>
                 </div>
-                <p>
-                  Designing and implementing a CPU supporting the RISC-V 32IM
-                  instruction set architecture with a 5-stage pipelined design,
-                  focusing on high efficiency and accurate instruction
-                  execution.
+                <p style="font-size: 0.9rem; line-height: 1.4">
+                  Implemented a 5-stage pipelined RISC-V RV32IM processor with
+                  in-order hazard handling, explored AXI-based memory
+                  integration for SoC compatibility, performed RTL power and
+                  static timing analysis (0.197 mW, 142 MHz), automated the
+                  analysis via a GitHub Actions CI/CD workflow, and prototyped
+                  the design on a Virtex-7 FPGA.
                 </p>
                 <div class="mt-3">
                   <a
@@ -1792,15 +1850,19 @@
                 <div class="mb-3">
                   <span class="tag">Verilog-HDL</span>
                   <span class="tag">Processor Design</span>
-                  <span class="tag">MIPS</span>
-                  <span class="tag">Hardware</span>
+                  <span class="tag">MIPS-inspired ISA</span>
+                  <span class="tag">Cache</span>
+                  <span class="tag">GTKWave</span>
                 </div>
-                <p>
+                <p style="font-size: 0.9rem; line-height: 1.4">
                   Designed and implemented an 8-bit single-cycle processor
-                  architecture in Verilog HDL to emulate a MIPS inspired ISA,
-                  enabling functionality for arithmetic, logic, data transfer,
-                  and control flow operations. Built comprehensive testbench for
-                  verification.
+                  architecture in Verilog HDL with instruction and data caches,
+                  featuring a memory unit and a MIPS-inspired ISA supporting
+                  arithmetic, logic, and control operations.
+                </p>
+                <p style="font-size: 0.9rem; line-height: 1.4">
+                  Developed a comprehensive testbench for verification and
+                  waveform analysis using GTKWave tool.
                 </p>
                 <div class="mt-3">
                   <a
@@ -2451,7 +2513,7 @@
                   >
                     <i class="bi bi-file-earmark-pdf"></i> Certificate
                   </a>
-                  <a
+                  <!-- <a
                     href="https://katta-00.github.io/docs/Certificates/SL.pdf"
                     class="btn-outline"
                     style="
@@ -2482,7 +2544,7 @@
                     target="_blank"
                   >
                     <i class="bi bi-file-earmark-pdf"></i> Part 3
-                  </a>
+                  </a> -->
                 </div>
               </div>
             </a>
