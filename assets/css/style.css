@@ -146,6 +146,12 @@ h6 {
   padding: 15px 0;
 }
 
+#header .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 #header .logo {
   font-size: 32px;
   margin: 0;
@@ -242,7 +248,8 @@ h6 {
 
 #header .navbar {
   padding: 0;
-  margin-right: auto; /* Adjusted to move the navbar to the left */
+  margin-right: auto;
+  margin-left: 0;
 }
 
 #header .navbar ul {
@@ -251,6 +258,7 @@ h6 {
   display: flex;
   list-style: none;
   align-items: center;
+  justify-content: flex-start;
 }
 
 /* ... other styles ... */
@@ -467,11 +475,24 @@ h6 {
   height: 100vh;
   background: url("../img/OIP.jpeg") top right;
   background-size: cover;
+  position: relative;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
 }
 
 #hero .container {
   padding-top: 70px;
   position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 992px) {
