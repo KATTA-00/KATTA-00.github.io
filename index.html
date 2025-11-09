@@ -35,10 +35,8 @@
       rel="stylesheet"
     />
     <!-- Bootstrap Icons CDN as fallback -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
-    />
+    <!-- Removed CDN fallback for Bootstrap Icons to avoid extra network request -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" /> -->
     <!-- Boxicons removed - using Bootstrap Icons only -->
     <!-- <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" /> -->
     <!-- Removed unused glightbox & swiper CSS to reduce payload -->
@@ -1320,14 +1318,19 @@
           <div class="col-lg-4 text-center">
             <!-- Profile Photo -->
             <div style="margin-bottom: 1.5rem">
-              <img
-                src="docs/kanishka_new.jpg"
-                alt="Kanishka Gunawardana"
-                class="profile-image"
-                width="400"
-                height="400"
-                loading="eager"
-              />
+              <picture class="profile-image-wrapper">
+                <source srcset="docs/kanishka_new.webp" type="image/webp" />
+                <img
+                  src="docs/kanishka_new.jpg"
+                  alt="Kanishka Gunawardana portrait"
+                  class="profile-image"
+                  width="340"
+                  height="340"
+                  loading="eager"
+                  decoding="async"
+                  fetchpriority="high"
+                />
+              </picture>
             </div>
             <!-- <div
               style="
