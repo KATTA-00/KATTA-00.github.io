@@ -24,7 +24,7 @@ const siteConfig = {
 
   // Document Links
   documents: {
-    cvPhd: "docs/Kanishka_Gunawardana_CV_PHD.pdf",
+    cvPhd: "docs/Kanishka_Gunawardana_CV_Hardware_Site.pdf",
     cvStandard: "docs/Kanishka_Gunawardana_CV.pdf",
     transcript: "docs/Kanishka_Gunawardana_Transcript.pdf",
     papers: "docs/Papers/",
