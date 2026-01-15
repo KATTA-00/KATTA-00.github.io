@@ -14,1509 +14,285 @@
     />
 
     <!-- Favicons -->
-    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
-    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
-    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231e3a8a'/><text x='50' y='70' font-family='Arial, sans-serif' font-size='50' font-weight='bold' text-anchor='middle' fill='white'>KG</text></svg>" />
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231e3a8a'/><text x='50' y='70' font-family='Arial, sans-serif' font-size='50' font-weight='bold' text-anchor='middle' fill='white'>KG</text></svg>" />
 
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
     <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
     />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap Icons CDN as fallback -->
-    <!-- Removed CDN fallback for Bootstrap Icons to avoid extra network request -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" /> -->
-    <!-- Boxicons removed - using Bootstrap Icons only -->
-    <!-- <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" /> -->
-    <!-- Removed unused glightbox & swiper CSS to reduce payload -->
-    <!-- <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" /> -->
-    <!-- <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" /> -->
 
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="assets/css/variables.css" rel="stylesheet" />
+    <link href="assets/css/layout.css" rel="stylesheet" />
+    <link href="assets/css/components.css" rel="stylesheet" />
 
-    <!-- Site Configuration -->
-    <script src="assets/js/config.js"></script>
-
-    <style>
-      /* Professional Academic Website Styles */
-      :root {
-        --primary-color: #1e3a8a;
-        --secondary-color: #3b82f6;
-        --accent-color: #10b981;
-        --text-dark: #1f2937;
-        --text-light: #6b7280;
-        --bg-light: #f8fafc;
-        --bg-white: #ffffff;
-      }
-
-      body {
-        font-family: "Open Sans", sans-serif;
-        background-color: var(--bg-light);
-        color: var(--text-dark);
-        line-height: 1.6;
-      }
-
-      /* Header Styles */
-      header#header {
-        background: linear-gradient(
-          135deg,
-          var(--primary-color) 0%,
-          var(--secondary-color) 100%
-        ) !important;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2) !important;
-        backdrop-filter: blur(10px) !important;
-        width: 100% !important;
-        position: fixed !important;
-        top: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        z-index: 1000 !important;
-        padding: 8px 0 !important;
-        margin: 0 !important;
-      }
-
-      header#header .container-fluid {
-        display: flex !important;
-        justify-content: space-between !important;
-        align-items: center !important;
-        flex-wrap: nowrap !important;
-        max-width: 100% !important;
-        padding: 0 15px !important;
-        margin: 0 !important;
-        width: 100% !important;
-      }
-
-      header#header .logo {
-        flex: 0 0 auto !important;
-        margin: 0 !important;
-        padding: 0 !important;
-      }
-
-      header#header .logo h1 {
-        margin: 0 !important;
-        padding: 0 !important;
-      }
-
-      header#header .logo a {
-        font-size: 1.5rem !important;
-        font-weight: 700 !important;
-        color: white !important;
-        text-decoration: none !important;
-        display: block !important;
-      }
-
-      header#header .navbar {
-        flex: 1 !important;
-        display: flex !important;
-        justify-content: center !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        border: none !important;
-        background: none !important;
-      }
-
-      header#header .navbar ul {
-        display: flex !important;
-        list-style: none !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        align-items: center !important;
-      }
-
-      header#header .navbar ul li {
-        margin: 0 3px !important;
-        padding: 0 !important;
-        list-style: none !important;
-      }
-
-      header#header .navbar ul li a {
-        color: rgba(255, 255, 255, 0.9) !important;
-        font-weight: 500 !important;
-        transition: color 0.3s ease !important;
-        padding: 8px 12px !important;
-        border-radius: 4px !important;
-        font-size: 14px !important;
-        white-space: nowrap !important;
-        text-decoration: none !important;
-        display: block !important;
-      }
-
-      header#header .navbar ul li a:hover,
-      header#header .navbar ul li a.active {
-        color: white !important;
-        background-color: rgba(255, 255, 255, 0.1) !important;
-        text-decoration: none !important;
-      }
-
-      header#header .header-social-links {
-        flex: 0 0 auto !important;
-        display: flex !important;
-        gap: 8px !important;
-        margin: 0 !important;
-        padding: 0 !important;
-      }
-
-      header#header .header-social-links a {
-        color: rgba(255, 255, 255, 0.8) !important;
-        transition: color 0.3s ease !important;
-        font-size: 16px !important;
-        text-decoration: none !important;
-        display: block !important;
-      }
-
-      header#header .header-social-links a:hover {
-        color: white !important;
-        text-decoration: none !important;
-      }
-
-      header#header .mobile-nav-toggle {
-        display: none !important;
-        color: white !important;
-        font-size: 24px !important;
-        cursor: pointer !important;
-        background: none !important;
-        border: none !important;
-      }
-
-      /* Hero Section */
-      section#hero {
-        background: linear-gradient(
-          135deg,
-          var(--primary-color) 0%,
-          var(--secondary-color) 100%
-        ) !important;
-        color: white !important;
-        min-height: 75vh !important;
-        display: flex !important;
-        align-items: center !important;
-        position: relative !important;
-        overflow: visible !important;
-        padding: 80px 0 60px 0 !important;
-        width: 100% !important;
-        margin: 0 !important;
-      }
-
-      section#hero::before {
-        content: "" !important;
-        position: absolute !important;
-        top: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        bottom: 0 !important;
-        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>') !important;
-        opacity: 0.4 !important;
-      }
-
-      section#hero::after {
-        content: "" !important;
-        position: absolute !important;
-        bottom: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        height: 4px !important;
-        background: linear-gradient(
-          90deg,
-          transparent,
-          rgba(255, 255, 255, 0.3),
-          transparent
-        ) !important;
-        z-index: 1 !important;
-      }
-
-      section#hero .container {
-        position: relative !important;
-        z-index: 2 !important;
-        width: 100% !important;
-        max-width: 1200px !important;
-        margin: 0 auto !important;
-        padding: 0 15px !important;
-      }
-
-      section#hero .row {
-        display: flex !important;
-        align-items: center !important;
-        width: 100% !important;
-        margin: 0 !important;
-        justify-content: space-between !important;
-        flex-wrap: wrap !important;
-      }
-
-      section#hero h1 {
-        font-size: 3.5rem !important;
-        font-weight: 700 !important;
-        margin-bottom: 1rem !important;
-        background: linear-gradient(45deg, #ffffff, #e0e7ff) !important;
-        -webkit-background-clip: text !important;
-        -webkit-text-fill-color: transparent !important;
-        background-clip: text !important;
-        line-height: 1.2 !important;
-      }
-
-      section#hero .subtitle {
-        font-size: 1.3rem !important;
-        margin-bottom: 1.5rem !important;
-        opacity: 0.9 !important;
-        font-weight: 300 !important;
-        color: white !important;
-      }
-
-      section#hero .specialization {
-        font-size: 1rem !important;
-        margin-bottom: 2rem !important;
-        padding: 0.8rem 1.5rem !important;
-        background: rgba(255, 255, 255, 0.12) !important;
-        border-radius: 30px !important;
-        backdrop-filter: blur(15px) !important;
-        border: 1px solid rgba(255, 255, 255, 0.25) !important;
-        display: inline-block !important;
-        color: white !important;
-        font-weight: 400 !important;
-        letter-spacing: 0.5px !important;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
-      }
-
-      section#hero img {
-        max-width: 100% !important;
-        height: auto !important;
-      }
-
-      /* Profile Image */
-      .profile-image {
-        width: 340px !important;
-        height: 340px !important;
-        border-radius: 50% !important;
-        border: 4px solid rgba(255, 255, 255, 0.3) !important;
-        object-fit: cover !important;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
-        max-width: 100% !important;
-        display: block !important;
-        margin: 0 auto !important;
-      }
-
-      section#hero .col-lg-4 {
-        margin-bottom: 2rem !important;
-        text-align: center !important;
-      }
-
-      section#hero p {
-        color: white !important;
-      }
-
-      .btn-group {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        margin-top: 2rem;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .btn-primary,
-      .btn-outline {
-        padding: 14px 28px;
-        font-size: 0.85rem;
-        font-weight: 600;
-        border-radius: 8px;
-        text-decoration: none;
-        transition: all 0.3s ease;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-        border: 2px solid;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
-        white-space: nowrap;
-        min-width: 200px;
-      }
-
-      .btn-primary i,
-      .btn-outline i {
-        font-size: 1rem;
-        flex-shrink: 0;
-      }
-
-      .btn-primary {
-        background-color: var(--accent-color);
-        color: white;
-        border-color: var(--accent-color);
-      }
-
-      .btn-primary:hover {
-        background-color: transparent;
-        color: var(--accent-color);
-        transform: translateY(-2px);
-      }
-
-      .btn-outline {
-        background-color: transparent;
-        color: white;
-        border-color: white;
-      }
-
-      .btn-outline:hover {
-        background-color: white;
-        color: var(--primary-color);
-        transform: translateY(-2px);
-      }
-
-      /* Research Highlights */
-      .research-preview {
-        padding: 2rem 0;
-        background: var(--bg-white);
-      }
-
-      .section-title {
-        text-align: center;
-        margin-bottom: 1.5rem;
-      }
-
-      .section-title h2 {
-        font-size: 2rem;
-        font-weight: 700;
-        color: var(--primary-color);
-        margin-bottom: 0.6rem;
-      }
-
-      .section-title p {
-        font-size: 0.95rem;
-        color: var(--text-light);
-        max-width: 600px;
-        margin: 0 auto;
-      }
-
-      .research-card {
-        background: var(--bg-white);
-        padding: 1.5rem;
-        border-radius: 12px;
-        transition: all 0.3s ease;
-        border: 2px solid #e5e7eb;
-        margin-bottom: 1.5rem;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      }
-
-      .research-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-        border-color: var(--accent-color);
-      }
-
-      .research-card h4 {
-        color: var(--primary-color);
-        font-weight: 600;
-        margin-bottom: 0.5rem;
-        font-size: 1rem;
-        line-height: 1.3;
-      }
-
-      .research-card .tag {
-        background: var(--secondary-color);
-        color: white;
-        padding: 0.15rem 0.5rem;
-        border-radius: 10px;
-        font-size: 0.7rem;
-        font-weight: 500;
-        margin-right: 0.3rem;
-        margin-bottom: 0.3rem;
-        display: inline-block;
-      }
-
-      .research-card p {
-        margin-bottom: 0.6rem;
-        line-height: 1.4;
-        font-size: 0.9rem;
-      }
-
-      /* Improved spacing for sections */
-      .row.g-4 {
-        --bs-gutter-y: 1.5rem;
-      }
-
-      /* Compact headers */
-      h2 {
-        margin-bottom: 1rem;
-      }
-
-      h4 {
-        margin-bottom: 0.8rem;
-      }
-
-      /* More compact design improvements */
-      .btn-outline {
-        font-size: 0.7rem !important;
-        padding: 0.25rem 0.6rem !important;
-        margin-right: 0.3rem !important;
-      }
-
-      /* Card buttons - darker theme */
-      .research-card .btn-outline,
-      .research-card a.btn-outline {
-        background-color: var(--primary-color) !important;
-        color: white !important;
-        border-color: var(--primary-color) !important;
-        font-size: 0.7rem !important;
-        padding: 0.25rem 0.6rem !important;
-        margin-right: 0.3rem !important;
-        display: inline-flex !important;
-        align-items: center !important;
-        gap: 0.3rem !important;
-        text-decoration: none !important;
-        transition: all 0.3s ease !important;
-      }
-
-      .research-card .btn-outline:hover,
-      .research-card a.btn-outline:hover {
-        background-color: var(--secondary-color) !important;
-        border-color: var(--secondary-color) !important;
-        color: white !important;
-        text-decoration: none !important;
-        transform: translateY(-1px) !important;
-      }
-
-      .research-card .btn-outline i,
-      .research-card a.btn-outline i {
-        font-size: 0.8rem !important;
-      }
-
-      /* Force hero section compactness */
-      section#hero {
-        min-height: 75vh !important;
-        max-height: 80vh !important;
-      }
-
-      #hero .row {
-        min-height: auto !important;
-      }
-
-      /* Ensure buttons are properly styled */
-      .btn-group .btn-outline,
-      .btn-group .btn-primary {
-        padding: 12px 30px !important;
-        font-size: 1rem !important;
-        margin-right: 1rem !important;
-      }
-
-      /* Compact spacing for content elements */
-      .text-muted {
-        margin-bottom: 0.4rem !important;
-        font-size: 0.85rem !important;
-      }
-
-      /* Reduce gap between rows in all sections */
-      .g-4 {
-        --bs-gutter-y: 1rem !important;
-      }
-
-      /* Compact achievement cards */
-      .research-card.text-center {
-        padding: 1rem !important;
-      }
-
-      .research-card.text-center i {
-        font-size: 2rem !important;
-        margin-bottom: 0.6rem !important;
-      }
-
-      .research-card.text-center h4 {
-        font-size: 1rem !important;
-        margin-bottom: 0.4rem !important;
-      }
-
-      .research-card.text-center p {
-        font-size: 0.85rem !important;
-        margin-bottom: 0.5rem !important;
-      }
-
-      /* Footer */
-      footer {
-        background: var(--primary-color);
-        color: white;
-        padding: 1.5rem 0 1rem;
-        margin-top: 1rem;
-      }
-
-      footer h4,
-      footer h5 {
-        color: white;
-        margin-bottom: 0.8rem;
-        font-weight: 600;
-        font-size: 1.1rem;
-      }
-
-      footer h4 {
-        font-size: 1.3rem;
-      }
-
-      footer p {
-        color: rgba(255, 255, 255, 0.9);
-        line-height: 1.4;
-        margin-bottom: 0.5rem;
-        font-size: 0.9rem;
-      }
-
-      footer ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      footer ul li {
-        margin-bottom: 0.4rem;
-      }
-
-      footer ul li a {
-        color: rgba(255, 255, 255, 0.8);
-        text-decoration: none;
-        transition: color 0.3s ease;
-        font-size: 0.9rem;
-      }
-
-      footer ul li a:hover {
-        color: white;
-        text-decoration: none;
-      }
-
-      footer .footer-divider {
-        border: none;
-        height: 1px;
-        background: rgba(255, 255, 255, 0.2);
-        margin: 1.5rem 0 1rem;
-      }
-
-      footer .footer-bottom {
-        padding-top: 0.5rem;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-      }
-
-      footer .footer-bottom p {
-        margin: 0;
-        color: rgba(255, 255, 255, 0.7);
-        font-size: 0.8rem;
-      }
-
-      .social-links {
-        text-align: center;
-        margin-top: 2rem;
-      }
-
-      .social-links a {
-        display: inline-block;
-        width: 45px;
-        height: 45px;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 50%;
-        text-align: center;
-        line-height: 45px;
-        color: white !important;
-        margin: 0 0.5rem;
-        text-decoration: none;
-      }
-
-      .social-links a:hover {
-        background: var(--accent-color);
-        color: white !important;
-        text-decoration: none;
-      }
-
-      .social-links a i {
-        color: inherit;
-        font-size: 1.2rem;
-      }
-
-      /* Responsive Design */
-
-      /* Responsive Design */
-      @media (max-width: 1200px) {
-        .navbar ul li a {
-          font-size: 13px;
-          padding: 6px 10px;
-        }
-
-        .header-social-links {
-          gap: 6px;
-        }
-
-        .header-social-links a {
-          font-size: 14px;
-        }
-      }
-
-      @media (max-width: 991px) {
-        header#header .mobile-nav-toggle {
-          display: none !important;
-        }
-
-        header#header .navbar ul {
-          display: none !important;
-        }
-
-        header#header .navbar {
-          justify-content: flex-end !important;
-        }
-
-        header#header .header-social-links {
-          display: none !important;
-        }
-
-        header#header .container-fluid {
-          padding: 0 15px !important;
-        }
-      }
-
-      /* Tablet and Mobile Styles */
-      @media (max-width: 992px) {
-        /* Header adjustments */
-        header#header {
-          padding: 8px 0 !important;
-        }
-
-        header#header .logo a {
-          font-size: 1.2rem !important;
-        }
-
-        /* Hero section */
-        section#hero {
-          min-height: 70vh !important;
-          padding: 70px 0 30px 0 !important;
-        }
-
-        section#hero .container {
-          padding: 0 20px !important;
-        }
-
-        section#hero .row {
-          flex-direction: column-reverse !important;
-          align-items: center !important;
-          justify-content: center !important;
-        }
-
-        section#hero .col-lg-8,
-        section#hero .col-lg-4 {
-          width: 100% !important;
-          max-width: 100% !important;
-          flex: 0 0 100% !important;
-        }
-
-        section#hero .col-lg-8 {
-          text-align: center !important;
-        }
-
-        section#hero .col-lg-4 {
-          display: none !important;
-        }
-
-        .profile-image {
-          display: none !important;
-        }
-
-        section#hero .col-lg-8 {
-          text-align: center !important;
-          width: 100% !important;
-          max-width: 100% !important;
-        }
-
-        section#hero h1 {
-          font-size: 2.5rem !important;
-          margin-top: 1rem !important;
-        }
-
-        section#hero .subtitle {
-          font-size: 1.15rem !important;
-        }
-
-        section#hero .specialization {
-          font-size: 0.9rem !important;
-          padding: 0.75rem 1rem !important;
-          display: inline-block !important;
-          text-align: center !important;
-        }
-
-        section#hero p {
-          font-size: 1rem !important;
-        }
-
-        .profile-image {
-          width: 280px !important;
-          height: 280px !important;
-        }
-
-        /* Sections */
-        section {
-          padding: 3rem 0 !important;
-        }
-
-        .section-title h2 {
-          font-size: 1.8rem;
-        }
-
-        .section-title p {
-          font-size: 0.95rem;
-        }
-
-        /* Cards */
-        .research-card {
-          padding: 1.5rem;
-        }
-
-        .research-card h4 {
-          font-size: 1.15rem;
-        }
-
-        /* Buttons */
-        .btn-group {
-          justify-content: center;
-          gap: 0.75rem;
-          flex-direction: column;
-        }
-
-        .btn-primary,
-        .btn-outline {
-          padding: 12px 24px;
-          font-size: 0.8rem;
-          width: 100%;
-          max-width: 280px;
-        }
-      }
-
-      @media (max-width: 850px) and (min-width: 769px) {
-        /* Small tablets and landscape phones */
-        #hero h1 {
-          font-size: 2.3rem !important;
-        }
-
-        #hero .subtitle {
-          font-size: 1.05rem !important;
-        }
-
-        #hero .specialization {
-          font-size: 0.85rem !important;
-        }
-
-        #hero p {
-          font-size: 0.95rem !important;
-        }
-
-        .btn-primary,
-        .btn-outline {
-          font-size: 0.75rem !important;
-          padding: 12px 22px !important;
-        }
-      }
-
-      @media (max-width: 768px) {
-        /* Mobile phones */
-        header#header {
-          padding: 6px 0 !important;
-        }
-
-        header#header .container-fluid {
-          padding: 0 12px !important;
-        }
-
-        header#header .logo a {
-          font-size: 1.1rem !important;
-        }
-
-        header#header .mobile-nav-toggle {
-          display: none !important;
-        }
-
-        #hero {
-          min-height: 60vh !important;
-          padding: 60px 0 40px 0 !important;
-          overflow: visible !important;
-        }
-
-        /* Hide image completely on mobile */
-        #hero .col-lg-4 {
-          display: none !important;
-        }
-
-        .profile-image {
-          display: none !important;
-        }
-
-        #hero .col-lg-8 {
-          text-align: center !important;
-          width: 100% !important;
-          max-width: 100% !important;
-          flex: 0 0 100% !important;
-        }
-
-        #hero .container {
-          padding: 0 15px !important;
-        }
-
-        #hero .row {
-          flex-direction: column !important;
-          align-items: center !important;
-          justify-content: center !important;
-        }
-
-        #hero h1 {
-          font-size: 2rem !important;
-          line-height: 1.2 !important;
-          margin-bottom: 0.8rem !important;
-        }
-
-        #hero .subtitle {
-          font-size: 1rem !important;
-          margin-bottom: 1rem !important;
-        }
-
-        #hero .specialization {
-          font-size: 0.8rem !important;
-          padding: 0.6rem 0.8rem !important;
-          margin-bottom: 1.5rem !important;
-        }
-
-        #hero p {
-          font-size: 0.9rem !important;
-        }
-
-        .btn-group {
-          justify-content: center !important;
-          gap: 0.75rem !important;
-          flex-direction: column !important;
-          width: 100% !important;
-          align-items: center !important;
-        }
-
-        .btn-primary,
-        .btn-outline {
-          width: 100% !important;
-          max-width: 300px !important;
-          text-align: center !important;
-          min-width: auto !important;
-          padding: 12px 16px !important;
-          font-size: 0.7rem !important;
-          white-space: normal !important;
-          line-height: 1.3 !important;
-          gap: 0.4rem !important;
-        }
-
-        .btn-primary i,
-        .btn-outline i {
-          font-size: 0.85rem !important;
-          flex-shrink: 0 !important;
-        }
-
-        /* Hide transcript button on mobile */
-        .btn-group .transcript-link {
-          display: none !important;
-        }
-
-        /* Footer mobile */
-        footer {
-          text-align: center;
-        }
-
-        footer .row.g-3 {
-          text-align: center;
-        }
-
-        footer .col-lg-4,
-        footer .col-lg-8 {
-          text-align: center !important;
-        }
-
-        footer .row.g-2 {
-          justify-content: center;
-        }
-      }
-
-      @media (max-width: 576px) {
-        /* Small mobile devices */
-        body {
-          font-size: 14px;
-        }
-
-        header {
-          padding: 5px 0;
-        }
-
-        header .container-fluid {
-          padding: 0 10px;
-        }
-
-        .logo a {
-          font-size: 1rem;
-        }
-
-        .mobile-nav-toggle {
-          display: none !important;
-        }
-
-        #hero {
-          min-height: 55vh !important;
-          padding: 50px 0 35px 0 !important;
-          overflow: visible !important;
-        }
-
-        #hero .container {
-          padding: 0 12px !important;
-        }
-
-        #hero h1 {
-          font-size: 1.7rem !important;
-        }
-
-        #hero .subtitle {
-          font-size: 0.9rem !important;
-        }
-
-        #hero .specialization {
-          font-size: 0.7rem !important;
-          padding: 0.5rem 0.7rem !important;
-        }
-
-        #hero .specialization i {
-          font-size: 0.7rem !important;
-        }
-
-        #hero p {
-          font-size: 0.85rem !important;
-        }
-
-        /* Keep image hidden */
-        .profile-image {
-          display: none !important;
-        }
-
-        #hero .col-lg-4 {
-          display: none !important;
-        }
-
-        .section-title h2 {
-          font-size: 1.4rem;
-        }
-
-        .section-title p {
-          font-size: 0.85rem;
-        }
-
-        .research-card {
-          padding: 1rem;
-        }
-
-        .research-card h4 {
-          font-size: 1rem;
-        }
-
-        .research-card p {
-          font-size: 0.85rem;
-        }
-
-        /* Add spacing between stacked buttons in cards */
-        .research-card .mt-3,
-        .research-card .mt-1 {
-          display: flex !important;
-          flex-direction: column !important;
-          gap: 0.5rem !important;
-        }
-
-        .research-card .btn-outline {
-          margin-right: 0 !important;
-          width: auto !important;
-        }
-
-        .btn-group {
-          gap: 0.6rem !important;
-        }
-
-        .btn-primary,
-        .btn-outline {
-          padding: 11px 14px !important;
-          font-size: 0.65rem !important;
-          max-width: 260px !important;
-          white-space: normal !important;
-          line-height: 1.3 !important;
-          gap: 0.35rem !important;
-        }
-
-        .btn-primary i,
-        .btn-outline i {
-          font-size: 0.8rem !important;
-          flex-shrink: 0 !important;
-        }
-
-        /* Adjust column spacing */
-        .container {
-          padding-left: 15px;
-          padding-right: 15px;
-        }
-
-        section {
-          padding: 2rem 0 !important;
-        }
-      }
-
-      @media (max-width: 480px) {
-        /* Very small screens */
-        #hero {
-          min-height: 50vh !important;
-          padding: 40px 0 30px 0 !important;
-          overflow: visible !important;
-        }
-
-        #hero .container {
-          padding: 0 10px !important;
-        }
-
-        #hero h1 {
-          font-size: 1.5rem !important;
-          margin-bottom: 0.6rem !important;
-        }
-
-        #hero .subtitle {
-          font-size: 0.85rem !important;
-          margin-bottom: 0.8rem !important;
-        }
-
-        #hero .specialization {
-          font-size: 0.65rem !important;
-          padding: 0.4rem 0.6rem !important;
-          margin-bottom: 1rem !important;
-        }
-
-        #hero p {
-          font-size: 0.8rem !important;
-          margin-bottom: 1.2rem !important;
-        }
-
-        .profile-image {
-          display: none !important;
-        }
-
-        #hero .col-lg-4 {
-          display: none !important;
-        }
-
-        #hero .col-lg-8 {
-          text-align: center !important;
-          width: 100% !important;
-          max-width: 100% !important;
-        }
-
-        .btn-group {
-          gap: 0.5rem !important;
-          margin-top: 1.5rem !important;
-        }
-
-        .btn-primary,
-        .btn-outline {
-          padding: 10px 12px !important;
-          font-size: 0.6rem !important;
-          max-width: 240px !important;
-          letter-spacing: 0.2px !important;
-          white-space: normal !important;
-          line-height: 1.3 !important;
-          gap: 0.3rem !important;
-        }
-
-        .btn-primary i,
-        .btn-outline i {
-          font-size: 0.75rem !important;
-          flex-shrink: 0 !important;
-        }
-
-        .section-title h2 {
-          font-size: 1.25rem;
-        }
-      }
-
-      @media (max-width: 360px) {
-        /* Extra small screens */
-        header .container-fluid {
-          padding: 0 8px !important;
-        }
-
-        .logo a {
-          font-size: 0.9rem !important;
-        }
-
-        #hero {
-          min-height: 45vh !important;
-          padding: 35px 0 25px 0 !important;
-          overflow: visible !important;
-        }
-
-        #hero .container {
-          padding: 0 8px !important;
-        }
-
-        #hero h1 {
-          font-size: 1.3rem !important;
-          margin-bottom: 0.5rem !important;
-        }
-
-        #hero .subtitle {
-          font-size: 0.8rem !important;
-          margin-bottom: 0.8rem !important;
-        }
-
-        #hero .specialization {
-          font-size: 0.6rem !important;
-          padding: 0.3rem 0.5rem !important;
-          margin-bottom: 1rem !important;
-        }
-
-        #hero p {
-          font-size: 0.75rem !important;
-          margin-bottom: 1rem !important;
-        }
-
-        .profile-image {
-          display: none !important;
-        }
-
-        #hero .col-lg-4 {
-          display: none !important;
-        }
-
-        #hero .col-lg-8 {
-          text-align: center !important;
-          width: 100% !important;
-          max-width: 100% !important;
-        }
-
-        .btn-group {
-          gap: 0.4rem !important;
-          margin-top: 1.2rem !important;
-        }
-
-        .btn-primary,
-        .btn-outline {
-          font-size: 0.55rem !important;
-          padding: 9px 10px !important;
-          max-width: 220px !important;
-          letter-spacing: 0.1px !important;
-          white-space: normal !important;
-          line-height: 1.3 !important;
-          gap: 0.25rem !important;
-        }
-
-        .btn-primary i,
-        .btn-outline i {
-          font-size: 0.7rem !important;
-          flex-shrink: 0 !important;
-        }
-      }
-    </style>
+    <!-- Theme JS (load early to prevent flash) -->
+    <script src="assets/js/theme.js"></script>
   </head>
 
   <body>
-    <!-- ======= Header ======= -->
-    <header id="header">
-      <div class="container-fluid">
-        <div class="logo">
-          <a href="index.html"
-            ><span class="logo-name">Kanishka Gunawardana</span></a
-          >
+    <div class="page-wrapper">
+      <!-- Mobile Header -->
+      <header class="mobile-header">
+        <a href="#" class="mobile-header-logo">Kanishka Gunawardana</a>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </header>
+
+      <!-- Sidebar Overlay (mobile) -->
+      <div class="sidebar-overlay"></div>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="profile-image-container">
+            <picture>
+              <source srcset="docs/kanishka_new.webp" type="image/webp" />
+              <img
+                src="docs/kanishka_new.jpg"
+                alt="Kanishka Gunawardana"
+                class="profile-image"
+                width="150"
+                height="150"
+                loading="eager"
+              />
+            </picture>
+          </div>
+          <h1 class="sidebar-name">Kanishka Gunawardana</h1>
+          <p class="sidebar-title">Computer Engineering Graduate</p>
         </div>
-        <nav class="navbar">
+
+        <nav class="sidebar-nav">
           <ul>
-            <li><a class="active" href="#hero">Home</a></li>
-            <!-- <li><a href="#focus">Focus</a></li> -->
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#research-work">Research Work</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#publications">Publications </a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" class="active"><i class="bi bi-person"></i> About</a></li>
+            <li><a href="#education"><i class="bi bi-mortarboard"></i> Education</a></li>
+            <li><a href="#experience"><i class="bi bi-briefcase"></i> Experience</a></li>
+            <li><a href="#research"><i class="bi bi-journal-text"></i> Research</a></li>
+            <li><a href="#projects"><i class="bi bi-code-square"></i> Projects</a></li>
+            <li><a href="#publications"><i class="bi bi-file-earmark-text"></i> Publications</a></li>
+            <li><a href="#achievements"><i class="bi bi-trophy"></i> Achievements</a></li>
+            <li><a href="#skills"><i class="bi bi-tools"></i> Skills</a></li>
+            <li><a href="#certificates"><i class="bi bi-award"></i> Certificates</a></li>
+            <li><a href="#contact"><i class="bi bi-envelope"></i> Contact</a></li>
           </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
-        <div class="header-social-links">
-          <a href="https://github.com/KATTA-00" class="github" title="GitHub">
-            <i class="bi bi-github"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/kanishka-gunawardana-285aa4201"
-            class="linkedin"
-            title="LinkedIn"
-          >
-            <i class="bi bi-linkedin"></i>
-          </a>
-          <a
-            href="https://scholar.google.com/citations?user=YOUR_ID"
-            class="google-scholar"
-            title="Google Scholar"
-          >
-            <i class="bi bi-mortarboard"></i>
-          </a>
-        </div>
-      </div>
-    </header>
-    <!-- End Header -->
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center">
-      <div class="container" data-aos="zoom-in" data-aos-delay="100">
-        <div class="row align-items-center">
-          <div class="col-lg-8">
-            <h1>Kanishka Gunawardana</h1>
-            <p class="subtitle">Computer Engineering Graduate</p>
-            <p class="specialization">
-              <i class="bi bi-cpu"></i> Accelerated Computing | Hardware Systems
-              | Computer Architecture | Embedded Systems | Neuromorphic
-              Computing
+        <div class="sidebar-footer">
+          <div class="sidebar-social">
+            <a href="https://github.com/KATTA-00" target="_blank" title="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/kanishka-gunawardana-285aa4201" target="_blank" title="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" title="Google Scholar">
+              <i class="bi bi-mortarboard"></i>
+            </a>
+            <a href="mailto:kanishkagunawarthana@gmail.com" title="Email">
+              <i class="bi bi-envelope"></i>
+            </a>
+          </div>
+          <div class="theme-toggle-container">
+            <button class="theme-toggle" aria-label="Toggle theme">
+              <i class="bi bi-moon"></i>
+              <span>Dark Mode</span>
+            </button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- About / Hero Section -->
+        <section id="about" class="hero-section">
+          <div class="hero-content">
+            <!-- Mini Terminal Widget -->
+            <div class="terminal-widget">
+              <div class="terminal-header">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+                <span class="terminal-title">kanishka@portfolio ~ </span>
+              </div>
+              <div class="terminal-body">
+                <div class="terminal-line">
+                  <span class="terminal-prompt">$</span>
+                  <span class="terminal-command" id="terminal-text"></span>
+                  <span class="terminal-cursor">|</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-intro">
+              <p class="hero-greeting">Hello, I'm</p>
+              <h1 class="hero-name">Kanishka Gunawardana</h1>
+              <p class="hero-title">Computer Engineering Graduate</p>
+            </div>
+
+            <!-- Stats Badges -->
+            <div class="hero-stats">
+              <div class="stat-badge">
+                <span class="stat-value">4.0</span>
+                <span class="stat-label">GPA</span>
+              </div>
+              <div class="stat-badge accent">
+                <span class="stat-value">#1</span>
+                <span class="stat-label">Rank / 486</span>
+              </div>
+              <div class="stat-badge purple">
+                <span class="stat-value">2</span>
+                <span class="stat-label">Publications</span>
+              </div>
+              <div class="stat-badge orange">
+                <span class="stat-value">10+</span>
+                <span class="stat-label">Projects</span>
+              </div>
+            </div>
+
+            <div class="hero-specialization">
+              <i class="bi bi-cpu"></i>
+              <span>Accelerated Computing</span>
+              <span>•</span>
+              <span>Hardware Systems</span>
+              <span>•</span>
+              <span>Computer Architecture</span>
+              <span>•</span>
+              <span>Embedded Systems</span>
+              <span>•</span>
+              <span>Neuromorphic Computing</span>
+            </div>
+
+            <p class="hero-description">
+              I specialize in computer architecture and embedded systems, designing hardware–software 
+              co-designs that optimize RISC-V CPU microarchitecture and maximize performance. My work 
+              advances energy efficiency and computational throughput in real-world embedded and edge 
+              applications.
             </p>
-            <!-- <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 0.8rem">
-              Specializing in neuromorphic computing, computer architecture, and
-              embedded systems.
-            </p> -->
-            <p
-              style="
-                font-size: 1.1rem;
-                opacity: 0.95;
-                margin-bottom: 1.5rem;
-                line-height: 1.8;
-                font-weight: 300;
-                letter-spacing: 0.3px;
-              "
-            >
-              I specialize in computer architecture and embedded systems,
-              designing hardware–software co-designs that optimize RISC-V CPU
-              microarchitecture and maximize performance. My work advances
-              energy efficiency and computational throughput in real-world
-              embedded and edge applications.
-            </p>
-            <div class="btn-group">
-              <a
-                href="docs/Kanishka_Gunawardana_CV_Hardware_Site.pdf"
-                class="btn-primary cv-phd-link"
-                target="_blank"
-              >
-                <i class="bi bi-file-earmark-pdf"></i> View Curriculum Vitae
+
+            <div class="hero-cta">
+              <a href="docs/Kanishka_Gunawardana_CV_Hardware_Site.pdf" class="btn btn-primary" target="_blank">
+                <i class="bi bi-file-earmark-pdf"></i> View CV
               </a>
-              <a
-                href="docs/Kanishka_Gunawardana_Transcript.pdf"
-                class="btn-outline transcript-link"
-                target="_blank"
-              >
-                <i class="bi bi-award"></i> View Academic Transcript
+              <a href="docs/Kanishka_Gunawardana_Transcript.pdf" class="btn btn-outline" target="_blank">
+                <i class="bi bi-award"></i> Academic Transcript
               </a>
             </div>
           </div>
-          <div class="col-lg-4 text-center">
-            <!-- Profile Photo -->
-            <div style="margin-bottom: 1.5rem">
-              <picture class="profile-image-wrapper">
-                <source srcset="docs/kanishka_new.webp" type="image/webp" />
-                <img
-                  src="docs/kanishka_new.jpg"
-                  alt="Kanishka Gunawardana portrait"
-                  class="profile-image"
-                  width="340"
-                  height="340"
-                  loading="eager"
-                  decoding="async"
-                  fetchpriority="high"
-                />
-              </picture>
-            </div>
-            <!-- <div
-              style="
-                background: rgba(255, 255, 255, 0.1);
-                padding: 2rem;
-                border-radius: 15px;
-                backdrop-filter: blur(10px);
-              "
-            > -->
-            <!-- <h4 style="color: white; margin-bottom: 1rem">Quick Stats</h4>
-              <div
-                class="quick-stats-content"
-                style="color: rgba(255, 255, 255, 0.9)"
-              >
-                <p><strong>GPA:</strong> 4.0/4.0</p>
-                <p><strong>Rank:</strong> 1st out of 90 students</p>
-                <p><strong>Recent Publications:</strong> IEEE ICAC 2024</p>
-                <p><strong>Research Groups:</strong> PeraMorphIQ, ESCAL</p>
-              </div> -->
-            <!-- </div> -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Hero -->
+        </section>
 
-    <!-- ======= Focus Section ======= -->
-    <section id="focus" class="research-preview">
-      <div class="container">
-        <div class="section-title">
-          <h2>Focus Areas</h2>
-          <p>
-            Exploring the intersection of computer architecture, neuromorphic
-            computing, and intelligent systems for next-generation computing
-            platforms.
-          </p>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6">
-            <div class="research-card">
+        <!-- Focus Areas Section -->
+        <section id="focus" class="section">
+          <div class="section-header">
+            <h2 class="section-title">Focus Areas</h2>
+            <p class="section-subtitle">
+              Exploring the intersection of computer architecture, neuromorphic computing, 
+              and intelligent systems for next-generation computing platforms.
+            </p>
+          </div>
+
+          <div class="grid grid-3">
+            <div class="focus-card">
               <h4>Computer Architecture</h4>
-              <div class="mb-3">
+              <div class="tags">
                 <span class="tag">Hardware-Software Co-Design</span>
                 <span class="tag">Domain-Specific Accelerators</span>
                 <span class="tag">RISC-V SoC</span>
               </div>
               <p>
-                Designing and verifying high-performance processor architectures
-                and domain-specific accelerators. I leverage hardware-software
-                co-design to optimize performance, including implementing RISC-V
-                (RV32IM) pipelines and integrating them into complex SoC designs
-                (e.g., SNAP-V ). Focus areas include RTL power analysis , custom
-                hardware instructions , and pre-silicon verification.
+                Designing and verifying high-performance processor architectures and domain-specific 
+                accelerators. I leverage hardware-software co-design to optimize performance, including 
+                implementing RISC-V (RV32IM) pipelines and integrating them into complex SoC designs.
               </p>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="research-card">
+
+            <div class="focus-card">
               <h4>Embedded Systems</h4>
-              <div class="mb-3">
+              <div class="tags">
                 <span class="tag">Low-Power Edge AI</span>
                 <span class="tag">IoT</span>
                 <span class="tag">Real-time Systems</span>
               </div>
               <p>
-                Creating robust and intelligent embedded solutions for
-                real-world applications. My expertise covers the design and
-                implementation of real-time systems and low-power hardware,
-                including firmware development and centralized hub design. Key
-                projects involved utilizing platforms like ESP32 and Raspberry
-                Pi and managing system deployment and communication protocols.
+                Creating robust and intelligent embedded solutions for real-world applications. 
+                My expertise covers the design and implementation of real-time systems and low-power 
+                hardware, including firmware development and centralized hub design.
               </p>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="research-card">
+
+            <div class="focus-card">
               <h4>Neuromorphic Computing</h4>
-              <div class="mb-2">
+              <div class="tags">
                 <span class="tag">Brain-inspired Computing</span>
                 <span class="tag">Spiking Neural Networks</span>
                 <span class="tag">Edge AI</span>
               </div>
               <p>
-                Developing brain-inspired computing systems for next-generation
-                Edge AI. My work with the PeraMorphIQ research group focuses on
-                designing configurable neuromorphic accelerators (e.g., 1k+ LIF
-                neurons) , optimizing for state-of-the-art energy efficiency and
-                on-chip learning.
+                Developing brain-inspired computing systems for next-generation Edge AI. My work 
+                with the PeraMorphIQ research group focuses on designing configurable neuromorphic 
+                accelerators, optimizing for state-of-the-art energy efficiency.
               </p>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- ======= Education Section ======= -->
-    <section
-      id="education"
-      style="padding: 2rem 0; background: var(--bg-light)"
-    >
-      <div class="container">
-        <div class="section-title">
-          <h2>Education</h2>
-          <p>
-            Academic journey with exceptional performance in computer
-            engineering and mathematics at the national level.
-          </p>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-6">
-            <div class="research-card">
+        <!-- Education Section -->
+        <section id="education" class="section section-alt">
+          <div class="section-header">
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">
+              Academic journey with exceptional performance in computer engineering and mathematics.
+            </p>
+          </div>
+
+          <div class="grid grid-2">
+            <div class="education-card">
               <h4>University of Peradeniya</h4>
-              <p class="text-muted mb-1" style="font-size: 0.8rem">
-                Nov. 2021 – Present
-              </p>
-              <div class="mb-1">
+              <p class="education-date">Nov. 2021 – Present</p>
+              <div class="tags">
                 <span class="tag">Computer Engineering</span>
                 <span class="tag">B.Sc. Engineering (Hons.)</span>
-                <span class="tag">First Class</span>
+                <span class="tag tag-accent">First Class</span>
               </div>
-              <p
-                style="
-                  font-size: 0.85rem;
-                  line-height: 1.4;
-                  margin-bottom: 0.6rem;
-                "
-              >
+              <p class="education-description">
                 Undergraduate in B.Sc. Engineering (Hons.) Computer Engineering
               </p>
-              <div
-                style="
-                  background: var(--bg-white);
-                  padding: 0.8rem;
-                  border-radius: 8px;
-                  border-left: 4px solid var(--primary-color);
-                  margin-bottom: 0.8rem;
-                "
-              >
-                <p style="margin: 0; font-size: 0.85rem; line-height: 1.4">
+              <div class="highlight-box">
+                <p>
                   <strong>GPA: 4.0/4.0</strong><br />
                   <strong>Rank: 1st out of 486 students</strong>
                 </p>
               </div>
-              <div class="mt-1">
-                <a
-                  href="docs/Kanishka_Gunawardana_Transcript.pdf"
-                  class="btn-outline"
-                  style="font-size: 0.7rem; padding: 0.25rem 0.6rem"
-                  target="_blank"
-                >
-                  <i class="bi bi-file-earmark-pdf"></i> Academic Transcript
+              <div class="card-footer">
+                <a href="docs/Kanishka_Gunawardana_Transcript.pdf" class="btn btn-sm btn-secondary" target="_blank">
+                  <i class="bi bi-file-earmark-pdf"></i> Transcript
                 </a>
               </div>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="research-card">
+
+            <div class="education-card">
               <h4>Dharmaraja College Kandy</h4>
-              <p class="text-muted mb-1" style="font-size: 0.8rem">
-                Nov. 2006 – Aug. 2019
-              </p>
-              <div class="mb-1">
+              <p class="education-date">Nov. 2006 – Aug. 2019</p>
+              <div class="tags">
                 <span class="tag">G.C.E. Advanced Level</span>
                 <span class="tag">Mathematics Stream</span>
-                <span class="tag">Top 150 Nationally</span>
+                <span class="tag tag-accent">Top 150 Nationally</span>
               </div>
-              <p
-                style="
-                  font-size: 0.85rem;
-                  line-height: 1.4;
-                  margin-bottom: 0.6rem;
-                "
-              >
+              <p class="education-description">
                 G.C.E. Advanced Level Examination with outstanding performance
               </p>
-              <div
-                style="
-                  background: var(--bg-white);
-                  padding: 0.8rem;
-                  border-radius: 8px;
-                  border-left: 4px solid var(--secondary-color);
-                  margin-bottom: 0.8rem;
-                "
-              >
-                <p style="margin: 0; font-size: 0.85rem; line-height: 1.4">
+              <div class="highlight-box highlight-box-accent">
+                <p>
                   <strong>Z-score: 2.5661</strong><br />
                   <strong>National Rank: 149 out of 19,508</strong><br />
                   <strong>District Rank: 11 out of 1,189</strong>
@@ -1524,1240 +300,611 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- ======= Experience Section ======= -->
-    <section
-      id="experience"
-      style="padding: 2rem 0; background: var(--bg-light)"
-    >
-      <div class="container">
-        <div class="section-title">
-          <h2>Professional Experience</h2>
-          <p>
-            Academic and industry experience in computer engineering, research,
-            and software development.
-          </p>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-6">
-            <a
-              href="https://people.ce.pdn.ac.lk/staff/temporary-academic-staff/"
-              target="_blank"
-              class="text-decoration-none"
-            >
-              <div class="research-card card-hover">
-                <div class="d-flex align-items-center mb-3">
-                  <i
-                    class="bi bi-building"
-                    style="
-                      font-size: 2.5rem;
-                      color: var(--primary-color);
-                      margin-right: 1rem;
-                    "
-                  ></i>
-                  <div>
-                    <h4 style="margin-bottom: 0.5rem">Temporary Instructor</h4>
-                    <p style="margin: 0; color: var(--text-light)">
-                      University of Peradeniya | August 2025 - Present
-                    </p>
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <span class="tag">Teaching</span>
-                  <span class="tag">Research Mentoring</span>
-                  <span class="tag">Computer Architecture</span>
-                </div>
-                <p>
-                  Teaching computer architecture and embedded systems courses to
-                  undergraduate students. Mentoring research teams on
-                  neuromorphic accelerators and on-chip learning capabilities.
-                  Contributing to curriculum development and academic research
-                  initiatives.
-                </p>
-              </div>
-            </a>
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+          <div class="section-header">
+            <h2 class="section-title">Professional Experience</h2>
+            <p class="section-subtitle">
+              Academic and industry experience in computer engineering, research, and software development.
+            </p>
           </div>
-          <div class="col-lg-6">
-            <a
-              href="https://www.attune-integrations.com/"
-              target="_blank"
-              class="text-decoration-none"
-            >
-              <div class="research-card card-hover">
-                <div class="d-flex align-items-center mb-3">
-                  <i
-                    class="bi bi-cpu-fill"
-                    style="
-                      font-size: 2.5rem;
-                      color: var(--accent-color);
-                      margin-right: 1rem;
-                    "
-                  ></i>
-                  <div>
-                    <h4 style="margin-bottom: 0.5rem">Intern Embedded Systems Engineer</h4>
-                    <p style="margin: 0; color: var(--text-light)">
-                      Attune Integration (Pvt) Ltd | November 2025 - Present
-                    </p>
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <span class="tag">Embedded Systems</span>
-                  <span class="tag">Hardware-Software Co-Design</span>
-                  <span class="tag">IoT Development</span>
-                  <span class="tag">Automation</span>
-                  <span class="tag">Industry 5.0</span>
-                </div>
-                <p>
-                  Contributing to cutting-edge automation solutions that integrate Artificial Intelligence, Software, Electronic, Mechanical, and Manufacturing technologies. Focused on embedded development and hardware-software integration to drive efficiency and elevate quality in Industry 5.0 applications.
-                </p>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <a
-              href="https://peramorphiq.github.io/PeraMorphIQ-Web/"
-              target="_blank"
-              class="text-decoration-none"
-            >
-              <div class="research-card card-hover">
-                <div class="d-flex align-items-center mb-3">
-                  <i
-                    class="bi bi-cpu-fill"
-                    style="
-                      font-size: 2.5rem;
-                      color: var(--accent-color);
-                      margin-right: 1rem;
-                    "
-                  ></i>
-                  <div>
-                    <h4 style="margin-bottom: 0.5rem">Research Assistant</h4>
-                    <p style="margin: 0; color: var(--text-light)">
-                      PeraMorphIQ Research Group | August 2025 - Present
-                    </p>
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <span class="tag">Neuromorphic Computing</span>
-                  <span class="tag">Hardware Design</span>
-                  <span class="tag">Edge AI</span>
-                </div>
-                <p>
-                  Contributing to cutting-edge research in neuromorphic
-                  computing and brain-inspired hardware architectures.
-                  Developing configurable neuromorphic accelerators for edge
-                  applications and investigating on-chip learning algorithms.
-                </p>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <a
-              href="https://wso2.com/"
-              target="_blank"
-              class="text-decoration-none"
-            >
-              <div class="research-card card-hover">
-                <div class="d-flex align-items-center mb-3">
-                  <i
-                    class="bi bi-code-slash"
-                    style="
-                      font-size: 2.5rem;
-                      color: var(--secondary-color);
-                      margin-right: 1rem;
-                    "
-                  ></i>
-                  <div>
-                    <h4 style="margin-bottom: 0.5rem">
-                      Software Engineering Intern
-                    </h4>
-                    <p style="margin: 0; color: var(--text-light)">
-                      WSO2 LLC | July 2024 - December 2024
-                    </p>
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <span class="tag">Ballerina</span>
-                  <span class="tag">API Integration</span>
-                  <span class="tag">OpenAI</span>
-                </div>
-                <p>
-                  Developed Ballerina integrations including the OpenAI
-                  Finetunes Connector and ISO20022-to-SwiftMT message conversion
-                  systems. Worked on enterprise-level software solutions and API
-                  integrations for cloud-native applications.
-                </p>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <a
-              href="https://robotics.soc.pdn.ac.lk/"
-              target="_blank"
-              class="text-decoration-none"
-            >
-              <div class="research-card card-hover">
-                <div class="d-flex align-items-center mb-3">
-                  <i
-                    class="bi bi-gear-fill"
-                    style="
-                      font-size: 2.5rem;
-                      color: var(--primary-color);
-                      margin-right: 1rem;
-                    "
-                  ></i>
-                  <div>
-                    <h4 style="margin-bottom: 0.5rem">
-                      Head of Web Development
-                    </h4>
-                    <p style="margin: 0; color: var(--text-light)">
-                      Robotics Society, University of Peradeniya | 2022 - 2023
-                    </p>
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <span class="tag">Leadership</span>
-                  <span class="tag">Web Development</span>
-                  <span class="tag">Team Management</span>
-                </div>
-                <p>
-                  Led the web development team for the university's robotics
-                  society. Managed website development projects, organized
-                  technical workshops, and coordinated with cross-functional
-                  teams for robotics competitions and events.
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- ======= Research Work Section ======= -->
-    <section
-      id="research-work"
-      style="padding: 2rem 0; background: var(--bg-white)"
-    >
-      <div class="container">
-        <div class="section-title">
-          <h2>Research Work</h2>
-          <p>
-            Ongoing and completed research projects in computer architecture and
-            neuromorphic computing.
-          </p>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-10 mx-auto">
-            <a
-              href="https://github.com/cepdnaclk/e19-4yp-RISC-V-SoC-With-Neuromorphic-Accelerator-for-SNNs"
-              target="_blank"
-              style="text-decoration: none; color: inherit"
-            >
-              <div
-                class="research-card"
-                style="
-                  cursor: pointer;
-                  transition: transform 0.2s, box-shadow 0.2s;
-                "
-                onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'"
-                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'"
-              >
-                <h4>
-                  SNAP-V: A RISC-V SoC with Configurable Neuromorphic
-                  Acceleration for Small-Scale Spiking Neural Networks (Final
-                  Year Thesis)
-                </h4>
-                <p class="text-muted mb-2" style="font-size: 0.9rem">
-                  Nov. 2024 - Jul. 2025
-                </p>
-                <div class="mb-3">
-                  <span class="tag">Final Year Thesis</span>
+          <div class="grid grid-2">
+            <a href="https://people.ce.pdn.ac.lk/staff/temporary-academic-staff/" target="_blank" class="card-link">
+              <div class="experience-card">
+                <div class="experience-icon">
+                  <i class="bi bi-building"></i>
+                </div>
+                <div class="experience-content">
+                  <h4>Temporary Instructor</h4>
+                  <p class="experience-company">University of Peradeniya | August 2025 - Present</p>
+                  <div class="tags">
+                    <span class="tag">Teaching</span>
+                    <span class="tag">Research Mentoring</span>
+                    <span class="tag">Computer Architecture</span>
+                  </div>
+                  <p class="experience-description">
+                    Teaching computer architecture and embedded systems courses to undergraduate students. 
+                    Mentoring research teams on neuromorphic accelerators and on-chip learning capabilities.
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://www.attune-integrations.com/" target="_blank" class="card-link">
+              <div class="experience-card">
+                <div class="experience-icon">
+                  <i class="bi bi-cpu-fill"></i>
+                </div>
+                <div class="experience-content">
+                  <h4>Intern Embedded Systems Engineer</h4>
+                  <p class="experience-company">Attune Integration (Pvt) Ltd | November 2025 - Present</p>
+                  <div class="tags">
+                    <span class="tag">Embedded Systems</span>
+                    <span class="tag">Hardware-Software Co-Design</span>
+                    <span class="tag">Industry 5.0</span>
+                  </div>
+                  <p class="experience-description">
+                    Contributing to cutting-edge automation solutions integrating AI, Software, Electronic, 
+                    Mechanical, and Manufacturing technologies for Industry 5.0 applications.
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://peramorphiq.github.io/PeraMorphIQ-Web/" target="_blank" class="card-link">
+              <div class="experience-card">
+                <div class="experience-icon">
+                  <i class="bi bi-cpu-fill"></i>
+                </div>
+                <div class="experience-content">
+                  <h4>Research Assistant</h4>
+                  <p class="experience-company">PeraMorphIQ Research Group | August 2025 - Present</p>
+                  <div class="tags">
+                    <span class="tag">Neuromorphic Computing</span>
+                    <span class="tag">Hardware Design</span>
+                    <span class="tag">Edge AI</span>
+                  </div>
+                  <p class="experience-description">
+                    Contributing to cutting-edge research in neuromorphic computing and brain-inspired 
+                    hardware architectures. Developing configurable neuromorphic accelerators for edge applications.
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://wso2.com/" target="_blank" class="card-link">
+              <div class="experience-card">
+                <div class="experience-icon">
+                  <i class="bi bi-code-slash"></i>
+                </div>
+                <div class="experience-content">
+                  <h4>Software Engineering Intern</h4>
+                  <p class="experience-company">WSO2 LLC | July 2024 - December 2024</p>
+                  <div class="tags">
+                    <span class="tag">Ballerina</span>
+                    <span class="tag">API Integration</span>
+                    <span class="tag">OpenAI</span>
+                  </div>
+                  <p class="experience-description">
+                    Developed Ballerina integrations including the OpenAI Finetunes Connector and 
+                    ISO20022-to-SwiftMT message conversion systems.
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://robotics.soc.pdn.ac.lk/" target="_blank" class="card-link">
+              <div class="experience-card">
+                <div class="experience-icon">
+                  <i class="bi bi-gear-fill"></i>
+                </div>
+                <div class="experience-content">
+                  <h4>Head of Web Development</h4>
+                  <p class="experience-company">Robotics Society, University of Peradeniya | 2022 - 2023</p>
+                  <div class="tags">
+                    <span class="tag">Leadership</span>
+                    <span class="tag">Web Development</span>
+                    <span class="tag">Team Management</span>
+                  </div>
+                  <p class="experience-description">
+                    Led the web development team for the university's robotics society. Managed website 
+                    development projects and organized technical workshops.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="section section-alt">
+          <div class="section-header">
+            <h2 class="section-title">Research Work</h2>
+            <p class="section-subtitle">
+              Ongoing and completed research projects in computer architecture and neuromorphic computing.
+            </p>
+          </div>
+
+          <div>
+            <a href="https://github.com/cepdnaclk/e19-4yp-RISC-V-SoC-With-Neuromorphic-Accelerator-for-SNNs" target="_blank" class="card-link">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">SNAP-V: A RISC-V SoC with Configurable Neuromorphic Acceleration for Small-Scale Spiking Neural Networks</h3>
+                  <p class="card-subtitle">Nov. 2024 - Jul. 2025 | Final Year Thesis</p>
+                </div>
+                <div class="tags">
+                  <span class="tag tag-accent">Final Year Thesis</span>
                   <span class="tag">RISC-V SoC</span>
                   <span class="tag">Neuromorphic</span>
                   <span class="tag">H-NoC</span>
                   <span class="tag">Energy-Efficient</span>
                 </div>
-                <p style="font-size: 0.9rem; line-height: 1.5">
-                  Designed and developed a dual-core RISC-V System-on-Chip
-                  integrating a configurable neuromorphic accelerator with over
-                  1k LIF neurons organized into parallel clusters interconnected
-                  through a hierarchical Network-on-Chip (H-NoC), enabling
-                  efficient spike-based computation for small-scale SNNs in
-                  low-power edge applications.
-                </p>
-                <p style="font-size: 0.9rem; line-height: 1.5">
-                  Validated the SoC on MNIST using Synopsys (VCS/PrimePower) and
-                  Xilinx Vivado, achieving 96.69% accuracy (within an average
-                  2.62% of baseline) and state-of-the-art energy efficiency of
-                  1.39 pJ/synaptic operation.
-                </p>
-                <p
-                  style="
-                    font-size: 0.9rem;
-                    color: var(--text-light);
-                    margin-bottom: 0.8rem;
-                  "
-                >
-                  <strong>Supervision:</strong> Dr. Isuru Nawinne, Prof. Roshan
-                  G. Ragel
-                </p>
-                <!-- <div class="mt-3">
-                  <a
-                    href="https://github.com/PeraMorphIQ"
-                    class="btn-outline"
-                    style="font-size: 0.8rem; padding: 0.4rem 0.8rem"
-                    target="_blank"
-                  >
-                    <i class="bi bi-github"></i> GitHub
-                  </a>
-                </div> -->
+                <div class="card-body">
+                  <p>
+                    Designed and developed a dual-core RISC-V System-on-Chip integrating a configurable 
+                    neuromorphic accelerator with over 1k LIF neurons organized into parallel clusters 
+                    interconnected through a hierarchical Network-on-Chip (H-NoC).
+                  </p>
+                  <p>
+                    Validated the SoC on MNIST using Synopsys (VCS/PrimePower) and Xilinx Vivado, achieving 
+                    96.69% accuracy and state-of-the-art energy efficiency of 1.39 pJ/synaptic operation.
+                  </p>
+                  <p><strong>Supervision:</strong> Dr. Isuru Nawinne, Prof. Roshan G. Ragel</p>
+                </div>
               </div>
             </a>
-          </div>
-          <div class="col-lg-10 mx-auto">
-            <a
-              href="https://ieeexplore.ieee.org/abstract/document/10851123"
-              target="_blank"
-              style="text-decoration: none; color: inherit"
-            >
-              <div
-                class="research-card"
-                style="
-                  cursor: pointer;
-                  transition: transform 0.2s, box-shadow 0.2s;
-                "
-                onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'"
-                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'"
-              >
-                <h4>
-                  Optimized Multi-Processor System-on-Chip (MPSoC) Design for
-                  Low-Resource JPEG Encoding
-                </h4>
-                <p class="text-muted mb-2" style="font-size: 0.9rem">
-                  IEEE ICAC 2024 | Dec. 2024
-                </p>
-                <div class="mb-3">
-                  <span class="tag">IEEE Conference</span>
+
+            <a href="https://ieeexplore.ieee.org/abstract/document/10851123" target="_blank" class="card-link">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Optimized Multi-Processor System-on-Chip (MPSoC) Design for Low-Resource JPEG Encoding</h3>
+                  <p class="card-subtitle">IEEE ICAC 2024 | Dec. 2024</p>
+                </div>
+                <div class="tags">
+                  <span class="tag tag-accent">IEEE Conference</span>
                   <span class="tag">MPSoC</span>
                   <span class="tag">FPGA</span>
                   <span class="tag">Custom Instructions</span>
                   <span class="tag">Pipeline Optimization</span>
                 </div>
-                <p style="font-size: 0.9rem; line-height: 1.5">
-                  Designed and optimized a Multiprocessor System-on-Chip (MPSoC)
-                  architecture for low-resource JPEG encoding using six Nios
-                  II/e CPUs on Cyclone IV E FPGA. Implemented a pipelined JPEG
-                  encoder with stages for color space conversion, DCT,
-                  quantization, and Huffman encoding.
-                </p>
-                <p style="font-size: 0.9rem; line-height: 1.5">
-                  Optimized performance using custom hardware components
-                  including FIFO queues, custom instruction blocks, and
-                  evaluated superscalar pipelines, achieving 2.8× throughput
-                  improvement and significant resource efficiency gains.
-                </p>
-                <p
-                  style="
-                    font-size: 0.9rem;
-                    color: var(--text-light);
-                    margin-bottom: 0.8rem;
-                  "
-                >
-                  <strong>Authors:</strong> K. Gunawardana, C. Adhikari, I.
-                  Nawinne |
-                  <strong>DOI:</strong> 10.1109/ICAC64487.2024.10851123
-                </p>
-                <div class="mt-3">
-                  <a
-                    href="https://ieeexplore.ieee.org/abstract/document/10851123"
-                    class="btn-outline"
-                    style="font-size: 0.8rem; padding: 0.4rem 0.8rem"
-                    target="_blank"
-                  >
+                <div class="card-body">
+                  <p>
+                    Designed and optimized a Multiprocessor System-on-Chip (MPSoC) architecture for 
+                    low-resource JPEG encoding using six Nios II/e CPUs on Cyclone IV E FPGA.
+                  </p>
+                  <p>
+                    Optimized performance using custom hardware components including FIFO queues, 
+                    custom instruction blocks, achieving 2.8× throughput improvement.
+                  </p>
+                  <p><strong>Authors:</strong> K. Gunawardana, C. Adhikari, I. Nawinne</p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://ieeexplore.ieee.org/abstract/document/10851123" class="btn btn-sm btn-secondary" target="_blank">
                     <i class="bi bi-file-earmark-pdf"></i> IEEE Xplore
                   </a>
                 </div>
               </div>
             </a>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- ======= Key Projects Section ======= -->
-    <section id="projects" style="padding: 2rem 0; background: var(--bg-light)">
-      <div class="container">
-        <div class="section-title">
-          <h2>Featured Projects</h2>
-          <p>
-            Highlighting significant contributions to research and development
-            in computer engineering.
-          </p>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-6">
-            <a
-              href="https://github.com/cepdnaclk/e19-co502-RV32IM-Pipeline-Implementation-Group1"
-              target="_blank"
-              style="text-decoration: none; color: inherit"
-            >
-              <div
-                class="research-card"
-                style="
-                  cursor: pointer;
-                  transition: transform 0.2s, box-shadow 0.2s;
-                "
-                onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'"
-                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'"
-              >
-                <h4>RV32IM Pipeline Processor</h4>
-                <p class="text-muted mb-2" style="font-size: 0.9rem">
-                  Dec. 2024 - Apr. 2025
-                </p>
-                <div class="mb-3">
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+          <div class="section-header">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">
+              Highlighting significant contributions to research and development in computer engineering.
+            </p>
+          </div>
+
+          <div>
+            <a href="https://github.com/cepdnaclk/e19-co502-RV32IM-Pipeline-Implementation-Group1" target="_blank" class="card-link">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">RV32IM Pipeline Processor</h3>
+                  <p class="card-subtitle">Dec. 2024 - Apr. 2025</p>
+                </div>
+                <div class="tags">
                   <span class="tag">Academic Project</span>
                   <span class="tag">RISC-V</span>
                   <span class="tag">5-Stage Pipeline</span>
                   <span class="tag">AXI Integration</span>
                   <span class="tag">FPGA</span>
                 </div>
-                <p style="font-size: 0.9rem; line-height: 1.4">
-                  Implemented a 5-stage pipelined RISC-V RV32IM processor with
-                  in-order hazard handling, explored AXI-based memory
-                  integration for SoC compatibility, performed RTL power and
-                  static timing analysis (0.197 mW, 142 MHz), automated the
-                  analysis via a GitHub Actions CI/CD workflow, and prototyped
-                  the design on a Virtex-7 FPGA.
-                </p>
-                <div class="mt-3">
-                  <a
-                    href="https://github.com/cepdnaclk/e19-co502-RV32IM-Pipeline-Implementation-Group1"
-                    class="btn-outline"
-                    style="
-                      font-size: 0.8rem;
-                      padding: 0.4rem 0.8rem;
-                      margin-right: 0.5rem;
-                    "
-                    target="_blank"
-                  >
+                <div class="card-body">
+                  <p>
+                    Implemented a 5-stage pipelined RISC-V RV32IM processor with in-order hazard handling, 
+                    AXI-based memory integration, RTL power analysis (0.197 mW, 142 MHz), and prototyped 
+                    on Virtex-7 FPGA.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://github.com/cepdnaclk/e19-co502-RV32IM-Pipeline-Implementation-Group1" class="btn btn-sm btn-secondary" target="_blank">
                     <i class="bi bi-github"></i> GitHub
                   </a>
-                  <a
-                    href="https://cepdnaclk.github.io/e19-co502-RV32IM-Pipeline-Implementation-Group1/"
-                    class="btn-outline"
-                    style="font-size: 0.8rem; padding: 0.4rem 0.8rem"
-                    target="_blank"
-                  >
+                  <a href="https://cepdnaclk.github.io/e19-co502-RV32IM-Pipeline-Implementation-Group1/" class="btn btn-sm btn-ghost" target="_blank">
                     <i class="bi bi-globe"></i> Website
                   </a>
                 </div>
               </div>
             </a>
-          </div>
-          <div class="col-lg-6">
-            <a
-              href="https://github.com/cepdnaclk/e19-3yp-impact-tracker"
-              target="_blank"
-              style="text-decoration: none; color: inherit"
-            >
-              <div
-                class="research-card"
-                style="
-                  cursor: pointer;
-                  transition: transform 0.2s, box-shadow 0.2s;
-                "
-                onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'"
-                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'"
-              >
-                <h4>Impact Tracking System For Athletes (3YP)</h4>
-                <p class="text-muted mb-2" style="font-size: 0.9rem">
-                  Nov. 2023 - Mar. 2024
-                </p>
-                <div class="mb-3">
+
+            <a href="https://github.com/cepdnaclk/e19-3yp-impact-tracker" target="_blank" class="card-link">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Impact Tracking System For Athletes (3YP)</h3>
+                  <p class="card-subtitle">Nov. 2023 - Mar. 2024</p>
+                </div>
+                <div class="tags">
                   <span class="tag">Third Year Project</span>
                   <span class="tag">IoT</span>
                   <span class="tag">Wearable Tech</span>
                   <span class="tag">AWS</span>
                 </div>
-                <p>
-                  Developed a real-time head impact monitoring system for
-                  contact sports using wearable devices and desktop dashboards,
-                  facilitating prompt concussion identification, post-session
-                  data transmission, and comprehensive analytics for player
-                  safety.
-                </p>
-                <p style="font-size: 0.9rem; color: var(--text-light)">
-                  <strong>Contributions:</strong> Designed wearable hardware and
-                  firmware, established centralized hub and network, contributed
-                  to backend API and AWS deployment.
-                </p>
-                <div class="mt-3">
-                  <a
-                    href="https://github.com/cepdnaclk/e19-3yp-impact-tracker"
-                    class="btn-outline"
-                    style="
-                      font-size: 0.8rem;
-                      padding: 0.4rem 0.8rem;
-                      margin-right: 0.5rem;
-                    "
-                    target="_blank"
-                  >
+                <div class="card-body">
+                  <p>
+                    Developed a real-time head impact monitoring system for contact sports using wearable 
+                    devices and desktop dashboards, facilitating prompt concussion identification.
+                  </p>
+                  <p><strong>Contributions:</strong> Designed wearable hardware and firmware, established 
+                  centralized hub and network, contributed to backend API and AWS deployment.</p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://github.com/cepdnaclk/e19-3yp-impact-tracker" class="btn btn-sm btn-secondary" target="_blank">
                     <i class="bi bi-github"></i> GitHub
                   </a>
-                  <a
-                    href="https://cepdnaclk.github.io/e19-3yp-impact-tracker/"
-                    class="btn-outline"
-                    style="font-size: 0.8rem; padding: 0.4rem 0.8rem"
-                    target="_blank"
-                  >
+                  <a href="https://cepdnaclk.github.io/e19-3yp-impact-tracker/" class="btn btn-sm btn-ghost" target="_blank">
                     <i class="bi bi-globe"></i> Website
                   </a>
                 </div>
               </div>
             </a>
-          </div>
-          <div class="col-lg-6">
-            <a
-              href="https://github.com/cepdnaclk/e19-co227-Leaf-Colour-Quantifier"
-              target="_blank"
-              style="text-decoration: none; color: inherit"
-            >
-              <div
-                class="research-card"
-                style="
-                  cursor: pointer;
-                  transition: transform 0.2s, box-shadow 0.2s;
-                "
-                onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'"
-                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'"
-              >
-                <h4>Field-Based Approach for Quantifying Plant Leaf Color</h4>
-                <p class="text-muted mb-2" style="font-size: 0.9rem">
-                  Aug. 2023 - Nov. 2023
-                </p>
-                <div class="mb-3">
+
+            <a href="https://github.com/cepdnaclk/e19-co227-Leaf-Colour-Quantifier" target="_blank" class="card-link">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Field-Based Approach for Quantifying Plant Leaf Color</h3>
+                  <p class="card-subtitle">Aug. 2023 - Nov. 2023</p>
+                </div>
+                <div class="tags">
                   <span class="tag">Computer Vision</span>
                   <span class="tag">Deep Learning</span>
                   <span class="tag">Mask R-CNN</span>
                   <span class="tag">FastAPI</span>
                 </div>
-                <p>
-                  Developed a mobile application with a backend that utilizes
-                  Image Processing and Computer Vision to objectively quantify
-                  plant leaf colour by analyzing information extracted from
-                  captured leaf images using Mask R-CNN segmentation.
-                </p>
-                <div class="mt-3">
-                  <a
-                    href="https://github.com/cepdnaclk/e19-co227-Leaf-Colour-Quantifier"
-                    class="btn-outline"
-                    style="
-                      font-size: 0.8rem;
-                      padding: 0.4rem 0.8rem;
-                      margin-right: 0.5rem;
-                    "
-                    target="_blank"
-                  >
+                <div class="card-body">
+                  <p>
+                    Developed a mobile application with a backend that utilizes Image Processing and 
+                    Computer Vision to objectively quantify plant leaf colour using Mask R-CNN segmentation.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://github.com/cepdnaclk/e19-co227-Leaf-Colour-Quantifier" class="btn btn-sm btn-secondary" target="_blank">
                     <i class="bi bi-github"></i> GitHub
                   </a>
-                  <a
-                    href="https://cepdnaclk.github.io/e19-co227-Leaf-Colour-Quantifier/"
-                    class="btn-outline"
-                    style="font-size: 0.8rem; padding: 0.4rem 0.8rem"
-                    target="_blank"
-                  >
+                  <a href="https://cepdnaclk.github.io/e19-co227-Leaf-Colour-Quantifier/" class="btn btn-sm btn-ghost" target="_blank">
                     <i class="bi bi-globe"></i> Website
                   </a>
                 </div>
               </div>
             </a>
-          </div>
-          <div class="col-lg-6">
-            <a
-              href="https://github.com/Pera-Swarm"
-              target="_blank"
-              style="text-decoration: none; color: inherit"
-            >
-              <div
-                class="research-card"
-                style="
-                  cursor: pointer;
-                  transition: transform 0.2s, box-shadow 0.2s;
-                "
-                onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'"
-                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'"
-              >
-                <h4>Obstacle Robot Swarm for Swarm Robotic Project</h4>
-                <p class="text-muted mb-2" style="font-size: 0.9rem">
-                  Feb. 2024 - Nov. 2023
-                </p>
-                <div class="mb-3">
+
+            <a href="https://github.com/Pera-Swarm" target="_blank" class="card-link">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Obstacle Robot Swarm for Swarm Robotic Project</h3>
+                  <p class="card-subtitle">Feb. 2024 - Nov. 2023</p>
+                </div>
+                <div class="tags">
                   <span class="tag">Robotics</span>
                   <span class="tag">Swarm Intelligence</span>
                   <span class="tag">Arduino</span>
                   <span class="tag">Computer Vision</span>
                 </div>
-                <p>
-                  Leading the development and firmware update of obstacle robots
-                  with collision avoidance algorithms for the swarm robotics
-                  platform. Integrating obstacle robots with the existing swarm
-                  platform, enabling studies of dynamic obstacle scenarios.
-                </p>
-                <div class="mt-3">
-                  <a
-                    href="https://github.com/Pera-Swarm"
-                    class="btn-outline"
-                    style="
-                      font-size: 0.8rem;
-                      padding: 0.4rem 0.8rem;
-                      margin-right: 0.5rem;
-                    "
-                    target="_blank"
-                  >
+                <div class="card-body">
+                  <p>
+                    Leading the development and firmware update of obstacle robots with collision avoidance 
+                    algorithms for the swarm robotics platform, enabling studies of dynamic obstacle scenarios.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://github.com/Pera-Swarm" class="btn btn-sm btn-secondary" target="_blank">
                     <i class="bi bi-github"></i> GitHub
                   </a>
-                  <a
-                    href="https://pera-swarm.ce.pdn.ac.lk/"
-                    class="btn-outline"
-                    style="font-size: 0.8rem; padding: 0.4rem 0.8rem"
-                    target="_blank"
-                  >
+                  <a href="https://pera-swarm.ce.pdn.ac.lk/" class="btn btn-sm btn-ghost" target="_blank">
                     <i class="bi bi-globe"></i> Website
                   </a>
                 </div>
               </div>
             </a>
-          </div>
-          <div class="col-lg-6">
-            <a
-              href="https://github.com/KATTA-00/CO224-Labs/tree/master/Lab05"
-              target="_blank"
-              style="text-decoration: none; color: inherit"
-            >
-              <div
-                class="research-card"
-                style="
-                  cursor: pointer;
-                  transition: transform 0.2s, box-shadow 0.2s;
-                "
-                onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'"
-                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'"
-              >
-                <h4>8-bit Single-cycle Processor</h4>
-                <p class="text-muted mb-2" style="font-size: 0.9rem">
-                  Mar. 2023 - Jun. 2023
-                </p>
-                <div class="mb-3">
+
+            <a href="https://github.com/KATTA-00/CO224-Labs/tree/master/Lab05" target="_blank" class="card-link">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">8-bit Single-cycle Processor</h3>
+                  <p class="card-subtitle">Mar. 2023 - Jun. 2023</p>
+                </div>
+                <div class="tags">
                   <span class="tag">Verilog-HDL</span>
                   <span class="tag">Processor Design</span>
                   <span class="tag">MIPS-inspired ISA</span>
                   <span class="tag">Cache</span>
-                  <span class="tag">GTKWave</span>
                 </div>
-                <p style="font-size: 0.9rem; line-height: 1.4">
-                  Designed and implemented an 8-bit single-cycle processor
-                  architecture in Verilog HDL with instruction and data caches,
-                  featuring a memory unit and a MIPS-inspired ISA supporting
-                  arithmetic, logic, and control operations.
-                </p>
-                <p style="font-size: 0.9rem; line-height: 1.4">
-                  Developed a comprehensive testbench for verification and
-                  waveform analysis using GTKWave tool.
-                </p>
-                <div class="mt-3">
-                  <a
-                    href="https://github.com/KATTA-00/CO224-Labs/tree/master/Lab05"
-                    class="btn-outline"
-                    style="font-size: 0.8rem; padding: 0.4rem 0.8rem"
-                    target="_blank"
-                  >
+                <div class="card-body">
+                  <p>
+                    Designed and implemented an 8-bit single-cycle processor architecture in Verilog HDL 
+                    with instruction and data caches, featuring a MIPS-inspired ISA supporting arithmetic, 
+                    logic, and control operations.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://github.com/KATTA-00/CO224-Labs/tree/master/Lab05" class="btn btn-sm btn-secondary" target="_blank">
                     <i class="bi bi-github"></i> GitHub
                   </a>
                 </div>
               </div>
             </a>
-          </div>
-          <div class="col-lg-6">
-            <a
-              href="https://github.com/cepdnaclk/e19-co227-digital-reporting-of-technical-visits"
-              target="_blank"
-              style="text-decoration: none; color: inherit"
-            >
-              <div
-                class="research-card"
-                style="
-                  cursor: pointer;
-                  transition: transform 0.2s, box-shadow 0.2s;
-                "
-                onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'"
-                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'"
-              >
-                <h4>Digital Reporting Platform for Technical Visits</h4>
-                <p class="text-muted mb-2" style="font-size: 0.9rem">
-                  May 2024 – Present
-                </p>
-                <div class="mb-3">
-                  <span class="tag">Group Project</span>
-                  <span class="tag">NLP</span>
-                  <span class="tag">Clustering</span>
-                  <span class="tag">Python</span>
-                  <span class="tag">TensorFlow</span>
-                </div>
-                <p>
-                  Developing web and mobile applications for documenting
-                  technical service visits with real-time reporting, approval
-                  workflows, and comprehensive analytics. The mobile app is
-                  utilized by technicians, while the web app is accessed by
-                  administrators to enhance task management and oversight.
-                </p>
-                <p style="font-size: 0.9rem; color: var(--text-light)">
-                  <strong>Contributions:</strong> Optimizing the technician
-                  selection process for specific tasks using user-provided data
-                  through Natural Language Processing, Clustering and Searching
-                  techniques.
-                </p>
-                <div class="mt-3">
-                  <a
-                    href="https://github.com/cepdnaclk/e19-co227-digital-reporting-of-technical-visits"
-                    class="btn-outline"
-                    style="
-                      font-size: 0.8rem;
-                      padding: 0.4rem 0.8rem;
-                      margin-right: 0.5rem;
-                    "
-                    target="_blank"
-                  >
-                    <i class="bi bi-github"></i> GitHub
-                  </a>
-                  <a
-                    href="https://cepdnaclk.github.io/e19-co227-digital-reporting-of-technical-visits/"
-                    class="btn-outline"
-                    style="font-size: 0.8rem; padding: 0.4rem 0.8rem"
-                    target="_blank"
-                  >
-                    <i class="bi bi-globe"></i> Website
-                  </a>
-                </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Ballerina OpenAI Finetunes Connector</h3>
+                <p class="card-subtitle">Aug. 2024 - Sep. 2024</p>
               </div>
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <div class="research-card" style="cursor: default">
-              <h4>Ballerina OpenAI Finetunes Connector</h4>
-              <p class="text-muted mb-2" style="font-size: 0.9rem">
-                Aug. 2024 - Sep. 2024
-              </p>
-              <div class="mb-3">
+              <div class="tags">
                 <span class="tag">Open-Source</span>
                 <span class="tag">WSO2 Internship</span>
                 <span class="tag">Ballerina</span>
                 <span class="tag">OpenAI API</span>
-                <span class="tag">Fine-tuning</span>
               </div>
-              <p>
-                Developed the ballerinax/openai.finetunes connector during WSO2
-                internship, providing seamless access to OpenAI's fine-tuning
-                API through Ballerina. Enables customization of models like
-                GPT-3.5-turbo for specific use cases including chatbots and
-                information extraction tools.
-              </p>
-              <p style="font-size: 0.9rem; color: var(--text-light)">
-                <strong>Impact:</strong> Published on Ballerina Central with
-                full documentation, enabling developers to easily integrate
-                custom AI models into their applications.
-              </p>
-              <div class="mt-3">
-                <a
-                  href="https://central.ballerina.io/ballerinax/openai.finetunes/latest"
-                  class="btn-outline"
-                  style="
-                    font-size: 0.8rem;
-                    padding: 0.4rem 0.8rem;
-                    margin-right: 0.5rem;
-                  "
-                  target="_blank"
-                >
+              <div class="card-body">
+                <p>
+                  Developed the ballerinax/openai.finetunes connector during WSO2 internship, providing 
+                  seamless access to OpenAI's fine-tuning API through Ballerina.
+                </p>
+                <p><strong>Impact:</strong> Published on Ballerina Central with full documentation.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://central.ballerina.io/ballerinax/openai.finetunes/latest" class="btn btn-sm btn-secondary" target="_blank">
                   <i class="bi bi-box"></i> Ballerina Central
                 </a>
-                <a
-                  href="https://github.com/ballerina-platform/module-ballerinax-openai.finetunes"
-                  class="btn-outline"
-                  style="font-size: 0.8rem; padding: 0.4rem 0.8rem"
-                  target="_blank"
-                >
+                <a href="https://github.com/ballerina-platform/module-ballerinax-openai.finetunes" class="btn btn-sm btn-ghost" target="_blank">
                   <i class="bi bi-github"></i> GitHub
                 </a>
               </div>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <a
-              href="https://github.com/cepdnaclk/e19-co225-Department-Space-Management-System-Web-Application"
-              target="_blank"
-              style="text-decoration: none; color: inherit"
-            >
-              <div
-                class="research-card"
-                style="
-                  cursor: pointer;
-                  transition: transform 0.2s, box-shadow 0.2s;
-                "
-                onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'"
-                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'"
-              >
-                <h4>Department Space Management System</h4>
-                <p class="text-muted mb-2" style="font-size: 0.9rem">
-                  Mar. 2023 – Jun. 2023
-                </p>
-                <div class="mb-3">
+
+            <a href="https://github.com/cepdnaclk/e19-co227-digital-reporting-of-technical-visits" target="_blank" class="card-link">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Digital Reporting Platform for Technical Visits</h3>
+                  <p class="card-subtitle">May 2024 – Present</p>
+                </div>
+                <div class="tags">
                   <span class="tag">Group Project</span>
-                  <span class="tag">Spring Boot</span>
-                  <span class="tag">React.js</span>
-                  <span class="tag">MySQL</span>
+                  <span class="tag">NLP</span>
+                  <span class="tag">Clustering</span>
+                  <span class="tag">Python</span>
                 </div>
-                <p>
-                  Developed a web application using Spring Boot and React for
-                  efficient reservation management of shared spaces in a
-                  university department, including waiting list functionality
-                  and user hierarchy for access control.
-                </p>
-                <p style="font-size: 0.9rem; color: var(--text-light)">
-                  <strong>Contributions:</strong> Developed the backend API
-                  using Spring Boot and integrated MySQL database for efficient
-                  data management and retrieval.
-                </p>
-                <div class="mt-3">
-                  <a
-                    href="https://github.com/cepdnaclk/e19-co225-Department-Space-Management-System-Web-Application"
-                    class="btn-outline"
-                    style="
-                      font-size: 0.8rem;
-                      padding: 0.4rem 0.8rem;
-                      margin-right: 0.5rem;
-                    "
-                    target="_blank"
-                  >
-                    <i class="bi bi-github"></i> GitHub
-                  </a>
-                  <a
-                    href="https://cepdnaclk.github.io/e19-co225-Department-Space-Management-System-Web-Application/"
-                    class="btn-outline"
-                    style="font-size: 0.8rem; padding: 0.4rem 0.8rem"
-                    target="_blank"
-                  >
-                    <i class="bi bi-globe"></i> Website
-                  </a>
+                <div class="card-body">
+                  <p>
+                    Developing web and mobile applications for documenting technical service visits with 
+                    real-time reporting, approval workflows, and comprehensive analytics.
+                  </p>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <a
-              href="https://github.com/cepdnaclk/e19-co226-Database-for-Cricket-Statistics"
-              target="_blank"
-              style="text-decoration: none; color: inherit"
-            >
-              <div
-                class="research-card"
-                style="
-                  cursor: pointer;
-                  transition: transform 0.2s, box-shadow 0.2s;
-                "
-                onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'"
-                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'"
-              >
-                <h4>Database for Cricket Statistics</h4>
-                <p class="text-muted mb-2" style="font-size: 0.9rem">
-                  Mar. 2023 – Jun. 2023
-                </p>
-                <div class="mb-3">
-                  <span class="tag">Group Project</span>
-                  <span class="tag">Node.js</span>
-                  <span class="tag">React.js</span>
-                  <span class="tag">MySQL</span>
-                  <span class="tag">WebSocket</span>
-                </div>
-                <p>
-                  Designed and developed CricLive, a comprehensive database for
-                  cricket statistics, enabling users to store, manage, and
-                  analyze data on players, teams, and matches with real-time
-                  updates and interactive visualizations.
-                </p>
-                <div class="mt-3">
-                  <a
-                    href="https://github.com/cepdnaclk/e19-co226-Database-for-Cricket-Statistics"
-                    class="btn-outline"
-                    style="
-                      font-size: 0.8rem;
-                      padding: 0.4rem 0.8rem;
-                      margin-right: 0.5rem;
-                    "
-                    target="_blank"
-                  >
-                    <i class="bi bi-github"></i> GitHub
-                  </a>
-                  <a
-                    href="https://cepdnaclk.github.io/e19-co226-Database-for-Cricket-Statistics/"
-                    class="btn-outline"
-                    style="font-size: 0.8rem; padding: 0.4rem 0.8rem"
-                    target="_blank"
-                  >
-                    <i class="bi bi-globe"></i> Website
-                  </a>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <a
-              href="https://github.com/KATTA-00/CO222-Project"
-              target="_blank"
-              style="text-decoration: none; color: inherit"
-            >
-              <div
-                class="research-card"
-                style="
-                  cursor: pointer;
-                  transition: transform 0.2s, box-shadow 0.2s;
-                "
-                onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'"
-                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'"
-              >
-                <h4>Crossword Puzzle Solver</h4>
-                <p class="text-muted mb-2" style="font-size: 0.9rem">
-                  Dec. 2022 - Jan. 2023
-                </p>
-                <div class="mb-3">
-                  <span class="tag">C Programming</span>
-                  <span class="tag">Algorithm Design</span>
-                  <span class="tag">Backtracking</span>
-                  <span class="tag">Problem Solving</span>
-                </div>
-                <p>
-                  Developed a C program that solves crossword puzzles using
-                  backtracking algorithms. The program reads a puzzle grid and
-                  word list from standard input, applies constraint satisfaction
-                  techniques to find valid placements, and outputs the completed
-                  puzzle to standard output.
-                </p>
-                <div class="mt-3">
-                  <a
-                    href="https://github.com/KATTA-00/CO222-Project"
-                    class="btn-outline"
-                    style="font-size: 0.8rem; padding: 0.4rem 0.8rem"
-                    target="_blank"
-                  >
+                <div class="card-footer">
+                  <a href="https://github.com/cepdnaclk/e19-co227-digital-reporting-of-technical-visits" class="btn btn-sm btn-secondary" target="_blank">
                     <i class="bi bi-github"></i> GitHub
                   </a>
                 </div>
               </div>
             </a>
-          </div>
-          <div class="col-lg-6">
-            <a
-              href="https://github.com/KATTA-00/LineFollowRobot"
-              target="_blank"
-              style="text-decoration: none; color: inherit"
-            >
-              <div
-                class="research-card"
-                style="
-                  cursor: pointer;
-                  transition: transform 0.2s, box-shadow 0.2s;
-                "
-                onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'"
-                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'"
-              >
-                <h4>Line Follow Robot</h4>
-                <p class="text-muted mb-2" style="font-size: 0.9rem">
-                  Oct. 2022
-                </p>
-                <div class="mb-3">
+
+            <a href="https://github.com/KATTA-00/LineFollowRobot" target="_blank" class="card-link">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Line Follow Robot</h3>
+                  <p class="card-subtitle">Oct. 2022</p>
+                </div>
+                <div class="tags">
                   <span class="tag">Arduino</span>
                   <span class="tag">C Programming</span>
                   <span class="tag">Embedded Systems</span>
                   <span class="tag">Robotics</span>
                 </div>
-                <p>
-                  Designed and implemented a line-following robot using Arduino
-                  microcontroller. Utilized infrared sensors for line detection
-                  and implemented PID control algorithms in C for smooth path
-                  tracking and motor speed adjustment.
-                </p>
-                <div class="mt-3">
-                  <a
-                    href="https://github.com/KATTA-00/LineFollowRobot"
-                    class="btn-outline"
-                    style="font-size: 0.8rem; padding: 0.4rem 0.8rem"
-                    target="_blank"
-                  >
+                <div class="card-body">
+                  <p>
+                    Designed and implemented a line-following robot using Arduino microcontroller with 
+                    infrared sensors and PID control algorithms for smooth path tracking.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="https://github.com/KATTA-00/LineFollowRobot" class="btn btn-sm btn-secondary" target="_blank">
                     <i class="bi bi-github"></i> GitHub
                   </a>
                 </div>
               </div>
             </a>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- ======= Publications Section ======= -->
-    <section
-      id="publications"
-      style="padding: 2rem 0; background: var(--bg-light)"
-    >
-      <div class="container">
-        <div class="section-title">
-          <h2>Publications</h2>
-          <p>
-            Peer-reviewed publications and contributions to academic
-            conferences.
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <div class="research-card">
-              <h4>
+        <!-- Publications Section -->
+        <section id="publications" class="section section-alt">
+          <div class="section-header">
+            <h2 class="section-title">Publications</h2>
+            <p class="section-subtitle">
+              Peer-reviewed publications and contributions to academic conferences.
+            </p>
+          </div>
+
+          <div style="max-width: 800px; margin: 0 auto;">
+            <div class="publication-card">
+              <h3 class="publication-title">
                 Neuromorphic Architectures for Edge-Oriented Spiking Neural Networks: A Review
-              </h4>
-              <div class="mb-3">
-                <span class="tag">SSRN 2026</span>
+              </h3>
+              <div class="tags">
+                <span class="tag tag-accent">SSRN 2026</span>
                 <span class="tag">Review Paper</span>
                 <span class="tag">Neuromorphic Computing</span>
                 <span class="tag">SNNs</span>
                 <span class="tag">Edge Computing</span>
-                <span class="tag">System-On-Chip</span>
               </div>
-              <p style="font-size: 0.9rem; line-height: 1.5">
+              <p class="publication-meta">
                 <strong>Authors:</strong> K. Gunawardana, S. Peeris, K. Rambukwella, R. Ragel, I. Nawinne<br />
                 <strong>Preprint:</strong> SSRN<br />
                 <strong>Published:</strong> January 6, 2026<br />
                 <strong>DOI:</strong> 10.2139/ssrn.5918822
               </p>
-              <div class="mt-3">
-                <a
-                  href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5918822"
-                  class="btn-primary"
-                  style="font-size: 0.9rem; padding: 0.5rem 1rem"
-                >
+              <div class="card-footer">
+                <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5918822" class="btn btn-primary" target="_blank">
                   <i class="bi bi-file-earmark-pdf"></i> View Paper
                 </a>
               </div>
             </div>
 
-            <div class="research-card">
-              <h4>
-                Optimized Multi-Processor System-on-Chip (MPSoC) Design for
-                Low-Resource JPEG Encoding
-              </h4>
-              <div class="mb-3">
-                <span class="tag">IEEE ICAC 2024</span>
+            <div class="publication-card">
+              <h3 class="publication-title">
+                Optimized Multi-Processor System-on-Chip (MPSoC) Design for Low-Resource JPEG Encoding
+              </h3>
+              <div class="tags">
+                <span class="tag tag-accent">IEEE ICAC 2024</span>
                 <span class="tag">Conference Paper</span>
                 <span class="tag">MPSoC</span>
                 <span class="tag">FPGA</span>
                 <span class="tag">Custom Instructions</span>
               </div>
-              <p style="font-size: 0.9rem; line-height: 1.5">
-                <strong>Authors:</strong> K. Gunawardana, C. Adhikari, I.
-                Nawinne<br />
-                <strong>Conference:</strong> IEEE International Conference on
-                Advanced Computing (ICAC) 2024, Colombo<br />
+              <p class="publication-meta">
+                <strong>Authors:</strong> K. Gunawardana, C. Adhikari, I. Nawinne<br />
+                <strong>Conference:</strong> IEEE International Conference on Advanced Computing (ICAC) 2024, Colombo<br />
                 <strong>Published:</strong> December 2024<br />
                 <strong>DOI:</strong> 10.1109/ICAC64487.2024.10851123
               </p>
-              <div class="mt-3">
-                <a
-                  href="https://ieeexplore.ieee.org/abstract/document/10851123"
-                  class="btn-primary"
-                  style="font-size: 0.9rem; padding: 0.5rem 1rem"
-                >
+              <div class="card-footer">
+                <a href="https://ieeexplore.ieee.org/abstract/document/10851123" class="btn btn-primary" target="_blank">
                   <i class="bi bi-file-earmark-pdf"></i> View Paper
                 </a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- ======= Achievements Section ======= -->
-    <section
-      id="achievements"
-      style="padding: 2rem 0; background: var(--bg-white)"
-    >
-      <div class="container">
-        <div class="section-title">
-          <h2>Recognition & Achievements</h2>
-          <p>
-            Awards and recognitions that reflect excellence in academics,
-            research, and competitive programming.
-          </p>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6">
-            <div class="research-card text-center">
-              <i
-                class="bi bi-trophy"
-                style="
-                  font-size: 3rem;
-                  color: var(--accent-color);
-                  margin-bottom: 1rem;
-                "
-              ></i>
-              <h4>SLIot Challenge 2023</h4>
-              <p class="text-muted" style="font-size: 0.9rem">
-                Mar. 2024 | Team: IMPAX
-              </p>
-              <p>
-                <strong>1st Runners-up</strong><br />
-                Sri Lanka's biggest IoT competition<br />
-                (100+ teams)
-              </p>
-              <p style="font-size: 0.8rem; color: var(--text-light)">
-                Organized by University of Moratuwa with SLT-MOBITEL and IESL
-              </p>
-            </div>
+        <!-- Achievements Section -->
+        <section id="achievements" class="section">
+          <div class="section-header">
+            <h2 class="section-title">Recognition & Achievements</h2>
+            <p class="section-subtitle">
+              Awards and recognitions that reflect excellence in academics, research, and competitive programming.
+            </p>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="research-card text-center">
-              <i
-                class="bi bi-award"
-                style="
-                  font-size: 3rem;
-                  color: var(--secondary-color);
-                  margin-bottom: 1rem;
-                "
-              ></i>
-              <h4>IEEEXtreme 17.0</h4>
-              <p class="text-muted" style="font-size: 0.9rem">
-                Nov. 2023 | Team: Five4Five
-              </p>
-              <p>
-                <strong>Global Rank 374</strong><br />
-                24-hour programming competition<br />
-                (16,500+ participants)
-              </p>
-              <p style="font-size: 0.8rem; color: var(--text-light)">
-                National Rank 24 (Out of 330 Teams)
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="research-card text-center">
-              <i
-                class="bi bi-code-slash"
-                style="
-                  font-size: 3rem;
-                  color: var(--primary-color);
-                  margin-bottom: 1rem;
-                "
-              ></i>
-              <h4>MoraXtreme 8.0</h4>
-              <p class="text-muted" style="font-size: 0.9rem">
-                Nov. 2023 | Team: Five4Five
-              </p>
-              <p>
-                <strong>4th Place National</strong><br />
-                12-hour algorithmic programming<br />
-                (400+ teams)
-              </p>
-              <p style="font-size: 0.8rem; color: var(--text-light)">
-                IEEE Student Branch, University of Moratuwa
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="research-card text-center">
-              <i
-                class="bi bi-cpu"
-                style="
-                  font-size: 3rem;
-                  color: var(--accent-color);
-                  margin-bottom: 1rem;
-                "
-              ></i>
-              <h4>ACES Coders v10.0</h4>
-              <p class="text-muted" style="font-size: 0.9rem">
-                Oct. 2023 | Team: Five4Five
-              </p>
-              <p>
-                <strong>12th Place National</strong><br />
-                12-hour algorithmic programming<br />
-                (350+ participants)
-              </p>
-              <p style="font-size: 0.8rem; color: var(--text-light)">
-                ACES, University of Peradeniya
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="research-card text-center">
-              <i
-                class="bi bi-star"
-                style="
-                  font-size: 3rem;
-                  color: var(--secondary-color);
-                  margin-bottom: 1rem;
-                "
-              ></i>
-              <h4>ACES PreCoders v10.0</h4>
-              <p class="text-muted" style="font-size: 0.9rem">
-                Sep. 2023 | Team: Five4Five
-              </p>
-              <p>
-                <strong>2nd Place University</strong><br />
-                6-hour algorithmic programming<br />
-                (50+ teams)
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="research-card text-center">
-              <i
-                class="bi bi-lightbulb"
-                style="
-                  font-size: 3rem;
-                  color: var(--primary-color);
-                  margin-bottom: 1rem;
-                "
-              ></i>
-              <h4>ACES Hackathon 2023</h4>
-              <p class="text-muted" style="font-size: 0.9rem">
-                Sep. 2023 | Team: LearnLink
-              </p>
-              <p>
-                <strong>Participant</strong><br />
-                Inter-university hackathon<br />
-                ACES organized
-              </p>
-              <p style="font-size: 0.8rem; color: var(--text-light)">
-                LearnLink - Online marketplace for books
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" style="padding: 2rem 0; background: var(--bg-white)">
-      <div class="container">
-        <div class="section-title">
-          <h2>Technical Skills</h2>
-          <p>
-            Comprehensive technical expertise across hardware design, software
-            development, and modern engineering tools.
-          </p>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-6">
-            <div class="research-card">
-              <h4>
-                <i class="bi bi-code-square me-2"></i>Programming Languages
-              </h4>
-              <div class="mb-2">
+          <div class="grid grid-3">
+            <div class="card card-achievement">
+              <div class="card-icon-wrapper">
+                <i class="bi bi-trophy"></i>
+              </div>
+              <h4 class="card-title">SLIot Challenge 2023</h4>
+              <p class="card-subtitle">Mar. 2024 | Team: IMPAX</p>
+              <div class="card-body">
+                <p>
+                  <strong>1st Runners-up</strong><br />
+                  Sri Lanka's biggest IoT competition<br />
+                  (100+ teams)
+                </p>
+              </div>
+            </div>
+
+            <div class="card card-achievement">
+              <div class="card-icon-wrapper">
+                <i class="bi bi-award"></i>
+              </div>
+              <h4 class="card-title">IEEEXtreme 17.0</h4>
+              <p class="card-subtitle">Nov. 2023 | Team: Five4Five</p>
+              <div class="card-body">
+                <p>
+                  <strong>Global Rank 374</strong><br />
+                  24-hour programming competition<br />
+                  (16,500+ participants)
+                </p>
+              </div>
+            </div>
+
+            <div class="card card-achievement">
+              <div class="card-icon-wrapper">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h4 class="card-title">MoraXtreme 8.0</h4>
+              <p class="card-subtitle">Nov. 2023 | Team: Five4Five</p>
+              <div class="card-body">
+                <p>
+                  <strong>4th Place National</strong><br />
+                  12-hour algorithmic programming<br />
+                  (400+ teams)
+                </p>
+              </div>
+            </div>
+
+            <div class="card card-achievement">
+              <div class="card-icon-wrapper">
+                <i class="bi bi-cpu"></i>
+              </div>
+              <h4 class="card-title">ACES Coders v10.0</h4>
+              <p class="card-subtitle">Oct. 2023 | Team: Five4Five</p>
+              <div class="card-body">
+                <p>
+                  <strong>12th Place National</strong><br />
+                  12-hour algorithmic programming<br />
+                  (350+ participants)
+                </p>
+              </div>
+            </div>
+
+            <div class="card card-achievement">
+              <div class="card-icon-wrapper">
+                <i class="bi bi-star"></i>
+              </div>
+              <h4 class="card-title">ACES PreCoders v10.0</h4>
+              <p class="card-subtitle">Sep. 2023 | Team: Five4Five</p>
+              <div class="card-body">
+                <p>
+                  <strong>2nd Place University</strong><br />
+                  6-hour algorithmic programming<br />
+                  (50+ teams)
+                </p>
+              </div>
+            </div>
+
+            <div class="card card-achievement">
+              <div class="card-icon-wrapper">
+                <i class="bi bi-lightbulb"></i>
+              </div>
+              <h4 class="card-title">ACES Hackathon 2023</h4>
+              <p class="card-subtitle">Sep. 2023 | Team: LearnLink</p>
+              <div class="card-body">
+                <p>
+                  <strong>Participant</strong><br />
+                  Inter-university hackathon<br />
+                  LearnLink - Online marketplace for books
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section section-alt">
+          <div class="section-header">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">
+              Comprehensive technical expertise across hardware design, software development, and modern engineering tools.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h4><i class="bi bi-code-square"></i> Programming Languages</h4>
+              <div class="skill-tags">
                 <span class="tag">Python</span>
                 <span class="tag">C/C++</span>
                 <span class="tag">Verilog HDL</span>
@@ -2770,11 +917,10 @@
                 <span class="tag">PHP</span>
               </div>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="research-card">
-              <h4><i class="bi bi-layers me-2"></i>Frameworks & Platforms</h4>
-              <div class="mb-2">
+
+            <div class="skill-category">
+              <h4><i class="bi bi-layers"></i> Frameworks & Platforms</h4>
+              <div class="skill-tags">
                 <span class="tag">Arduino</span>
                 <span class="tag">ESP32</span>
                 <span class="tag">Express.js</span>
@@ -2784,11 +930,10 @@
                 <span class="tag">React.js</span>
               </div>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="research-card">
-              <h4><i class="bi bi-box me-2"></i>Libraries & Tools</h4>
-              <div class="mb-2">
+
+            <div class="skill-category">
+              <h4><i class="bi bi-box"></i> Libraries & Tools</h4>
+              <div class="skill-tags">
                 <span class="tag">OpenCV</span>
                 <span class="tag">NumPy</span>
                 <span class="tag">Pandas</span>
@@ -2797,24 +942,20 @@
                 <span class="tag">TensorFlow</span>
               </div>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="research-card">
-              <h4><i class="bi bi-tools me-2"></i>Developer Tools</h4>
-              <div class="mb-2">
+
+            <div class="skill-category">
+              <h4><i class="bi bi-tools"></i> Developer Tools</h4>
+              <div class="skill-tags">
                 <span class="tag">Git</span>
                 <span class="tag">Linux</span>
                 <span class="tag">Docker</span>
                 <span class="tag">AWS</span>
               </div>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="research-card">
-              <h4>
-                <i class="bi bi-cpu-fill me-2"></i>EDA & Verification Tools
-              </h4>
-              <div class="mb-2">
+
+            <div class="skill-category">
+              <h4><i class="bi bi-cpu-fill"></i> EDA & Verification Tools</h4>
+              <div class="skill-tags">
                 <span class="tag">Quartus II</span>
                 <span class="tag">Nios II</span>
                 <span class="tag">GTKWave</span>
@@ -2826,345 +967,146 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- ======= Certificates Section ======= -->
-    <section
-      id="certificates"
-      style="padding: 2rem 0; background: var(--bg-light)"
-    >
-      <div class="container">
-        <div class="section-title">
-          <h2>Selected Certificates</h2>
-          <p>
-            Professional development through specialized courses and
-            certifications.
-          </p>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-6">
-            <a
-              href="https://katta-00.github.io/docs/Certificates/ML.pdf"
-              target="_blank"
-              style="text-decoration: none; color: inherit"
-            >
-              <div
-                class="research-card"
-                style="
-                  cursor: pointer;
-                  transition: transform 0.2s, box-shadow 0.2s;
-                "
-                onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'"
-                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'"
-              >
-                <h4>Machine Learning Specialization</h4>
-                <p class="text-muted mb-1" style="font-size: 0.8rem">
-                  Stanford University & DeepLearning.AI (Coursera) | Sep. 2023
-                </p>
-                <div class="mb-1">
+        <!-- Certificates Section -->
+        <section id="certificates" class="section">
+          <div class="section-header">
+            <h2 class="section-title">Selected Certificates</h2>
+            <p class="section-subtitle">
+              Professional development through specialized courses and certifications.
+            </p>
+          </div>
+
+          <div class="grid grid-2">
+            <a href="https://katta-00.github.io/docs/Certificates/ML.pdf" target="_blank" class="card-link">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Machine Learning Specialization</h3>
+                  <p class="card-subtitle">Stanford University & DeepLearning.AI (Coursera) | Sep. 2023</p>
+                </div>
+                <div class="tags">
                   <span class="tag">Machine Learning</span>
                   <span class="tag">Deep Learning</span>
                   <span class="tag">Stanford</span>
                   <span class="tag">Andrew Ng</span>
                 </div>
-                <p
-                  style="
-                    font-size: 0.85rem;
-                    line-height: 1.4;
-                    margin-bottom: 0.8rem;
-                  "
-                >
-                  Comprehensive specialization covering supervised learning,
-                  unsupervised learning, and advanced learning algorithms with
-                  practical implementations.
-                </p>
-                <div class="mt-1">
-                  <a
-                    href="https://katta-00.github.io/docs/Certificates/ML.pdf"
-                    class="btn-outline"
-                    style="
-                      font-size: 0.7rem;
-                      padding: 0.25rem 0.6rem;
-                      margin-right: 0.3rem;
-                    "
-                    target="_blank"
-                  >
-                    <i class="bi bi-file-earmark-pdf"></i> Certificate
-                  </a>
-                  <!-- <a
-                    href="https://katta-00.github.io/docs/Certificates/SL.pdf"
-                    class="btn-outline"
-                    style="
-                      font-size: 0.7rem;
-                      padding: 0.25rem 0.6rem;
-                      margin-right: 0.3rem;
-                    "
-                    target="_blank"
-                  >
-                    <i class="bi bi-file-earmark-pdf"></i> Part 1
-                  </a>
-                  <a
-                    href="https://katta-00.github.io/docs/Certificates/UL.pdf"
-                    class="btn-outline"
-                    style="
-                      font-size: 0.7rem;
-                      padding: 0.25rem 0.6rem;
-                      margin-right: 0.3rem;
-                    "
-                    target="_blank"
-                  >
-                    <i class="bi bi-file-earmark-pdf"></i> Part 2
-                  </a>
-                  <a
-                    href="https://katta-00.github.io/docs/Certificates/AA.pdf"
-                    class="btn-outline"
-                    style="font-size: 0.7rem; padding: 0.25rem 0.6rem"
-                    target="_blank"
-                  >
-                    <i class="bi bi-file-earmark-pdf"></i> Part 3
-                  </a> -->
+                <div class="card-body">
+                  <p>
+                    Comprehensive specialization covering supervised learning, unsupervised learning, 
+                    and advanced learning algorithms with practical implementations.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <span class="btn btn-sm btn-secondary">
+                    <i class="bi bi-file-earmark-pdf"></i> View Certificate
+                  </span>
                 </div>
               </div>
             </a>
-          </div>
-          <div class="col-lg-6">
-            <a
-              href="https://katta-00.github.io/docs/Certificates/CAD_E1_1017.pdf"
-              target="_blank"
-              style="text-decoration: none; color: inherit"
-            >
-              <div
-                class="research-card"
-                style="
-                  cursor: pointer;
-                  transition: transform 0.2s, box-shadow 0.2s;
-                "
-                onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)'"
-                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'"
-              >
-                <h4>Engineering Drawing and 3D Modelling using AutoCAD</h4>
-                <p class="text-muted mb-1" style="font-size: 0.8rem">
-                  TecView Institute | Mar. 2021
-                </p>
-                <div class="mb-1">
+
+            <a href="https://katta-00.github.io/docs/Certificates/CAD_E1_1017.pdf" target="_blank" class="card-link">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Engineering Drawing and 3D Modelling using AutoCAD</h3>
+                  <p class="card-subtitle">TecView Institute | Mar. 2021</p>
+                </div>
+                <div class="tags">
                   <span class="tag">AutoCAD</span>
                   <span class="tag">3D Modelling</span>
                   <span class="tag">Engineering Drawing</span>
                   <span class="tag">CAD Design</span>
                 </div>
-                <p
-                  style="
-                    font-size: 0.85rem;
-                    line-height: 1.4;
-                    margin-bottom: 0.8rem;
-                  "
-                >
-                  Professional certification in engineering drawing and 3D
-                  modeling techniques using AutoCAD software for technical
-                  design and documentation.
-                </p>
-                <div class="mt-1">
-                  <a
-                    href="https://katta-00.github.io/docs/Certificates/CAD_E1_1017.pdf"
-                    class="btn-outline"
-                    style="font-size: 0.7rem; padding: 0.25rem 0.6rem"
-                    target="_blank"
-                  >
+                <div class="card-body">
+                  <p>
+                    Professional certification in engineering drawing and 3D modeling techniques 
+                    using AutoCAD software for technical design and documentation.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <span class="btn btn-sm btn-secondary">
                     <i class="bi bi-file-earmark-pdf"></i> View Certificate
-                  </a>
+                  </span>
                 </div>
               </div>
             </a>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" style="padding: 2rem 0; background: var(--bg-white)">
-      <div class="container">
-        <div class="section-title">
-          <h2>Get In Touch</h2>
-          <p>
-            Interested in collaboration, research opportunities, PhD positions,
-            or engineering roles? Let's connect!
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <div class="research-card text-center">
-              <div class="row g-4">
-                <div class="col-md-6">
-                  <i
-                    class="bi bi-envelope"
-                    style="
-                      font-size: 2rem;
-                      color: var(--secondary-color);
-                      margin-bottom: 1rem;
-                    "
-                  ></i>
-                  <h5>Email</h5>
-                  <p>
-                    <a href="mailto:kanishkagunawarthana@gmail.com"
-                      >kanishkagunawarthana@gmail.com</a
-                    ><br />
-                    <a href="mailto:kanishkag@eng.pdn.ac.lk"
-                      >kanishkag@eng.pdn.ac.lk</a
-                    >
-                  </p>
-                </div>
-                <div class="col-md-6">
-                  <i
-                    class="bi bi-geo-alt"
-                    style="
-                      font-size: 2rem;
-                      color: var(--secondary-color);
-                      margin-bottom: 1rem;
-                    "
-                  ></i>
-                  <h5>Location</h5>
-                  <p>
-                    Department of Computer Engineering<br />
-                    University of Peradeniya, Sri Lanka
-                  </p>
-                </div>
-              </div>
-              <!-- <div class="social-links mt-4">
-                <a href="https://github.com/KATTA-00" title="GitHub">
-                  <i class="bi bi-github" style="font-size: 1.5rem"></i>
+        <!-- Contact Section -->
+        <section id="contact" class="section section-alt">
+          <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">
+              Interested in collaboration, research opportunities, PhD positions, or engineering roles? Let's connect!
+            </p>
+          </div>
+
+          <div class="contact-grid" style="max-width: 600px; margin: 0 auto;">
+            <div class="contact-item">
+              <i class="bi bi-envelope"></i>
+              <h5>Email</h5>
+              <p>
+                <a href="mailto:kanishkagunawarthana@gmail.com">kanishkagunawarthana@gmail.com</a><br />
+                <a href="mailto:kanishkag@eng.pdn.ac.lk">kanishkag@eng.pdn.ac.lk</a>
+              </p>
+            </div>
+            <div class="contact-item">
+              <i class="bi bi-geo-alt"></i>
+              <h5>Location</h5>
+              <p>
+                Department of Computer Engineering<br />
+                University of Peradeniya, Sri Lanka
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="footer-content">
+            <div class="footer-info">
+              <h4>Kanishka Gunawardana</h4>
+              <p>
+                Computer Engineering Graduate specializing in accelerated computing, hardware systems, 
+                and embedded systems. Seeking PhD opportunities and research/engineering positions in 
+                hardware-software co-design.
+              </p>
+              <p class="footer-location">
+                <i class="bi bi-geo-alt"></i> University of Peradeniya, Sri Lanka
+              </p>
+            </div>
+
+            <div class="footer-connect">
+              <h5>Connect</h5>
+              <div class="footer-social">
+                <a href="https://github.com/KATTA-00" target="_blank" title="GitHub">
+                  <i class="bi bi-github"></i>
                 </a>
-                <a
-                  href="https://www.linkedin.com/in/kanishka-gunawardana-285aa4201"
-                  title="LinkedIn"
-                >
-                  <i class="bi bi-linkedin" style="font-size: 1.5rem"></i>
-                </a>
-                <a
-                  href="https://scholar.google.com/citations?user=YOUR_ID"
-                  title="Google Scholar"
-                >
-                  <i class="bi bi-mortarboard" style="font-size: 1.5rem"></i>
+                <a href="https://www.linkedin.com/in/kanishka-gunawardana-285aa4201" target="_blank" title="LinkedIn">
+                  <i class="bi bi-linkedin"></i>
                 </a>
                 <a href="mailto:kanishkagunawarthana@gmail.com" title="Email">
-                  <i class="bi bi-envelope" style="font-size: 1.5rem"></i>
+                  <i class="bi bi-envelope"></i>
                 </a>
-              </div> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div id="preloader"></div>
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-    >
-      <i class="bi bi-arrow-up-short"></i>
-    </a>
-
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-      <div class="container">
-        <div class="row g-3 align-items-stretch p-3">
-          <div class="col-lg-8 col-md-8">
-            <h4>Kanishka Gunawardana</h4>
-            <p>
-              Computer Engineering Graduate specializing in accelerated
-              computing, hardware systems, and embedded systems. Seeking PhD
-              opportunities and research/engineering positions in
-              hardware-software co-design.
-            </p>
-            <div class="mt-2">
-              <small style="color: rgba(255, 255, 255, 0.7)">
-                <i class="bi bi-geo-alt me-2"></i>University of Peradeniya, Sri
-                Lanka
-              </small>
+                <a href="https://www.instagram.com/_kanishka_gun_/" target="_blank" title="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/kanishka.gunawardana.169" target="_blank" title="Facebook">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-4">
-            <h5>Connect</h5>
-            <div class="d-flex flex-wrap gap-3 justify-content-center">
-              <a
-                href="https://github.com/KATTA-00"
-                target="_blank"
-                class="text-decoration-none"
-                style="color: rgba(255, 255, 255, 0.8)"
-              >
-                <i class="bi bi-github" style="font-size: 1.5rem"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/kanishka-gunawardana-285aa4201"
-                target="_blank"
-                class="text-decoration-none"
-                style="color: rgba(255, 255, 255, 0.8)"
-              >
-                <i class="bi bi-linkedin" style="font-size: 1.5rem"></i>
-              </a>
-              <a
-                href="mailto:kanishkagunawarthana@gmail.com"
-                class="text-decoration-none"
-                style="color: rgba(255, 255, 255, 0.8)"
-              >
-                <i class="bi bi-envelope" style="font-size: 1.5rem"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/_kanishka_gun_/"
-                target="_blank"
-                class="text-decoration-none"
-                style="color: rgba(255, 255, 255, 0.8)"
-              >
-                <i class="bi bi-instagram" style="font-size: 1.5rem"></i>
-              </a>
-              <a
-                href="https://www.facebook.com/kanishka.gunawardana.169"
-                target="_blank"
-                class="text-decoration-none"
-                style="color: rgba(255, 255, 255, 0.8)"
-              >
-                <i class="bi bi-facebook" style="font-size: 1.5rem"></i>
-              </a>
-            </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 Kanishka Gunawardana. All rights reserved.</p>
           </div>
-        </div>
+        </footer>
+      </main>
+    </div>
 
-        <!-- <hr class="footer-divider" /> -->
-
-        <div class="footer-bottom">
-          <div class="row align-items-center">
-            <div class="col-lg-6 col-md-6 text-center text-lg-start">
-              <p>&copy; 2025 Kanishka Gunawardana. All rights reserved.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- End Footer -->
-
-    <!-- Vendor JS Files -->
-    <script
-      src="assets/vendor/purecounter/purecounter_vanilla.js"
-      defer
-    ></script>
-    <script src="assets/vendor/aos/aos.js" defer></script>
-    <script
-      src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"
-      defer
-    ></script>
-    <!-- Removed unused vendor scripts: glightbox, isotope, swiper, waypoints, php-email-form to speed up load -->
-    <!-- <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script> -->
-    <!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script> -->
-    <!-- <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script> -->
-    <!-- <script src="assets/vendor/waypoints/noframework.waypoints.js" defer></script> -->
-    <!-- <script src="assets/vendor/php-email-form/validate.js" defer></script> -->
-
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js" defer></script>
-
-    <!-- Site Configuration Manager -->
-    <script src="assets/js/site-config-manager.js" defer></script>
+    <!-- Navigation JS -->
+    <script src="assets/js/navigation.js"></script>
   </body>
 </html>
