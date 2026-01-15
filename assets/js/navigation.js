@@ -243,12 +243,110 @@
     });
   }
 
+  // Back to top button
+  function initBackToTop() {
+    const backToTopBtn = document.getElementById('backToTop');
+    if (!backToTopBtn) return;
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+
+  // Page loader
+  function initPageLoader() {
+    const loader = document.getElementById('pageLoader');
+    if (!loader) return;
+
+    // Hide loader when page is fully loaded
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        loader.classList.add('hidden');
+      }, 500);
+    });
+  }
+
+  // Animated counter for stats
+  function animateCounters() {
+    const counters = document.querySelectorAll('.stat-value[data-count]');
+    
+    counters.forEach(counter => {
+      const target = parseFloat(counter.getAttribute('data-count'));
+      const duration = 2000;
+      const start = 0;
+      const startTime = performance.now();
+      
+      function updateCounter(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        
+        // Easing function for smooth animation
+        const easeOut = 1 - Math.pow(1 - progress, 3);
+        const current = start + (target - start) * easeOut;
+        
+        if (Number.isInteger(target)) {
+          counter.textContent = Math.floor(current);
+        } else {
+          counter.textContent = current.toFixed(1);
+        }
+        
+        if (progress < 1) {
+          requestAnimationFrame(updateCounter);
+        } else {
+          counter.textContent = target;
+        }
+      }
+      
+      requestAnimationFrame(updateCounter);
+    });
+  }
+
+  // Intersection observer for triggering animations
+  function initIntersectionObserver() {
+    const observerOptions = {
+      threshold: 0.2,
+      rootMargin: '0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+          
+          // Trigger counter animation for stats section
+          if (entry.target.classList.contains('hero-stats')) {
+            animateCounters();
+          }
+        }
+      });
+    }, observerOptions);
+
+    // Observe elements
+    document.querySelectorAll('.section, .hero-stats, .card').forEach(el => {
+      observer.observe(el);
+    });
+  }
+
   // Initialize
   function init() {
     initDOMReferences();
     setupEventListeners();
     updateActiveNavLink();
     initTerminalTyping();
+    initBackToTop();
+    initPageLoader();
+    initIntersectionObserver();
     revealOnScroll(); // Initial check
   }
 

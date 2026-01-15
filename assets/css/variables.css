@@ -5,7 +5,7 @@
 
 :root {
   /* =========================
-     Color Palette - Modern Light Mode
+     Color Palette - Modern Lighter Mode
      ========================= */
   --color-primary: #3b82f6;
   --color-primary-light: #60a5fa;
@@ -16,14 +16,15 @@
   --color-pink: #ec4899;
   --color-orange: #f59e0b;
   --color-cyan: #06b6d4;
+  --color-indigo: #6366f1;
   
-  /* Background Colors */
+  /* Background Colors - Lighter */
   --bg-primary: #ffffff;
-  --bg-secondary: #f8fafc;
-  --bg-tertiary: #f1f5f9;
-  --bg-sidebar: linear-gradient(180deg, #1e40af 0%, #3b82f6 100%);
-  --bg-sidebar-solid: #2563eb;
-  --bg-sidebar-hover: rgba(255, 255, 255, 0.15);
+  --bg-secondary: #fafbfc;
+  --bg-tertiary: #f3f4f6;
+  --bg-sidebar: linear-gradient(180deg, #3b82f6 0%, #6366f1 100%);
+  --bg-sidebar-solid: #3b82f6;
+  --bg-sidebar-hover: rgba(255, 255, 255, 0.18);
   
   /* Text Colors */
   --text-primary: #0f172a;
