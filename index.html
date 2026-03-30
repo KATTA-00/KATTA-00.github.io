@@ -173,7 +173,7 @@
 
             <p class="hero-description">
               I specialize in computer architecture and embedded systems, designing hardware–software 
-              co-designs that optimize RISC-V CPU microarchitecture and maximize performance. My work 
+              co-designs that optimize CPU microarchitecture and maximize performance. My work 
               advances energy efficiency and computational throughput in real-world embedded and edge 
               applications.
             </p>
@@ -738,23 +738,53 @@
           </div>
 
           <div style="max-width: 800px; margin: 0 auto;">
+            
+            <div class="publication-card">
+              <h3 class="publication-title">
+                SNAP-V: A RISC-V SoC with Configurable Neuromorphic Acceleration for Small-Scale Spiking Neural Networks
+              </h3>
+              <div class="tags">
+                <span class="tag tag-accent">Preprint</span>
+                <span class="tag">RISC-V SoC</span>
+                <span class="tag">Neuromorphic</span>
+                <span class="tag">Edge AI</span>
+              </div>
+              <p class="publication-meta">
+                <strong>Authors:</strong> K. Gunawardana, S. Peeris, K. Rambukwella, T. Wanduragala, S. Jameel, R. Ragel, I. Nawinne<br />
+                <strong>Status:</strong> Preprint (arXiv)
+              </p>
+              <div class="publication-description" style="margin-top: 1rem; font-size: 0.95rem; color: var(--text-secondary);">
+                <ul style="padding-left: 1.5rem; margin-bottom: 1rem;">
+                  <li style="margin-bottom: 0.5rem;">Proposed SNAP-V, a RISC-V-based neuromorphic SoC featuring two accelerator variants (bus-based Cerebra-S and NoC-based Cerebra-H) to provide a complete, resource-efficient platform tailored for small-scale edge SNNs.</li>
+                  <li>Demonstrated a 9.46x operating frequency improvement in Cerebra-H over Cerebra-S, achieving 1.05 pJ/SOP in 45nm CMOS while maintaining high inference fidelity with a 2.62% average accuracy deviation.</li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <a href="https://arxiv.org/abs/2603.11939" class="btn btn-primary" target="_blank">
+                  <i class="bi bi-file-earmark-pdf"></i> View Paper
+                </a>
+              </div>
+            </div>
+
             <div class="publication-card">
               <h3 class="publication-title">
                 Neuromorphic Architectures for Edge-Oriented Spiking Neural Networks: A Review
               </h3>
               <div class="tags">
-                <span class="tag tag-accent">SSRN 2026</span>
+                <span class="tag tag-accent">Preprint</span>
                 <span class="tag">Review Paper</span>
                 <span class="tag">Neuromorphic Computing</span>
                 <span class="tag">SNNs</span>
-                <span class="tag">Edge Computing</span>
               </div>
               <p class="publication-meta">
-                <strong>Authors:</strong> K. Gunawardana, S. Peeris, K. Rambukwella, R. Ragel, I. Nawinne<br />
-                <strong>Preprint:</strong> SSRN<br />
-                <strong>Published:</strong> January 6, 2026<br />
-                <strong>DOI:</strong> 10.2139/ssrn.5918822
+                <strong>Authors:</strong> K. Gunawardana, S. Peeris, K. Rambukwella, R.G. Ragel, I. Nawinne<br />
+                <strong>Status:</strong> Preprint (SSRN)
               </p>
+              <div class="publication-description" style="margin-top: 1rem; font-size: 0.95rem; color: var(--text-secondary);">
+                <ul style="padding-left: 1.5rem; margin-bottom: 1rem;">
+                  <li>Conducted a review of ASIC- and FPGA-based neuromorphic architectures, highlighting large-scale systems are underutilized for small-scale edge workloads while small-scale designs remain rare; analyzed software frameworks and event-driven communication strategies to advocate for SoC-centric platforms for energy-efficient deployment.</li>
+                </ul>
+              </div>
               <div class="card-footer">
                 <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5918822" class="btn btn-primary" target="_blank">
                   <i class="bi bi-file-earmark-pdf"></i> View Paper
@@ -768,23 +798,53 @@
               </h3>
               <div class="tags">
                 <span class="tag tag-accent">IEEE ICAC 2024</span>
-                <span class="tag">Conference Paper</span>
                 <span class="tag">MPSoC</span>
                 <span class="tag">FPGA</span>
                 <span class="tag">Custom Instructions</span>
               </div>
               <p class="publication-meta">
                 <strong>Authors:</strong> K. Gunawardana, C. Adhikari, I. Nawinne<br />
-                <strong>Conference:</strong> IEEE International Conference on Advanced Computing (ICAC) 2024, Colombo<br />
-                <strong>Published:</strong> December 2024<br />
-                <strong>DOI:</strong> 10.1109/ICAC64487.2024.10851123
+                <strong>Conference:</strong> IEEE International Conference on Advanced Computing (ICAC) 2024, Colombo
               </p>
+              <div class="publication-description" style="margin-top: 1rem; font-size: 0.95rem; color: var(--text-secondary);">
+                <ul style="padding-left: 1.5rem; margin-bottom: 1rem;">
+                  <li style="margin-bottom: 0.5rem;">Implemented an FPGA MPSoC JPEG encoder on Cyclone IV using Nios II/e cores; introduced lightweight custom hardware instructions and custom FIFO queues to offload compute-critical stages and reduce processor stalls.</li>
+                  <li>Achieved 2.8× throughput improvement; superscalar options were evaluated but deprioritised.</li>
+                </ul>
+              </div>
               <div class="card-footer">
                 <a href="https://ieeexplore.ieee.org/abstract/document/10851123" class="btn btn-primary" target="_blank">
                   <i class="bi bi-file-earmark-pdf"></i> View Paper
                 </a>
               </div>
             </div>
+
+            <!-- <div class="publication-card">
+              <h3 class="publication-title">
+                A Configurable Neuromorphic Network-on-Chip Architecture for Spiking Neural Networks
+              </h3>
+              <div class="tags">
+                <span class="tag tag-accent">MERCon 2026</span>
+                <span class="tag">Submitted</span>
+                <span class="tag">NoC</span>
+                <span class="tag">SNNs</span>
+              </div>
+              <p class="publication-meta">
+                <strong>Authors:</strong> I. Balasuriya, A. Karunanayake, T. Rathnayake, K. Gunawardana, S. Peeris, R. Ragel, M. Wickramasinghe, I. Nawinne<br />
+                <strong>Status:</strong> Submitted
+              </p>
+              <div class="publication-description" style="margin-top: 1rem; font-size: 0.95rem; color: var(--text-secondary);">
+                <ul style="padding-left: 1.5rem; margin-bottom: 1rem;">
+                  <li>Conducted experimental evaluations to validate the performance and efficiency of the proposed NoC architecture, actively participating in the technical writing, data presentation, and editorial refinement of the paper.</li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <a href="https://drive.google.com/file/u/1/d/1q0tgqPjFomz5iPi7gaQeL-IipKj1AZjN/view" class="btn btn-primary" target="_blank">
+                  <i class="bi bi-file-earmark-pdf"></i> View Draft
+                </a>
+              </div>
+            </div> -->
+
           </div>
         </section>
 
@@ -795,6 +855,20 @@
             <p class="section-subtitle">
               Awards and recognitions that reflect excellence in academics, research, and competitive programming.
             </p>
+          </div>
+
+          <div class="card card-achievement" style="margin-bottom: 2.5rem;">
+            <div class="card-icon-wrapper">
+              <i class="bi bi-medal-fill" style="color: var(--accent-color);"></i>
+            </div>
+            <h4 class="card-title">J. B. Dissanayake Prize</h4>
+            <p class="card-subtitle">2025 | Faculty of Engineering, UoP</p>
+            <div class="card-body">
+              <p>
+                <strong>Industrial Training Excellence</strong><br />
+                Awarded for outstanding performance and excellence during the undergraduate industrial training program.
+              </p>
+            </div>
           </div>
 
           <div class="grid grid-3">
