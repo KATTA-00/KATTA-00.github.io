@@ -18,7 +18,7 @@ const siteConfig = {
   socialLinks: {
     github: "https://github.com/KATTA-00",
     linkedin: "https://www.linkedin.com/in/kanishka-gunawardana-285aa4201",
-    googleScholar: "https://scholar.google.com/citations?user=YOUR_ID",
+    googleScholar: "https://scholar.google.com/citations?hl=en&user=zqQs0UUAAAAJ",
     email: "mailto:kanishkagunawarthana@gmail.com",
   },
 
@@ -40,7 +40,7 @@ const siteConfig = {
   // Academic Information
   academic: {
     gpa: "4.0/4.0",
-    rank: "1st out of 90 students",
+    rank: "1st out of 486 students",
     institution: "University of Peradeniya",
     degree: "B.Sc. Engineering (Hons.) in Computer Engineering",
   },
@@ -64,9 +64,9 @@ const siteConfig = {
   // Professional Experience
   experience: [
     {
-      title: "Temporary Instructor",
-      organization: "University of Peradeniya",
-      duration: "2024 - Present",
+      title: "Teaching Assistant",
+      organization: "Department of Computer Engineering, University of Peradeniya",
+      duration: "Aug. 2025 - Present",
       type: "Academic",
       tags: ["Teaching", "Research Mentoring", "Computer Architecture"],
       description:
@@ -75,7 +75,7 @@ const siteConfig = {
     {
       title: "Software Engineering Intern",
       organization: "WSO2 LLC",
-      duration: "2023",
+      duration: "Jul. 2024 - Dec. 2024",
       type: "Industry",
       tags: ["Ballerina", "API Integration", "OpenAI"],
       description:
@@ -84,7 +84,7 @@ const siteConfig = {
     {
       title: "Research Assistant",
       organization: "PeraMorphIQ Research Group",
-      duration: "2023 - Present",
+      duration: "Aug. 2025 - Present",
       type: "Research",
       tags: ["Neuromorphic Computing", "Hardware Design", "Edge AI"],
       description:
@@ -93,7 +93,7 @@ const siteConfig = {
     {
       title: "Head of Web Development",
       organization: "Robotics Society, University of Peradeniya",
-      duration: "2022 - 2023",
+      duration: "Sep. 2023 - Aug. 2024",
       type: "Leadership",
       tags: ["Leadership", "Web Development", "Team Management"],
       description:
@@ -122,7 +122,7 @@ const siteConfig = {
       tags: ["RISC-V", "Verilog-HDL", "Neuromorphic", "SoC", "FPGA"],
       description:
         "Developing a neuromorphic SoC for small-scale SNNs, featuring a configurable neuromorphic accelerator with on-chip learning, tailored for low-power edge applications such as robotics. Integrating RISC-V-based general-purpose computing and sensor interfacing capabilities.",
-      duration: "Nov. 2024 - Present",
+      duration: "Nov. 2024 - Jul. 2025",
       technologies:
         "RISC-V, Verilog-HDL, Synopsys Tools, FPGA, Cyclone IV, Quartus II",
       supervision: "Dr. Isuru Nawinne, Prof. Roshan G. Ragel",
@@ -137,7 +137,7 @@ const siteConfig = {
       tags: ["RISC-V", "Verilog HDL", "CPU Design", "Pipelining"],
       description:
         "Designing and implementing a CPU supporting the RISC-V 32IM instruction set architecture with a 5-stage pipelined design, focusing on high efficiency and accurate instruction execution.",
-      duration: "Dec. 2024 - Present",
+      duration: "Dec. 2024 - Jul. 2025",
       technologies:
         "Verilog HDL, Icarus Verilog, GTKWave, Synopsys DC, Synopsys VCS",
       github:
@@ -185,7 +185,7 @@ const siteConfig = {
       tags: ["Robotics", "Swarm Intelligence", "Arduino", "Computer Vision"],
       description:
         "Leading the development and firmware update of obstacle robots with collision avoidance algorithms for the swarm robotics platform. Integrating obstacle robots with the existing swarm platform, enabling studies of dynamic obstacle scenarios.",
-      duration: "Feb. 2024 - Nov. 2023",
+      duration: "Feb. 2023 - Nov. 2024",
       technologies: "Arduino, Python, Java, MQTT, OpenCV",
       github: "https://github.com/Pera-Swarm",
       website: "https://pera-swarm.ce.pdn.ac.lk/",

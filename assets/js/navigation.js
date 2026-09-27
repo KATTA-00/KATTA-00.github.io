@@ -183,10 +183,10 @@
 
     const commands = [
       'whoami → Hardware-Software Co-Design Engineer',
-      'cat skills.txt → Verilog | RISC-V | Python | C++',
+      'cat skills.txt → Verilog | Chisel | RISC-V | C++',
       'ls projects/ → SNAP-V, RV32IM, MPSoC...',
       'echo $GPA → 4.0/4.0 (Rank #1)',
-      './research --status → 2 Publications, 1 Thesis'
+      './research --status → 3 Publications, 1 Thesis'
     ];
     
     let commandIndex = 0;
