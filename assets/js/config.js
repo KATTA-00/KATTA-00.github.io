@@ -64,7 +64,7 @@ const siteConfig = {
   // Professional Experience
   experience: [
     {
-      title: "Teaching Assistant",
+      title: "Temporary Instructor",
       organization: "Department of Computer Engineering, University of Peradeniya",
       duration: "Aug. 2025 - Present",
       type: "Academic",
@@ -74,7 +74,7 @@ const siteConfig = {
     },
     {
       title: "Software Engineering Intern",
-      organization: "WSO2 LLC",
+      organization: "WSO2 Lanka (Pvt) Ltd, Colombo",
       duration: "Jul. 2024 - Dec. 2024",
       type: "Industry",
       tags: ["Ballerina", "API Integration", "OpenAI"],
