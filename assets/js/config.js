@@ -82,7 +82,7 @@ const siteConfig = {
         "Developed Ballerina integrations including the OpenAI Finetunes Connector and ISO20022-to-SwiftMT message conversion systems. Worked on enterprise-level software solutions and API integrations for cloud-native applications.",
     },
     {
-      title: "Research Assistant",
+      title: "Graduate Researcher",
       organization: "PeraMorphIQ Research Group",
       duration: "Aug. 2025 - Present",
       type: "Research",
